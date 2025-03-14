@@ -28,6 +28,9 @@ class Calculator(QDialog):
         self.factorSoFar = 0.0
         self.waitingForOperand = True
 
+        self.intResult = None
+        self.floatResult = None
+
         self.display = QLineEdit('0')
         self.display.setMinimumHeight(30)
         self.display.setReadOnly(False)
@@ -408,6 +411,16 @@ class Calculator(QDialog):
                 return False
             self.factorSoFar /= rightOperand
         return True
+
+    def accept(self):
+        self.intResult = int(float(self.display.text()))
+        self.floatResult = float(self.display.text())
+        super(Calculator, self).accept()
+
+    def reject(self):
+        self.intResult = None
+        self.floatResult = None
+        super(Calculator, self).reject()
 
     # Subclass can redefine
     def backAction(self):
