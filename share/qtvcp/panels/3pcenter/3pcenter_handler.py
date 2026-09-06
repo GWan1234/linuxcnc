@@ -55,6 +55,8 @@ class HandlerClass:
 
 #######################################################################################################
 
+
+
     def XY_A(self):
           self.X_A = hal.get_value("halui.axis.x.pos-relative")
           self.w.label_2.setText(str(round(self.X_A, 4)))
@@ -71,26 +73,26 @@ class HandlerClass:
 
     def XY_C(self):
           self.X_C = hal.get_value("halui.axis.x.pos-relative")
-          self.w.label_7.setText( str(round(self.X_C, 4)))
+          self.w.label_7.setText(str(round(self.X_C, 4)))
           self.Y_C = hal.get_value("halui.axis.y.pos-relative")
           self.w.label_8.setText(str(round(self.Y_C, 4)))
           self.obliczXY()
 
     def obliczXY(self):
         try:
-            if ((self.X_A, self.Y_A) != ( self.X_B, self.Y_B) and (self.X_A, self.Y_A) != (self.X_C, self.Y_C) and (self.X_B, self.Y_B) != (self.X_C, self.Y_C)):
+            if ((self.X_A, self.Y_A) != ( self.X_B, self.Y_B) and (self.X_A, self.Y_A) != (self.X_C, self.Y_C) and (self.X_B, self.Y_B) != (self.X_C, self.Y_C) ):
                 try:
-                    X = ((self.X_A**2+self.Y_A**2)*(self.Y_B-self.Y_C)+(self.X_B**2+self.Y_B**2)*(self.Y_C-self.Y_A)+(self.X_C**2+self.Y_C**2)*(self.Y_A-self.Y_B))/(2*(self.X_A*(self.Y_B-self.Y_C)-self.Y_A*(self.X_B-self.X_C)+self.X_B*self.Y_C-self.X_C*self.Y_B))
-                    Y = ((self.X_A**2+self.Y_A**2)*(self.X_C-self.X_B)+(self.X_B**2+self.Y_B**2)*(self.X_A-self.X_C)+(self.X_C**2+self.Y_C**2)*(self.X_B-self.X_A))/(2*(self.X_A*(self.Y_B-self.Y_C)-self.Y_A*(self.X_B-self.X_C)+self.X_B*self.Y_C-self.X_C*self.Y_B))
-                    self.dataX = str(round(X, 4))
-                    self.w.label_9.setText(self.dataX)
-                    self.dataY = str(round(Y, 4))
-                    self.w.label_11.setText(self.dataY)
-                    self.w.label_4.setText("OK")
-                    self.w.label_4.setStyleSheet("background-color: rgba(50, 150, 50, 120);")
+                    self.X = ((self.X_A**2+self.Y_A**2)*(self.Y_B-self.Y_C)+(self.X_B**2+self.Y_B**2)*(self.Y_C-self.Y_A)+(self.X_C**2+self.Y_C**2)*(self.Y_A-self.Y_B))/(2*(self.X_A*(self.Y_B-self.Y_C)-self.Y_A*(self.X_B-self.X_C)+self.X_B*self.Y_C-self.X_C*self.Y_B))
+                    self.Y = ((self.X_A**2+self.Y_A**2)*(self.X_C-self.X_B)+(self.X_B**2+self.Y_B**2)*(self.X_A-self.X_C)+(self.X_C**2+self.Y_C**2)*(self.X_B-self.X_A))/(2*(self.X_A*(self.Y_B-self.Y_C)-self.Y_A*(self.X_B-self.X_C)+self.X_B*self.Y_C-self.X_C*self.Y_B))
+                    self.w.label_9.setText(str(round(self.X, 4)))
+                    self.w.label_11.setText(str(round(self.Y, 4)))
+                    self.w.label_4.setText("X0 Y0 is not in the center of the circle")
+                    self.w.label_4.setStyleSheet("background-color: rgba(250, 250, 30, 120);")
                     self.w.label_9.setStyleSheet("background-color: rgba(50, 150, 50, 120);")
                     self.w.label_11.setStyleSheet("background-color: rgba(50, 150, 50, 120);")
                     self.w.pushButton_4.show()
+                    self.w.pushButton_5.show()
+                    #self.setCenter()
                 except:
                     self.set_no_ok()
             else:
@@ -105,8 +107,8 @@ class HandlerClass:
         self.w.label_4.setStyleSheet("background-color: rgba(223, 13, 15, 120);")
         self.w.label_9.setStyleSheet("background-color: rgba(223, 13, 15, 120);")
         self.w.label_11.setStyleSheet("background-color: rgba(223, 13, 15, 120);")
-        self.w.label_9.setText("A")
-        self.w.label_11.setText("B")
+        self.w.label_9.setText("X")
+        self.w.label_11.setText("Y")
         self.w.pushButton_4.hide()
         self.w.pushButton_5.hide()
 
@@ -115,14 +117,32 @@ class HandlerClass:
             c.mode(linuxcnc.MODE_MDI)
             c.wait_complete()
             c.mdi('g53 g0 z0')
-            c.mdi('g54 g0 x'+self.dataX)
-            c.mdi('g54 g0 y'+self.dataY)
-            self.w.pushButton_5.show()
+            c.mdi('g54 g0 x'+str(round(self.X, 4))+'y'+str(round(self.Y, 4)))
 
     def setCenter(self):
+            offset_X = (hal.get_value("halui.axis.x.pos-relative") - self.X)
+            offset_Y = (hal.get_value("halui.axis.y.pos-relative") - self.Y)
             c.mode(linuxcnc.MODE_MDI)
             c.wait_complete()
-            c.mdi('g10 l20 p1 x0 y0')
+            c.mdi('g10 l20 p1 x'+str(round(offset_X, 4))+'y'+str(round(offset_Y, 4)))
+            self.w.label_4.setText("OK")
+            self.w.label_4.setStyleSheet("background-color: rgba(50, 150, 50, 120);")
+            self.X = 0
+            self.Y = 0
+            self.w.label_9.setText(str(self.X))
+            self.w.label_11.setText(str(self.Y))
+            self.X_A = ""
+            self.w.label_2.setText('X')
+            self.Y_A = ""
+            self.w.label_3.setText('Y')
+            self.X_B = ""
+            self.w.label_5.setText('X')
+            self.Y_B = ""
+            self.w.label_6.setText('Y')
+            self.X_C = ""
+            self.w.label_7.setText('X')
+            self.Y_C = ""
+            self.w.label_8.setText('Y')
 
 
 
@@ -133,3 +153,4 @@ class HandlerClass:
 
 def get_handlers(halcomp,widgets,paths):
      return [HandlerClass(halcomp,widgets,paths)]
+
