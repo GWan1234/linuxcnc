@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
 "PO-Revision-Date: 2026-09-07 00:52+0000\n"
-"Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: none\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -3726,7 +3726,7 @@ msgid ""
 msgstr ""
 "A partir de https://www.rtai.org.   Um kernel Linux com o patch RTAI está "
 "disponível a partir do arquivo Debian em https://linuxcnc.org.   Veja "
-"<<cha:getting-linuxcnc,Obter o LinuxCNC> para instruções de instalação."
+"<<cha:getting-linuxcnc,Obter o LinuxCNC>> para instruções de instalação."
 
 #. type: Labeled list
 #: src/code/building-linuxcnc.adoc:126
@@ -3824,7 +3824,7 @@ msgid ""
 "arguments to `src/configure` and `make`."
 msgstr ""
 "Compilar para Run-In-Place segue os passos na secção <<Quick-Start,Arranque "
-"Rápido> na topo deste documento, possivelmente com diferentes argumentos "
+"Rápido>> na topo deste documento, possivelmente com diferentes argumentos "
 "para `src/configure` e `make`."
 
 #. type: Title ====
@@ -4105,8 +4105,8 @@ msgid ""
 msgstr ""
 "dependências de tempo de compilação devem ser instaladas, ou seja, ficheiros "
 "de cabeçalho para bibliotecas usadas de código externo, como descrito na "
-"secção <<Satisfying-Build-Dependencies,Satisfazer Dependências de Compilação>"
-"."
+"secção <<Satisfying-Build-Dependencies,Satisfazer Dependências de "
+"Compilação>>."
 
 #. type: Plain text
 #: src/code/building-linuxcnc.adoc:254
@@ -4171,10 +4171,10 @@ msgid ""
 "(\"uspace\"), expecting the preempt_rt kernel to minimize latencies."
 msgstr ""
 "O `debian/configure` aceita argumentos dependendo da plataforma em que/para "
-"que você está compilando, veja a secção <debian-configure-arguments, "
-"argumentos <<debian-configure-arguments, `debian/configure`>>.  Vem "
-"predefinido para o LinuxCNC correr no espaço do utilizador (\"uspace\"), "
-"contando com um kernel preempt_rt para minimizar latências."
+"que você está compilando, veja a secção <<debian-configure-arguments, "
+"argumentos `debian/configure`>>.  Vem predefinido para o LinuxCNC correr no "
+"espaço do utilizador (\"uspace\"), contando com um kernel preempt_rt para "
+"minimizar latências."
 
 #. type: Plain text
 #: src/code/building-linuxcnc.adoc:281
@@ -4980,10 +4980,10 @@ msgid ""
 "quickest, easiest way to get started.  However, there are other options to "
 "consider."
 msgstr ""
-"As instruções de <<Quick-Start,Arranque Rápido>> no topo deste documento "
-"clonam o nosso repositório git em https://github.com/LinuxCNC/linuxcnc.git. "
-"Esta é a maneira mais rápida e fácil de começar. No entanto, há outras "
-"opções a considerar."
+"As instruções <<Quick-Start,Arranque Rápido>> no topo deste documento clonam "
+"o nosso repositório git em https://github.com/LinuxCNC/linuxcnc.git.  Esta é "
+"a maneira mais rápida e fácil de começar.  No entanto, há outras opções a "
+"considerar."
 
 #. type: Title ===
 #: src/code/building-linuxcnc.adoc:552
@@ -7790,7 +7790,7 @@ msgid ""
 msgstr ""
 "LinuxCNC suporta dois tipos de hardware de troca de ferramentas, chamado "
 "_nonrandom_ e _random_.  A definição INI "
-"<<sub:ini:sec:emcio,[EMCIO]RANDOM_TOOLCHANGER> controla a qual desses tipos "
+"<<sub:ini:sec:emcio,[EMCIO]RANDOM_TOOLCHANGER>> controla a qual desses tipos "
 "de hardware o LinuxCNC pensa que está ligado."
 
 #. type: Title ====
@@ -7921,8 +7921,8 @@ msgid ""
 "table>>.  The tool table records the following information for each tool:"
 msgstr ""
 "LinuxCNC mantém o acompanhamento de ferramentas num ficheiro chamado "
-"<<sec:tool-table,tool table>>.  A tabela de ferramentas registra as "
-"seguintes informações para cada ferramenta:"
+"<<sec:tool-table,tool table>>.  A tabela de ferramentas regista as seguintes "
+"informações para cada ferramenta:"
 
 #. type: Labeled list
 #: src/code/code-notes.adoc:1154
@@ -8222,10 +8222,10 @@ msgid ""
 "with the new tool information from pocket 0 (spindle)."
 msgstr ""
 "De volta ao interp, +settings->current_pocket+ é atribuído o novo índice de "
-"dados de ferramenta a partir de +settings->selected_pocket+ (definido por "
+"dados de ferramentas a partir de +settings->selected_pocket+ (definido por "
 "+Txxx+).  Os parâmetros numerados relevantes (<<sub:numbered-"
 "parameters,#5400-#5413>>) são atualizados com as novas informações da "
-"ferramenta do bolso 0 (o fuso)."
+"ferramenta do bolso 0 (fuso)."
 
 #. type: Title ====
 #: src/code/code-notes.adoc:1217
@@ -8916,7 +8916,7 @@ msgid ""
 "then `axis[n]` does not exist on this machine and must be ignored."
 msgstr ""
 "Uma matriz de estruturas do eixo `EMCMOT_MAX_AXIS`. `axis[n]` é válido se `"
-"(axis_mask & (1 < n))` for Verdadeiro.  Se `(axis_mask & (1 < n))` for "
+"(axis_mask & (1 << n))` for Verdadeiro.  Se `(axis_mask & (1 << n))` for "
 "Falso, então `axis[n]` não existe nesta máquina e deve ser ignorado."
 
 #. type: Labeled list
@@ -13696,8 +13696,8 @@ msgid ""
 "usually a <<sub:hal-s32,s32>>, but could be also a <<sub:hal-s64,s64>>."
 msgstr ""
 "Um número inteiro que pode ter um sinal positivo ou negativo.  Em HAL é "
-"geralmente um <<sub:hal-s32,s32>, mas poderá ser também um <<sub:hal-s64,s64>"
-"."
+"geralmente um <<sub:hal-s32,s32>>, mas poderá ser também um <<sub:hal-"
+"s64,s64>>."
 
 #. type: Title ====
 #: src/common/glossary.adoc:326 src/config/core-components.adoc:192
@@ -13859,7 +13859,7 @@ msgid ""
 "but could be also a <<sub:hal-u64,u64>>."
 msgstr ""
 "Um número inteiro que não tem sinal.  Em HAL é geralmente um <<sub:hal-"
-"u32,u32> mas pode ser também um <<sub:hal-u64,u64>."
+"u32,u32>> mas pode ser também um <<sub:hal-u64,u64>>."
 
 #. type: Labeled list
 #: src/common/glossary.adoc:369
@@ -50203,10 +50203,9 @@ msgstr ""
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:1815
-#, fuzzy, no-wrap
-#| msgid "G73 X- Y- Z- R- Q- P- <L->\n"
+#, no-wrap
 msgid "G73 X- Y- Z- R- Q- D- <L->\n"
-msgstr "G73 X- Y- Z- R- Q- P- <L->\n"
+msgstr "G73 X- Y- Z- R- Q- D- <L->\n"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:1818
@@ -51464,10 +51463,9 @@ msgstr ""
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2413
-#, fuzzy, no-wrap
-#| msgid "G74 (X- Y- Z-) or (U- V- W-) R- L- P- $- F-\n"
+#, no-wrap
 msgid "G83 (X- Y- Z-) or (U- V- W-) R- L- Q- D-\n"
-msgstr "G74 (X- Y- Z-) or (U- V- W-) R- L- P- $- F-\n"
+msgstr "G83 (X- Y- Z-) or (U- V- W-) R- L- Q- D-\n"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2424
@@ -53220,7 +53218,7 @@ msgstr ""
 #: src/gcode/machining-center.adoc:26
 #, no-wrap
 msgid "Axes"
-msgstr "Machados"
+msgstr "Eixos"
 
 #. type: Index entry
 #: src/gcode/machining-center.adoc:35 src/gcode/machining-center.adoc:57
@@ -53260,7 +53258,7 @@ msgstr ""
 #. type: Index entry
 #: src/gcode/machining-center.adoc:57
 msgid "primary linear"
-msgstr ""
+msgstr "linear primário"
 
 #. type: Plain text
 #: src/gcode/machining-center.adoc:57
@@ -53272,7 +53270,7 @@ msgstr ""
 #. type: Index entry
 #: src/gcode/machining-center.adoc:63
 msgid "secondary linear"
-msgstr ""
+msgstr "linear secundário"
 
 #. type: Plain text
 #: src/gcode/machining-center.adoc:63
@@ -53284,10 +53282,8 @@ msgstr ""
 
 #. type: Index entry
 #: src/gcode/machining-center.adoc:69
-#, fuzzy
-#| msgid "Notation"
 msgid "rotational"
-msgstr "Notação"
+msgstr "rotativo"
 
 #. type: Plain text
 #: src/gcode/machining-center.adoc:69
@@ -53310,7 +53306,7 @@ msgstr ""
 #. type: Index entry
 #: src/gcode/machining-center.adoc:86
 msgid "coolant"
-msgstr ""
+msgstr "refrigerante"
 
 #. type: Plain text
 #: src/gcode/machining-center.adoc:86
@@ -53948,49 +53944,49 @@ msgstr ""
 #: src/gcode/m-code.adoc:16
 #, no-wrap
 msgid "<<mcode:m0-m1,M0 M1>>"
-msgstr ""
+msgstr "<<mcode:m0-m1,M0 M1>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:17
 #, no-wrap
 msgid "<<mcode:m2-m30,M2 M30>>"
-msgstr ""
+msgstr "<<mcode:m2-m30,M2 M30>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:18
 #, no-wrap
 msgid "<<mcode:m60, M60>>"
-msgstr ""
+msgstr "<<mcode:m60, M60>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:19
 #, no-wrap
 msgid "<<mcode:m3-m4-m5,M3 M4 M5>>"
-msgstr ""
+msgstr "<<mcode:m3-m4-m5,M3 M4 M5>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:20
 #, no-wrap
 msgid "<<mcode:m6,M6>>"
-msgstr ""
+msgstr "<<mcode:m6,M6>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:21
 #, no-wrap
 msgid "<<mcode:m7-m8-m9,M7 M8 M9>>"
-msgstr ""
+msgstr "<<mcode:m7-m8-m9,M7 M8 M9>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:22
 #, no-wrap
 msgid "<<mcode:m19,M19>>"
-msgstr ""
+msgstr "<<mcode:m19,M19>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:23
 #, no-wrap
 msgid "<<mcode:m48-m49,M48 M49>>"
-msgstr ""
+msgstr "<<mcode:m48-m49,M48 M49>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:24
@@ -54002,13 +53998,13 @@ msgstr ""
 #: src/gcode/m-code.adoc:24
 #, no-wrap
 msgid "<<mcode:m50,M50>>"
-msgstr ""
+msgstr "<<mcode:m50,M50>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:25
 #, no-wrap
 msgid "<<mcode:m51,M51>>"
-msgstr ""
+msgstr "<<mcode:m51,M51>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:26
@@ -54020,19 +54016,19 @@ msgstr ""
 #: src/gcode/m-code.adoc:26
 #, no-wrap
 msgid "<<mcode:m52,M52>>"
-msgstr ""
+msgstr "<<mcode:m52,M52>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:27
 #, no-wrap
 msgid "<<mcode:m53,M53>>"
-msgstr ""
+msgstr "<<mcode:m53,M53>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:28
 #, no-wrap
 msgid "<<mcode:m61,M61>>"
-msgstr ""
+msgstr "<<mcode:m61,M61>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:29
@@ -54044,7 +54040,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:29
 #, no-wrap
 msgid "<<mcode:m62-m65,m62-m65>>"
-msgstr ""
+msgstr "<<mcode:m62-m65,m62-m65>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:30
@@ -54056,7 +54052,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:30
 #, no-wrap
 msgid "<<mcode:m66,M66>>"
-msgstr ""
+msgstr "<<mcode:m66,M66>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:31
@@ -54068,7 +54064,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:31
 #, no-wrap
 msgid "<<mcode:m67,M67>>"
-msgstr ""
+msgstr "<<mcode:m67,M67>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:32 src/gcode/m-code.adoc:33
@@ -54080,13 +54076,13 @@ msgstr ""
 #: src/gcode/m-code.adoc:32
 #, no-wrap
 msgid "<<mcode:m68,M68>>"
-msgstr ""
+msgstr "<<mcode:m68,M68>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:33
 #, no-wrap
 msgid "<<mcode:m70,M70>>"
-msgstr ""
+msgstr "<<mcode:m70,M70>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:34
@@ -54098,7 +54094,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:34
 #, no-wrap
 msgid "<<mcode:m71,M71>>"
-msgstr ""
+msgstr "<<mcode:m71,M71>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:35
@@ -54110,7 +54106,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:35
 #, no-wrap
 msgid "<<mcode:m72,M72>>"
-msgstr ""
+msgstr "<<mcode:m72,M72>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:36
@@ -54122,7 +54118,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:36
 #, no-wrap
 msgid "<<mcode:m73,M73>>"
-msgstr ""
+msgstr "<<mcode:m73,M73>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:37
@@ -54134,7 +54130,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:37
 #, no-wrap
 msgid "<<mcode:m98-m99,M98 M99>>"
-msgstr ""
+msgstr "<<mcode:m98-m99,M98 M99>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:38
@@ -54146,7 +54142,7 @@ msgstr ""
 #: src/gcode/m-code.adoc:38
 #, no-wrap
 msgid "<<mcode:m100-m199,M100-M199>>"
-msgstr ""
+msgstr "<<mcode:m100-m199,M100-M199>>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:39
@@ -57256,7 +57252,7 @@ msgstr ""
 #: src/plasma/qtplasmac.adoc:2576
 #, no-wrap
 msgid "O"
-msgstr ""
+msgstr "O"
 
 #. type: Table
 #: src/gcode/overview.adoc:139
@@ -57292,7 +57288,7 @@ msgstr ""
 #: src/gcode/overview.adoc:143 src/gui/axis.adoc:652
 #, no-wrap
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #. type: Table
 #: src/gcode/overview.adoc:144
@@ -62352,10 +62348,9 @@ msgstr "Depois corra este comando para descarregar o iso para o seu computador"
 
 #. type: delimited block -
 #: src/getting-started/getting-linuxcnc.adoc:72
-#, fuzzy, no-wrap
-#| msgid "zsync http://www.linuxcnc.org/iso/linuxcnc_2.9.4-amd64.hybrid.iso\n"
+#, no-wrap
 msgid "zsync https://www.linuxcnc.org/iso/linuxcnc_2.9.8-amd64.hybrid.iso\n"
-msgstr "zsync http://www.linuxcnc.org/iso/linuxcnc_2.9.4-amd64.hybrid.iso\n"
+msgstr "zsync https://www.linuxcnc.org/iso/linuxcnc_2.9.8-amd64.hybrid.iso\n"
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:77
@@ -62402,17 +62397,15 @@ msgstr ""
 
 #. type: delimited block -
 #: src/getting-started/getting-linuxcnc.adoc:92
-#, fuzzy, no-wrap
-#| msgid "md5sum linuxcnc-2.9.4-amd64.iso\n"
+#, no-wrap
 msgid "md5sum linuxcnc-2.9.8-amd64.iso\n"
-msgstr "md5sum linuxcnc-2.9.4-amd64.iso\n"
+msgstr "md5sum linuxcnc-2.9.8-amd64.iso\n"
 
 #. type: delimited block -
 #: src/getting-started/getting-linuxcnc.adoc:98
-#, fuzzy, no-wrap
-#| msgid "sha256sum linuxcnc-2.9.4-amd64.iso\n"
+#, no-wrap
 msgid "sha256sum linuxcnc-2.9.8-amd64.iso\n"
-msgstr "sha256sum linuxcnc-2.9.4-amd64.iso\n"
+msgstr "sha256sum linuxcnc-2.9.8-amd64.iso\n"
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:100
@@ -62421,14 +62414,7 @@ msgstr "Depois compare com estes sumários de verificação"
 
 #. type: delimited block -
 #: src/getting-started/getting-linuxcnc.adoc:108
-#, fuzzy, no-wrap
-#| msgid ""
-#| "amd64 (PC)\n"
-#| "md5sum: 1815aceaac0e7861747aa34d61846e79\n"
-#| "sha256sum: 08b3f59233e47c91cf1c9a85c41df48542c97b134efefa7446d3060c9a3e644b\n"
-#| "arm64 (Pi)\n"
-#| "md5sum: 4547e8a72433efb033f0a5cf166a5cd2\n"
-#| "sha256sum: ff3ba9b8dfb93baf1e2232746655f8521a606bc0fab91bffc04ba74cc3be6bf0\n"
+#, no-wrap
 msgid ""
 "amd64 (PC)\n"
 "md5sum: cf77d61fcba9641d7205ac33751e5f38\n"
@@ -62438,8 +62424,8 @@ msgid ""
 "sha256sum: ff3ba9b8dfb93baf1e2232746655f8521a606bc0fab91bffc04ba74cc3be6bf0\n"
 msgstr ""
 "amd64 (PC)\n"
-"md5sum: 1815aceaac0e7861747aa34d61846e79\n"
-"sha256sum: 08b3f59233e47c91cf1c9a85c41df48542c97b134efefa7446d3060c9a3e644b\n"
+"md5sum: cf77d61fcba9641d7205ac33751e5f38\n"
+"sha256sum: 72eab92d7c34c238b0429054dc52d240df8dc5f083e769a39194cfac3e4984e8\n"
 "arm64 (Pi)\n"
 "md5sum: 4547e8a72433efb033f0a5cf166a5cd2\n"
 "sha256sum: ff3ba9b8dfb93baf1e2232746655f8521a606bc0fab91bffc04ba74cc3be6bf0\n"
@@ -62539,10 +62525,10 @@ msgstr ""
 
 #. type: delimited block -
 #: src/getting-started/getting-linuxcnc.adoc:149
-#, fuzzy, no-wrap
-#| msgid "dd if=linuxcnc_2.9.4-amd64.hybrid.iso of=/dev/sde\n"
+#, no-wrap
 msgid "dd if=linuxcnc_2.9.8-amd64.hybrid.iso of=/dev/sde bs=4k status=progress\n"
-msgstr "dd if=linuxcnc_2.9.4-amd64.hybrid.iso of=/dev/sde\n"
+msgstr ""
+"dd if=linuxcnc_2.9.8-amd64.hybrid.iso of=/dev/sde bs=4k status=progress\n"
 
 #. type: Title ===
 #: src/getting-started/getting-linuxcnc.adoc:151
@@ -62585,10 +62571,11 @@ msgstr ""
 
 #. type: delimited block -
 #: src/getting-started/getting-linuxcnc.adoc:169
-#, fuzzy, no-wrap
-#| msgid "sudo dd if=linuxcnc_2.9.4-amd64.hybrid.iso of=/dev/rdiskN bs=1m\n"
+#, no-wrap
 msgid "sudo dd if=linuxcnc_2.9.8-amd64.hybrid.iso of=/dev/rdiskN bs=1m status=progress\n"
-msgstr "sudo dd if=linuxcnc_2.9.4-amd64.hybrid.iso of=/dev/rdiskN bs=1m\n"
+msgstr ""
+"sudo dd if=linuxcnc_2.9.8-amd64.hybrid.iso of=/dev/rdiskN bs=1m "
+"status=progress\n"
 
 #. type: Block title
 #: src/getting-started/getting-linuxcnc.adoc:171
@@ -62807,10 +62794,9 @@ msgstr ""
 
 #. type: Table
 #: src/getting-started/getting-linuxcnc.adoc:258
-#, fuzzy, no-wrap
-#| msgid "Debian"
+#, no-wrap
 msgid "Debian Trixie"
-msgstr "Debian"
+msgstr "Debian Trixie"
 
 #. type: Table
 #: src/getting-started/getting-linuxcnc.adoc:258
@@ -62846,10 +62832,9 @@ msgstr ""
 
 #. type: Table
 #: src/getting-started/getting-linuxcnc.adoc:259
-#, fuzzy, no-wrap
-#| msgid "Debian"
+#, no-wrap
 msgid "Debian Troxie"
-msgstr "Debian"
+msgstr "Debian Troxie"
 
 #. type: Table
 #: src/getting-started/getting-linuxcnc.adoc:259
@@ -62970,31 +62955,23 @@ msgstr ""
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:282
-#, fuzzy
-#| msgid "deb https://linuxcnc.org buster base 2.9-rt"
 msgid "Debian Trixie: `deb http://linuxcnc.org trixie base`"
-msgstr "deb https://linuxcnc.org buster base 2.9-rt"
+msgstr "Debian Trixie: `deb http://linuxcnc.org trixie base`"
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:283
-#, fuzzy
-#| msgid "deb https://linuxcnc.org bookworm base 2.9-rt"
 msgid "Debian Bookworm: `deb http://linuxcnc.org bookworm base`"
-msgstr "deb https://linuxcnc.org bookworm base 2.9-rt"
+msgstr "Debian Bookworm: `deb http://linuxcnc.org bookworm base`"
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:284
-#, fuzzy
-#| msgid "deb https://linuxcnc.org bullseye base 2.9-uspace"
 msgid "Debian Bullseye: `deb http://linuxcnc.org bullseye base`"
-msgstr "deb https://linuxcnc.org bullseye base 2.9-uspace"
+msgstr "Debian Bullseye: `deb http://linuxcnc.org bullseye base`"
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:285
-#, fuzzy
-#| msgid "deb https://linuxcnc.org buster base 2.9-rt"
 msgid "Debian Buster: `deb http://linuxcnc.org buster base`"
-msgstr "deb https://linuxcnc.org buster base 2.9-rt"
+msgstr "Debian Buster: `deb http://linuxcnc.org buster base`"
 
 #. type: Plain text
 #: src/getting-started/getting-linuxcnc.adoc:288
@@ -64703,10 +64680,9 @@ msgstr ""
 
 #. type: Table
 #: src/getting-started/updating-linuxcnc.adoc:100
-#, fuzzy, no-wrap
-#| msgid "deb https://linuxcnc.org buster base 2.9-uspace"
+#, no-wrap
 msgid "deb https://linuxcnc.org trixie base 2.9-uspace"
-msgstr "deb https://linuxcnc.org buster base 2.9-uspace"
+msgstr "deb https://linuxcnc.org trixie base 2.9-uspace"
 
 #. type: Table
 #: src/getting-started/updating-linuxcnc.adoc:100
@@ -64716,10 +64692,9 @@ msgstr ""
 
 #. type: Table
 #: src/getting-started/updating-linuxcnc.adoc:101
-#, fuzzy, no-wrap
-#| msgid "deb https://linuxcnc.org buster base 2.9-rt"
+#, no-wrap
 msgid "deb https://linuxcnc.org trixie base 2.9-rt"
-msgstr "deb https://linuxcnc.org buster base 2.9-rt"
+msgstr "deb https://linuxcnc.org trixie base 2.9-rt"
 
 #. type: Block title
 #: src/getting-started/updating-linuxcnc.adoc:103
@@ -64891,10 +64866,9 @@ msgstr ""
 
 #. type: delimited block -
 #: src/getting-started/updating-linuxcnc.adoc:168
-#, fuzzy, no-wrap
-#| msgid "sudo dpkg -i ../linuxcnc*.deb\n"
+#, no-wrap
 msgid "sudo dpkg -i linuxcnc_2.9.8.deb\n"
-msgstr "sudo dpkg -i ../linuxcnc*.deb\n"
+msgstr "sudo dpkg -i linuxcnc_2.9.8.deb\n"
 
 #. type: Title ==
 #: src/getting-started/updating-linuxcnc.adoc:171
@@ -64943,7 +64917,7 @@ msgstr ""
 #: src/getting-started/updating-linuxcnc.adoc:191
 #, no-wrap
 msgid "Canterp"
-msgstr ""
+msgstr "Canterp"
 
 #. type: Plain text
 #: src/getting-started/updating-linuxcnc.adoc:195
@@ -65021,10 +64995,9 @@ msgstr ""
 #
 #. type: Title ==
 #: src/getting-started/updating-linuxcnc.adoc:227
-#, fuzzy, no-wrap
-#| msgid "Configuration file format"
+#, no-wrap
 msgid "Updating Configuration Files for 2.10.y"
-msgstr "Formato de ficheiro de configuração"
+msgstr "Atualizar Ficheiros de Configuração para 2.10.y"
 
 #. type: Plain text
 #: src/getting-started/updating-linuxcnc.adoc:232
@@ -65036,17 +65009,15 @@ msgstr ""
 
 #. type: Title ==
 #: src/getting-started/updating-linuxcnc.adoc:234
-#, fuzzy, no-wrap
-#| msgid "HAL Components"
+#, no-wrap
 msgid "New HAL components"
-msgstr "Componentes do HAL"
+msgstr "Novos Componentes do HAL"
 
 #. type: Title ===
 #: src/getting-started/updating-linuxcnc.adoc:236
-#, fuzzy, no-wrap
-#| msgid "Non-realtime"
+#, no-wrap
 msgid "Non-Realtime"
-msgstr "Não-tempo-real"
+msgstr "Não-Tempo-Real"
 
 #. type: Plain text
 #: src/getting-started/updating-linuxcnc.adoc:247
@@ -65054,6 +65025,8 @@ msgid ""
 "mdro mqtt-publisher pi500_vfd pmx485-test qtplasmac-cfg2prefs qtplasmac-"
 "materials qtplasmac-plasmac2qt qtplasmac-setup sim-torch svd-ps_vfd"
 msgstr ""
+"mdro mqtt-publisher pi500_vfd pmx485-test qtplasmac-cfg2prefs qtplasmac-"
+"materials qtplasmac-plasmac2qt qtplasmac-setup sim-torch svd-ps_vfd"
 
 #. type: Plain text
 #: src/getting-started/updating-linuxcnc.adoc:261
@@ -65061,13 +65034,14 @@ msgid ""
 "anglejog div2 enum filter_kalman flipflop homecomp limit_axis mesa_uart "
 "millturn scaled_s32_sums tof ton"
 msgstr ""
+"anglejog div2 enum filter_kalman flipflop homecomp limit_axis mesa_uart "
+"millturn scaled_s32_sums tof ton"
 
 #. type: Title ==
 #: src/getting-started/updating-linuxcnc.adoc:262
-#, fuzzy, no-wrap
-#| msgid "Hardware Drivers"
+#, no-wrap
 msgid "New Drivers"
-msgstr "Drivers de Hardware"
+msgstr "Novos Controladores"
 
 #. type: Plain text
 #: src/getting-started/updating-linuxcnc.adoc:267
@@ -65088,7 +65062,7 @@ msgstr ""
 #: src/gui/axis.adoc:5 src/gui/axis.adoc:14
 #, no-wrap
 msgid "AXIS GUI"
-msgstr ""
+msgstr "GUI AXIS"
 
 #. type: Plain text
 #: src/gui/axis.adoc:20
@@ -65114,7 +65088,7 @@ msgstr ""
 #: src/gui/axis.adoc:23
 #, no-wrap
 msgid "images/axis.png"
-msgstr ""
+msgstr "images/axis.png"
 
 #. type: Title ==
 #: src/gui/axis.adoc:25 src/gui/mdro.adoc:29 src/gui/tklinuxcnc.adoc:26
@@ -76977,10 +76951,9 @@ msgstr ""
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: src/gui/gladevcp-panels.adoc:23 src/gui/gladevcp-panels.adoc:27
-#, fuzzy, no-wrap
-#| msgid "Versa Probe"
+#, no-wrap
 msgid "GTK Verser Probe"
-msgstr "Prova Versa"
+msgstr "Sonda Verser GTK"
 
 #. type: Plain text
 #: src/gui/gladevcp-panels.adoc:25
@@ -77015,12 +76988,12 @@ msgstr ""
 #. type: Plain text
 #: src/gui/gladevcp-panels.adoc:37
 msgid "https://vers.ge/en/blog/useful-articles/probe-screen-v28"
-msgstr ""
+msgstr "https://vers.ge/en/blog/useful-articles/probe-screen-v28"
 
 #. type: Plain text
 #: src/gui/gladevcp-panels.adoc:38
 msgid "https://github.com/verser-git/probe_screen_v2.9"
-msgstr ""
+msgstr "https://github.com/verser-git/probe_screen_v2.9"
 
 #. type: Plain text
 #: src/gui/gladevcp-panels.adoc:41 src/gui/gladevcp-panels.adoc:83
@@ -88085,7 +88058,7 @@ msgstr ""
 #: src/gui/ngcgui.adoc:5 src/gui/ngcgui.adoc:19 src/user/user-intro.adoc:127
 #, no-wrap
 msgid "NGCGUI"
-msgstr ""
+msgstr "NGCGUI"
 
 #. type: Block title
 #: src/gui/ngcgui.adoc:13
@@ -88097,7 +88070,7 @@ msgstr ""
 #: src/gui/ngcgui.adoc:14
 #, no-wrap
 msgid "images/ngcgui.png"
-msgstr ""
+msgstr "images/ngcgui.png"
 
 #. type: Plain text
 #: src/gui/ngcgui.adoc:23
@@ -99182,8 +99155,8 @@ msgid ""
 "A general overview of <<cha:qtvcp:modifying-screens,Customizing Stock "
 "Screens>>."
 msgstr ""
-"Uma visão geral de <<cha:qtvcp:modifying-screens,Persnalizar Ecrãs de Stock>>"
-"."
+"Uma visão geral de <<cha:qtvcp:modifying-screens,Personalizar Ecrãs de "
+"Stock>>."
 
 #. type: Title ===
 #: src/gui/qtdragon.adoc:1578
@@ -129597,7 +129570,7 @@ msgstr ""
 #: src/hal/components.adoc:104
 #, no-wrap
 msgid "link:../man/man1/svd-ps_vfd.1.html[svd-ps_vfd]"
-msgstr ""
+msgstr "link:../man/man1/svd-ps_vfd.1.html[svd-ps_vfd]"
 
 #. type: Table
 #: src/hal/components.adoc:104
@@ -129609,7 +129582,7 @@ msgstr ""
 #: src/hal/components.adoc:105
 #, no-wrap
 msgid "link:../man/man1/vfdb_vfd.1.html[vfdb_vfd]"
-msgstr ""
+msgstr "link:../man/man1/vfdb_vfd.1.html[vfdb_vfd]"
 
 #. type: Table
 #: src/hal/components.adoc:105
@@ -129621,7 +129594,7 @@ msgstr ""
 #: src/hal/components.adoc:106
 #, no-wrap
 msgid "link:../man/man1/vfs11_vfd.1.html[vfs11_vfd]"
-msgstr ""
+msgstr "link:../man/man1/vfs11_vfd.1.html[vfs11_vfd]"
 
 #. type: Table
 #: src/hal/components.adoc:106
@@ -129633,7 +129606,7 @@ msgstr ""
 #: src/hal/components.adoc:107
 #, no-wrap
 msgid "link:../man/man1/wj200_vfd.1.html[wj200_vfd]"
-msgstr ""
+msgstr "link:../man/man1/wj200_vfd.1.html[wj200_vfd]"
 
 #. type: Table
 #: src/hal/components.adoc:107
@@ -129645,7 +129618,7 @@ msgstr ""
 #: src/hal/components.adoc:108
 #, no-wrap
 msgid "link:../man/man1/xhc-hb04.1.html[xhc-hb04]"
-msgstr ""
+msgstr "link:../man/man1/xhc-hb04.1.html[xhc-hb04]"
 
 #. type: Table
 #: src/hal/components.adoc:108
@@ -129657,7 +129630,7 @@ msgstr ""
 #: src/hal/components.adoc:109
 #, no-wrap
 msgid "link:../man/man1/xhc-hb04-accels.1.html[xhc-hb04-accels]"
-msgstr ""
+msgstr "link:../man/man1/xhc-hb04-accels.1.html[xhc-hb04-accels]"
 
 #. type: Table
 #: src/hal/components.adoc:109
@@ -129669,7 +129642,7 @@ msgstr ""
 #: src/hal/components.adoc:110
 #, no-wrap
 msgid "link:../man/man1/xhc-whb04b-6.1.html[xhc-whb04b-6]"
-msgstr ""
+msgstr "link:../man/man1/xhc-whb04b-6.1.html[xhc-whb04b-6]"
 
 #. type: Table
 #: src/hal/components.adoc:110
@@ -129687,7 +129660,7 @@ msgstr ""
 #: src/hal/components.adoc:116
 #, no-wrap
 msgid "hal_ppmc"
-msgstr ""
+msgstr "hal_ppmc"
 
 #. type: Table
 #: src/hal/components.adoc:116
@@ -129699,7 +129672,7 @@ msgstr ""
 #: src/hal/components.adoc:117
 #, no-wrap
 msgid "link:../man/man9/hal_bb_gpio.9.html[hal_bb_gpio]"
-msgstr ""
+msgstr "link:../man/man9/hal_bb_gpio.9.html[hal_bb_gpio]"
 
 #. type: Table
 #: src/hal/components.adoc:117
@@ -129801,7 +129774,7 @@ msgstr ""
 #: src/hal/components.adoc:126
 #, no-wrap
 msgid "link:../man/man9/max31855.9.html[max31855]"
-msgstr ""
+msgstr "link:../man/man9/max31855.9.html[max31855]"
 
 #. type: Table
 #: src/hal/components.adoc:126
@@ -129813,7 +129786,7 @@ msgstr ""
 #: src/hal/components.adoc:127
 #, no-wrap
 msgid "link:../man/man9/mesa_7i65.9.html[mesa_7i65]"
-msgstr ""
+msgstr "link:../man/man9/mesa_7i65.9.html[mesa_7i65]"
 
 #. type: Table
 #: src/hal/components.adoc:127
@@ -129825,7 +129798,7 @@ msgstr ""
 #: src/hal/components.adoc:128
 #, no-wrap
 msgid "link:../man/man9/mesa_pktgyro_test.9.html[mesa_pktgyro_test]"
-msgstr ""
+msgstr "link:../man/man9/mesa_pktgyro_test.9.html[mesa_pktgyro_test]"
 
 #. type: Table
 #: src/hal/components.adoc:128
@@ -129837,7 +129810,7 @@ msgstr ""
 #: src/hal/components.adoc:129
 #, no-wrap
 msgid "link:../man/man9/mesa_uart.9.html[mesa_uart]"
-msgstr ""
+msgstr "link:../man/man9/mesa_uart.9.html[mesa_uart]"
 
 #. type: Table
 #: src/hal/components.adoc:129
@@ -129849,7 +129822,7 @@ msgstr ""
 #: src/hal/components.adoc:130
 #, no-wrap
 msgid "link:../man/man9/opto_ac5.9.html[opto_ac5]"
-msgstr ""
+msgstr "link:../man/man9/opto_ac5.9.html[opto_ac5]"
 
 #. type: Table
 #: src/hal/components.adoc:130
@@ -135467,7 +135440,7 @@ msgstr ""
 
 #. type: delimited block -
 #: src/hal/haltcl.adoc:79
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "[SECTION_A]\n"
 "ITEM1 = value_1\n"
@@ -135476,11 +135449,11 @@ msgid ""
 "[SECTION_B]\n"
 "...\n"
 msgstr ""
-"[SECTION_A]\n"
-"ITEM1 = value_1\n"
-"ITEM2 = value_2\n"
+"[SECÇÃO_A]\n"
+"ITEM1 = valor_1\n"
+"ITEM2 = valor_2\n"
 "...\n"
-"[SECTION_B]\n"
+"[SECÇÃO_B]\n"
 "...\n"
 
 #. type: Plain text
@@ -135492,9 +135465,9 @@ msgstr ""
 
 #. type: delimited block -
 #: src/hal/haltcl.adoc:86
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[SECTION]ITEM\n"
-msgstr "[SECTION]ITEM\n"
+msgstr "[SECÇÃO]ITEM\n"
 
 #. type: Plain text
 #: src/hal/haltcl.adoc:89
@@ -135505,9 +135478,9 @@ msgstr ""
 
 #. type: delimited block -
 #: src/hal/haltcl.adoc:93
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "$::SECTION(ITEM)\n"
-msgstr "$::SECTION(ITEM)\n"
+msgstr "$::SECÇÃO(ITEM)\n"
 
 #. type: Plain text
 #: src/hal/haltcl.adoc:96
@@ -139825,7 +139798,7 @@ msgstr ""
 #: src/hal/tools.adoc:25
 #, no-wrap
 msgid "man halcmd\n"
-msgstr ""
+msgstr "man halcmd\n"
 
 #. type: Plain text
 #: src/hal/tools.adoc:29
@@ -142734,9 +142707,9 @@ msgstr "[HAL]\n"
 
 #. type: delimited block -
 #: src/hal/twopass.adoc:47
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "TWOPASS = anystring\n"
-msgstr "TWOPASS = anystring\n"
+msgstr "TWOPASS = qualquer-string\n"
 
 #. type: Plain text
 #: src/hal/twopass.adoc:50
@@ -149982,7 +149955,7 @@ msgstr ""
 #: src/lathe/lathe-user.adoc:72
 #, no-wrap
 msgid "images/tool-positions_en.svg"
-msgstr ""
+msgstr "images/tool-positions_en.svg"
 
 #. type: Plain text
 #: src/lathe/lathe-user.adoc:75
@@ -149993,15 +149966,13 @@ msgstr ""
 
 #. type: Index entry
 #: src/lathe/lathe-user.adoc:77
-#, fuzzy
-#| msgid "Axis Positions"
 msgid "Tool Positions 1"
-msgstr "Posições dos Eixos"
+msgstr "Posições de Ferramenta 1"
 
 #. type: Index entry
 #: src/lathe/lathe-user.adoc:77
 msgid "3 & 4"
-msgstr ""
+msgstr "3 & 4"
 
 #. type: Block title
 #: src/lathe/lathe-user.adoc:78
@@ -150019,21 +149990,19 @@ msgstr ""
 
 #. type: Index entry
 #: src/lathe/lathe-user.adoc:85
-#, fuzzy
-#| msgid "Axis Positions"
 msgid "Tool Positions 5"
-msgstr "Posições dos Eixos"
+msgstr "Posições de Ferramenta 5"
 
 #. type: Index entry
 #: src/lathe/lathe-user.adoc:85
 msgid "7 & 8"
-msgstr ""
+msgstr "7 & 8"
 
 #. type: Block title
 #: src/lathe/lathe-user.adoc:86
 #, no-wrap
 msgid "Tool Positions 5, 6, 7 & 8"
-msgstr ""
+msgstr "Posições de Ferramenta 5, 6, 7 & 8"
 
 #. type: Plain text
 #: src/lathe/lathe-user.adoc:91
@@ -162182,7 +162151,7 @@ msgstr "mb2hal(1)"
 #. type: Plain text
 #: src/man/man1/mb2hal.1.adoc:6
 msgid "mb2hal - HAL non-realtime component for Modbus"
-msgstr ""
+msgstr "mb2hal - componente não-tempo-real do HAL para Modbus"
 
 #. type: Labeled list
 #: src/man/man1/mb2hal.1.adoc:9
@@ -162342,6 +162311,8 @@ msgid ""
 "m = HAL_TX_NAME or transaction number if not set\n"
 "n = element number (NELEMENTS)"
 msgstr ""
+"m = HAL_TX_NAME ou número de transição se não definido\n"
+"n = número de elemento (NELEMENTS)"
 
 #. type: delimited block .
 #: src/man/man1/mb2hal.1.adoc:82
@@ -162350,6 +162321,8 @@ msgid ""
 "mb2hal.00.01.int (TRANSACTION_00, second register)\n"
 "mb2hal.readStatus.01.bit (HAL_TX_NAME=readStatus, first bit)\n"
 msgstr ""
+"mb2hal.00.01.int (TRANSACTION_00, segundo registo)\n"
+"mb2hal.readStatus.01.bit (HAL_TX_NAME=readStatus, primeiro bit)\n"
 
 #. type: Plain text
 #: src/man/man1/mb2hal.1.adoc:86
@@ -162367,6 +162340,8 @@ msgstr "mdi(1)"
 msgid ""
 "mdi - Send G-code commands from the terminal to the running LinuxCNC instance"
 msgstr ""
+"mdi - Envia comandos de código G a partir do terminal para a instância de "
+"LinuxCNC que está a correr"
 
 #. type: Plain text
 #: src/man/man1/mdi.1.adoc:16
@@ -162379,7 +162354,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/mdi.1.adoc:20
 msgid "send a single command and exit:"
-msgstr ""
+msgstr "envia um único comando e termina:"
 
 #. type: delimited block .
 #: src/man/man1/mdi.1.adoc:22
@@ -162390,7 +162365,7 @@ msgstr "mdi m2 s1400\n"
 #. type: Plain text
 #: src/man/man1/mdi.1.adoc:25
 msgid "interactive session"
-msgstr ""
+msgstr "sessão interativa"
 
 #. type: delimited block .
 #: src/man/man1/mdi.1.adoc:31
@@ -162423,7 +162398,7 @@ msgstr "melfagui(1)"
 #. type: Plain text
 #: src/man/man1/melfagui.1.adoc:6
 msgid "melfagui - Vismach Virtual Machine GUI"
-msgstr ""
+msgstr "melfagui - GUI de Máquina Virtual Vismach"
 
 #. type: Plain text
 #: src/man/man1/melfagui.1.adoc:10
@@ -162478,7 +162453,7 @@ msgstr ""
 #: src/man/man1/milltask.1.adoc:26
 #, no-wrap
 msgid "Per-joint pins (N == joint number)"
-msgstr ""
+msgstr "Pinos por-articulação (N == número de articulação)"
 
 #. type: Labeled list
 #: src/man/man1/milltask.1.adoc:28
@@ -162588,7 +162563,7 @@ msgstr "Permite ajuste de \\[JOINT_N]*HOME_SEQUENCE*"
 #: src/man/man1/milltask.1.adoc:49
 #, no-wrap
 msgid "Per-axis pins (L == axis letter)"
-msgstr ""
+msgstr "Pinos por-eixo (L == letra de eixo)"
 
 #. type: Labeled list
 #: src/man/man1/milltask.1.adoc:51
@@ -162770,6 +162745,11 @@ msgid ""
 "halcmd programs specified by `[APPLICATION]APP` items or by GUIs that "
 "support a `[HAL]POSTGUI_HALFILE`."
 msgstr ""
+"Os pinos *inihal* não pode ser vinculados nem definidos num ficheiro HAL que "
+"é especificado por um item `[HAL]HALFILE` de ficheiro INI, porque eles não "
+"são criados até que o *milltask* seja arrancado. OS valores de pino *inihal* "
+"podem ser alterados por programas halcmd independentes especificados por "
+"items `[APPLICATION]APP` ou por GUIs que suportem um `[HAL]POSTGUI_HALFILE`."
 
 #. type: Plain text
 #: src/man/man1/milltask.1.adoc:92
@@ -162815,6 +162795,9 @@ msgid ""
 "D700 E700 F700-series VFDs (others may work) This uses the COMPUTER LINK "
 "protocol _not_ MODBUS. The connection is made through the PU connector."
 msgstr ""
+"mitsub_vfd - Componente não-tempo-real do HAL para VFDs Mitsubishi A500 F500 "
+"E500 A500 D700 E700 séries-F700 (outros podem funcionar). Isto usa o "
+"protocolo COMPUTER LINK _não_ MODBUS. A ligação é feita através da ficha PU."
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:13
@@ -162972,6 +162955,9 @@ msgid ""
 "Communication speed 96\n"
 "(can be optionally set 48, 96, 192 if component is also set)"
 msgstr ""
+"Velocidade de comunicação 96\n"
+"(opcionalmente pode ser definido para 48, 96, 192 se o componente for também "
+"definido)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:42
@@ -162986,6 +162972,8 @@ msgid ""
 "Stop bit/data length - 1\n"
 "(8 bits, two stop - don't change)"
 msgstr ""
+"Comprimento de bit/dados de parar - 1\n"
+"(8 bits, duas paragens - não altere)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:45
@@ -163000,6 +162988,8 @@ msgid ""
 "Parity - 0\n"
 "(no parity - don't change)"
 msgstr ""
+"Paridade - 0\n"
+"(nenhuma paridade - não altere)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:48
@@ -163014,6 +163004,8 @@ msgid ""
 "COM tries - 10\n"
 "(if maximum 10 COM errors then inverter faults- can change.)"
 msgstr ""
+"Tentativas COM - 10\n"
+"(se o máximo de 10 erros COM então inversor falha - pode alterar.)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:51
@@ -163028,6 +163020,9 @@ msgid ""
 "COM check time interval 9999\n"
 "(never check - if communication is lost inverter will not know (can change))"
 msgstr ""
+"Intervalo de temo de verificação COM 9999\n"
+"(nunca verifica - se a comunicação se perder o inversor não vai saber (pode "
+"alterar))"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:54
@@ -163042,6 +163037,8 @@ msgid ""
 "Wait time - 9999\n"
 "No wait time is added to the serial data frame (don't change)."
 msgstr ""
+"Tempo de espera - 9999\n"
+"Nenhum tempo de espera é adicionado à estrutura de dados série (não altere)."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:57
@@ -163057,7 +163054,7 @@ msgid ""
 "Don't change."
 msgstr ""
 "Seleção CR - 0\n"
-"Não altera."
+"Não altere."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:60
@@ -163072,26 +163069,28 @@ msgid ""
 "Communication protocol - 0\n"
 "Computer link protocol - don't change - (not all VFDs have this)"
 msgstr ""
+"Protocolo de comunicação - 0\n"
+"Protocolo de Ligação de Computador - não altere - (em todos VFDs têm isto)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:66
 msgid "This driver assumes certain other VFD settings:"
-msgstr ""
+msgstr "Este controlador assume outras determinadas definições de VFD:"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:68
 msgid "That the motor frequency status is set to show Hertz."
-msgstr ""
+msgstr "Que o estado de frequência do motor é definido para mostrar Hertz."
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:69
 msgid "That the status bit 3 is up to speed."
-msgstr ""
+msgstr "Que o bit 3 de estado é para velocidade."
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:70
 msgid "That the status bit 7 is alarm."
-msgstr ""
+msgstr "Que o bit 7 de estado é alarme."
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:74
@@ -163101,6 +163100,10 @@ msgid ""
 "You must set set the monitor pin to false.\n"
 "In this case pins such as up-to-speed, amps, alarm and status bits are not useful."
 msgstr ""
+"Alguns modelos, ex. o E500, não pode monitorizar o estado.\n"
+"Tem de definir o pino de monitor para falso.\n"
+"Neste caso os pinos como up-to-speed, amps, alarm e bits de estado não são "
+"úteis."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:77
@@ -163150,12 +163153,15 @@ msgid ""
 "VFD.  Status, amps, power, motor-feedback, and alarm would then not be "
 "useful."
 msgstr ""
+"Define pino de modo monitor.  Se falso, o comando request-status não vai ser "
+"enviado ao VFD.  O estado, amperes, energia, resposta do motor, e alarme não "
+"irão ser úteis."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:84
 #, no-wrap
 msgid "_VFD_NAME_**.estop** (bit, in)"
-msgstr ""
+msgstr "_VFD_NAME_**.estop** (bit, entrada)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:86
@@ -163163,12 +163169,14 @@ msgid ""
 "Set E-stop mode pin.  This will stop the VFD. Restarting requires the run "
 "pin to cycle."
 msgstr ""
+"Define o pino de modo E-stop.  Isto vai parar o VFD. O reiniciar requer o "
+"pino de execução para ciclo."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:86
 #, no-wrap
 msgid "_VFD_NAME_**.fwd** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.fwd** (bit, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:87
@@ -163176,105 +163184,107 @@ msgid ""
 "Up-to-speed status pin. Motor is at requested speed within VFD's settings "
 "tolerance."
 msgstr ""
+"Pino do estado up-to-speed. O motor está na velocidade pedida dentro das "
+"definições de tolerância do VFD."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:87
 #, no-wrap
 msgid "_VFD_NAME_**.alarm** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.alarm** (bit, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:88
 msgid "Alarm status pin"
-msgstr ""
+msgstr "Pino de estado do alarme"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:88
 #, no-wrap
 msgid "_VFD_NAME_**.motor-cmd** (float, in)"
-msgstr ""
+msgstr "_VFD_NAME_**.motor-cmd** (float, entrada)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:89
 msgid "The requested motor speed, in Hertz (Hz)"
-msgstr ""
+msgstr "A velocidade do motor pedida, em Hertz (Hz)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:89
 #, no-wrap
 msgid "_VFD_NAME_**.motor-fb** (float, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.motor-fb** (float, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:90
 msgid "The motor feedback speed (from VFD) in Hertz (Hz)"
-msgstr ""
+msgstr "A velocidade respondida pelo motor (a partir do VFD) em Hertz (Hz)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:90
 #, no-wrap
 msgid "_VFD_NAME_**.motor-amps** (float, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.motor-amps** (float, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:91
 msgid "The motor current, in amperes (A)"
-msgstr ""
+msgstr "A corrente do motor, em amperes (A)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:91
 #, no-wrap
 msgid "_VFD_NAME_**.motor-power** (float, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.motor-power** (float, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:92
 msgid "The motor power"
-msgstr ""
+msgstr "A potência do motor"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:92 src/man/man1/mitsub_vfd.1.adoc:93
 #: src/man/man1/mitsub_vfd.1.adoc:94
 #, no-wrap
 msgid "_VFD_NAME_**.scale-cmd** (float, in)"
-msgstr ""
+msgstr "_VFD_NAME_**.scale-cmd** (float, entrada)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:93 src/man/man1/mitsub_vfd.1.adoc:94
 #: src/man/man1/mitsub_vfd.1.adoc:95
 msgid "Motor command's scale setting defaults to 1"
-msgstr ""
+msgstr "Definição de escala do comando do motor predefinido para 1"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:95
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-0** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-0** (bit, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:96 src/man/man1/mitsub_vfd.1.adoc:97
 #: src/man/man1/mitsub_vfd.1.adoc:98 src/man/man1/mitsub_vfd.1.adoc:100
 #: src/man/man1/mitsub_vfd.1.adoc:101 src/man/man1/mitsub_vfd.1.adoc:102
 msgid "Raw status bit"
-msgstr ""
+msgstr "Bit de estado bruto"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:96
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-1** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-1** (bit, saída)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:97
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-2** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-2** (bit, saída)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:98
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-3** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-3** (bit, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:99
@@ -163282,30 +163292,33 @@ msgid ""
 "Raw status bit. Configure the VFD so that the function 'Up to frequency' or "
 "'motor-at-speed' is assigned to status bit 3 (parameter 191 for 700 series)."
 msgstr ""
+"Bit de estado bruto. Configure o VFD para que a função 'Up to frequency' ou "
+"'motor-at-speed' seja atribuída ao bit 3 de estado (parâmetro 191 para "
+"séries 700)."
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:99
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-4** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-4** (bit, saída)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:100
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-5** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-5** (bit, saída)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:101
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-6** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-6** (bit, saída)"
 
 #. type: Labeled list
 #: src/man/man1/mitsub_vfd.1.adoc:102
 #, no-wrap
 msgid "_VFD_NAME_**.stat-bit-7** (bit, out)"
-msgstr ""
+msgstr "_VFD_NAME_**.stat-bit-7** (bit, saída)"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:103
@@ -163313,12 +163326,14 @@ msgid ""
 "Raw status bit. Configure the VFD so that the function 'alarm' is assigned "
 "to status bit 7 (parameter 195 for 700 series)."
 msgstr ""
+"Bit de estado bruto. Configure o VFD para que a função 'alarm' seja "
+"atribuída ao bit 7 de estado (parâmetro 195 para séries 700)."
 
 #. type: Title ==
 #: src/man/man1/mitsub_vfd.1.adoc:104
 #, no-wrap
 msgid "SAMPLE HAL"
-msgstr ""
+msgstr "EXEMPLAR do HAL"
 
 #. type: delimited block .
 #: src/man/man1/mitsub_vfd.1.adoc:132
@@ -163350,6 +163365,32 @@ msgid ""
 "setp coolant.monitor 1\n"
 "net estop-out coolant.estop\n"
 msgstr ""
+"loadusr -Wn coolant mitsub_vfd --port /dev/ttyUSB0 spindle=02 coolant=01\n"
+"# **************** Configuração VFD de fuso escravo 2 ****************\n"
+"net spindle-vel-cmd spindle.motor-cmd\n"
+"net spindle-cw spindle.fwd\n"
+"net spindle-on spindle.run\n"
+"net spindle-at-speed spindle.up-to-speed\n"
+"net estop-out spindle.estop\n"
+"# cmd escalado para RPM (correia/caixa de velocidades controlada)\n"
+"setp spindle.scale-cmd .135\n"
+"# resposta em rpm (recetáculo do comando)\n"
+"setp spindle.scale-fb 7.411\n"
+"# liga monitorização para a resposta funcionar\n"
+"setp spindle.monitor 1\n"
+"net spindle-speed-indicator spindle.motor-fb\n"
+"# *************** Configuração VFD de refrigerante escrava 1 "
+"*****************\n"
+"net coolant-flood coolant.run\n"
+"net coolant-is-on coolant.up-to-speed\n"
+"# cmd e resposta escalados a hertz\n"
+"setp coolant.scale-cmd 1\n"
+"setp coolant.scale-fb 1\n"
+"# comando de velocidade total\n"
+"setp coolant.motor-cmd 60\n"
+"# permite-nos ver o estado\n"
+"setp coolant.monitor 1\n"
+"net estop-out coolant.estop\n"
 
 #. type: Plain text
 #: src/man/man1/mitsub_vfd.1.adoc:137
@@ -163358,32 +163399,35 @@ msgid ""
 "false.  In this case, pins such as up-to-speed, amps, alarm and status bits "
 "are not useful."
 msgstr ""
+"Alguns modelos, ex. E500, não podem monitorizar o estado, assim defina o "
+"pino de monitor para falso.  Neste caso, pinos tais como up-to-speed, amps, "
+"alarm e bits de estado não são úteis."
 
 #. type: Title =
 #: src/man/man1/modcompile.1.adoc:1
 #, no-wrap
 msgid "modcompile(1)"
-msgstr ""
+msgstr "modcompile(1)"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:6
 msgid "modcompile - Utility for compiling Modbus drivers"
-msgstr ""
+msgstr "modcompile - Utilitário para compilar controladores de Modbus"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:10
 msgid "*modcompile -h*"
-msgstr ""
+msgstr "*modcompile -h*"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:12
 msgid "*modcompile* [*-k*] [*-n*] [*-v*] all"
-msgstr ""
+msgstr "*modcompile* [*-k*] [*-n*] [*-v*] all"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:14
 msgid "*modcompile* [*-k*] [*-n*] [*-v*] module.mod ..."
-msgstr ""
+msgstr "*modcompile* [*-k*] [*-n*] [*-v*] module.mod ..."
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:19
@@ -163391,30 +163435,30 @@ msgid ""
 "The *modcompile* utility is used to compile modbus drivers that use the "
 "PktUART interface of Mesa cards."
 msgstr ""
+"O utilitário *modcompile* é usado para compilar controladores modbus que "
+"usam a interface PktUART das placas Mesa."
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:23
-#, fuzzy
-#| msgid "https://linuxcnc.org/docs/html/gui/axis.html"
 msgid "https://linuxcnc.org/docs/devel/html/drivers/mesa_modbus.html"
-msgstr "https://linuxcnc.org/docs/html/gui/axis.html"
+msgstr "https://linuxcnc.org/docs/devel/html/drivers/mesa_modbus.html"
 
 #. type: Labeled list
 #: src/man/man1/modcompile.1.adoc:26
 #, no-wrap
 msgid "*-h*, *--help*"
-msgstr ""
+msgstr "*-h*, *--help*"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:28
 msgid "Brief help message."
-msgstr ""
+msgstr "Mensagem breve de ajuda."
 
 #. type: Labeled list
 #: src/man/man1/modcompile.1.adoc:28
 #, no-wrap
 msgid "*-k*, *--keep*"
-msgstr ""
+msgstr "*-k*, *--keep*"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:31
@@ -163422,12 +163466,14 @@ msgid ""
 "Keep the temporary files. The program will print a line where these are "
 "located. You will be responsible for deleting them."
 msgstr ""
+"Mantém os ficheiros temporários. O programa vai escrever uma linha a indicar "
+"onde estes estão localizados.  Você vai ser responsável por apaga-los."
 
 #. type: Labeled list
 #: src/man/man1/modcompile.1.adoc:31
 #, no-wrap
 msgid "*-n*, *--noinstall*"
-msgstr ""
+msgstr "*-n*, *--noinstall*"
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:34
@@ -163435,28 +163481,33 @@ msgid ""
 "Do not run the install step for the compiled module. This option is probably "
 "only useful if you also use the *--keep* option."
 msgstr ""
+"Não corre o passo de instalação para o módulo compilado. Provavelmente esta "
+"opção só é útil se também usar a opção *--keep*."
 
 #. type: Plain text
 #: src/man/man1/modcompile.1.adoc:36
 msgid "Do a verbose build, showing all steps detailed while being performed."
 msgstr ""
+"Faz uma compilação detalhada, mostrando todos os passos com detalhe enquanto "
+"são efetuados."
 
 #. type: Title =
 #: src/man/man1/monitor-xhc-hb04.1.adoc:1
 #, no-wrap
 msgid "monitor-xhc-hb04(1)"
-msgstr ""
+msgstr "monitor-xhc-hb04(1)"
 
 #. type: Plain text
 #: src/man/man1/monitor-xhc-hb04.1.adoc:6
 msgid ""
 "monitor-xhc-hb04 - monitors the XHC-HB04 pendant and warns of disconnection"
 msgstr ""
+"monitor-xhc-hb04 - monitoriza o pendente XHC-HB04 e avisa em caso de desligar"
 
 #. type: Plain text
 #: src/man/man1/monitor-xhc-hb04.1.adoc:10
 msgid "*monitor-xhc-hb04*"
-msgstr ""
+msgstr "*monitor-xhc-hb04*"
 
 #. type: Plain text
 #: src/man/man1/monitor-xhc-hb04.1.adoc:15
@@ -163465,11 +163516,15 @@ msgid ""
 "pendant.  This script runs in the background and will pop up a message when "
 "the pendant is disconnected or reconnected."
 msgstr ""
+"*monitor-xhc-hb04* é incluído para monitorizar situações de desligar e "
+"religar do pendente.  Este script corre nos bastidores e vai mostrar uma "
+"mensagem quando o pendente é desligado ou religado."
 
 #. type: Plain text
 #: src/man/man1/monitor-xhc-hb04.1.adoc:17
 msgid "Usage is optional; if used it is specified with INI file entry:"
 msgstr ""
+"A utilização é opcional; se usado é especificado com entrada no ficheiro INI:"
 
 #. type: literal
 #: src/man/man1/monitor-xhc-hb04.1.adoc:20
@@ -163478,27 +163533,31 @@ msgid ""
 " [APPLICATIONS]\n"
 " APP = monitor-xhc-hb04\n"
 msgstr ""
+" [APPLICATIONS]\n"
+" APP = monitor-xhc-hb04\n"
 
 #. type: literal
 #: src/man/man1/monitor-xhc-hb04.1.adoc:24
 msgid "xhc-hb04(1), linuxcnc(1)"
-msgstr ""
+msgstr "xhc-hb04(1), linuxcnc(1)"
 
 #. type: Title =
 #: src/man/man1/motion-logger.1.adoc:1
 #, no-wrap
 msgid "motion-logger(1)"
-msgstr ""
+msgstr "motion-logger(1)"
 
 #. type: Plain text
 #: src/man/man1/motion-logger.1.adoc:6
 msgid "motion-logger - log motion commands sent from LinuxCNC's Task module"
 msgstr ""
+"motion-logger - regista comandos de movimento enviados do módulo Tarefa "
+"(Task) do LinuxCNC"
 
 #. type: Plain text
 #: src/man/man1/motion-logger.1.adoc:10
 msgid "*motion-logger*"
-msgstr ""
+msgstr "*motion-logger*"
 
 #. type: Plain text
 #: src/man/man1/motion-logger.1.adoc:15
@@ -163506,32 +163565,34 @@ msgid ""
 "*motion-logger* is a test program to log motion commands sent from "
 "LinuxCNC's Task module to the Motion module."
 msgstr ""
+"*motion-logger* é um programa de teste para registar comandos de movimento "
+"enviados a partir do módulo Task do LinuxCNC para o módulo Motion."
 
 #. type: Plain text
 #: src/man/man1/motion-logger.1.adoc:17
 msgid "It is largely used by the regression tests and is poorly documented."
-msgstr ""
+msgstr "É muito usado pelos testes de regressão e muito pobremente documentado."
 
 #. type: Title =
 #: src/man/man1/moveoff_gui.1.adoc:1
 #, no-wrap
 msgid "moveoff_gui(1)"
-msgstr ""
+msgstr "moveoff_gui(1)"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:6
 msgid "moveoff_gui - a GUI for the moveoff component"
-msgstr ""
+msgstr "moveoff_gui - uma GUI para o componente moveoff"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:10
 msgid "*moveoff_gui* [*--help* | -- *-h* | *-?]"
-msgstr ""
+msgstr "*moveoff_gui* [*--help* | -- *-h* | *-?]"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:12
 msgid "*moveoff_gui* [_options_]"
-msgstr ""
+msgstr "*moveoff_gui* [_opções_]"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:18
@@ -163540,6 +163601,9 @@ msgid ""
 "moveoff component to implement HAL-only offsets.  See the manpage (man "
 "moveoff) for *IMPORTANT* limitations and warnings."
 msgstr ""
+"Moveoff_gui é um exemplo de interface de utilizador gráfica (GUI) para "
+"controlar um componente moveoff de HAL para implementar desvios apenas-HAL.  "
+"Veja o manual (man moveoff) para limitações e avisos *IMPORTANTES*."
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:22
@@ -163548,18 +163612,21 @@ msgid ""
 "`KINEMATICS_TYPE = KINEMATICS_IDENTITY`.  The modules currently supported "
 "are: *trivkins*"
 msgstr ""
+"As configurações suportadas têm de usar um módulo de cinemáticas conhecido "
+"com `KINEMATICS_TYPE = IDENTIDADE-CINEMÁTICA`.  Os módulos atualmente "
+"suportados são: *trivkins*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:25
 #, no-wrap
 msgid "*--help | -? | -- -h*"
-msgstr ""
+msgstr "*--help | -? | -- -h*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:27
 #, no-wrap
 msgid "*-mode* *onpause* | always"
-msgstr ""
+msgstr "*-mode* *onpause* | always"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:31
@@ -163569,12 +163636,15 @@ msgid ""
 "always: show GUI to control offsets always\n"
 "Default: *onpause*"
 msgstr ""
+"onpause: mostra GUI para controlar desvios quando o programa está em pausa\n"
+"always: mostra sempre a GUI para controlar desvios\n"
+"Predefinição: *onpause*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:31
 #, no-wrap
 msgid "*-axes* _axis-names_"
-msgstr ""
+msgstr "*-axes* _nomes-eixos_"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:35
@@ -163584,12 +163654,15 @@ msgid ""
 "Examples: -axes x, -axes xyz, -axes xz (no spaces)\n"
 "Default: *xyz*"
 msgstr ""
+"Letras do conjunto de \\{x y z a b c u v w}.\n"
+"Exemplos: -axes x, -axes xyz, -axes xz (sem espaços)\n"
+"Predefinição: *xyz*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:35
 #, no-wrap
 msgid "*-inc* _incrementvalue_"
-msgstr ""
+msgstr "*-inc* _valor-de-incremento_"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:38
@@ -163598,12 +163671,14 @@ msgid ""
 "Specify one increment value per -inc (up to 4).\n"
 "Defaults: * 0.001 0.01 0.10 1.0*"
 msgstr ""
+"Especifica um valor de incremento por -inc (até 4).\n"
+"Predefinição: * 0.001 0.01 0.10 1.0*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:38
 #, no-wrap
 msgid "*-size* _integer_"
-msgstr ""
+msgstr "*-size* _inteiro_"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:41
@@ -163612,12 +163687,15 @@ msgid ""
 "Overall gui size is based on font size, typically 8 - 20.\n"
 "Default: *14*"
 msgstr ""
+"O tamanho da gui em geral é baseado no tamanho da letra, tipicamente 8 - "
+"20.\n"
+"Predefinição: *14*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:41
 #, no-wrap
 msgid "*-loc* center | +x+y"
-msgstr ""
+msgstr "*-loc* center | +x+y"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:45
@@ -163627,12 +163705,15 @@ msgid ""
 "Examples: -loc center, -loc +20+100\n"
 "Default: *center*"
 msgstr ""
+"Localização inicial no ecrã.\n"
+"Exemplos: -loc center, -loc +20+100\n"
+"Predefinição: *center*"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:45
 #, no-wrap
 msgid "*-autoresume*"
-msgstr ""
+msgstr "*-autoresume*"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:48
@@ -163641,12 +163722,14 @@ msgid ""
 "Resume program when move-enable deasserted.\n"
 "Default: notused"
 msgstr ""
+"Retoma o programa quando o move-enable é desativado.\n"
+"Predefinição: não usado"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:48
 #, no-wrap
 msgid "*-delay* _delay secs_"
-msgstr ""
+msgstr "*-delay* _atraso segundos_"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:51
@@ -163655,23 +163738,26 @@ msgid ""
 "Delay for autoresume (allow time to restore spindle speed etc).\n"
 "Default: *5*"
 msgstr ""
+"Atraso para o autoresume (permite tempo para restaurar a velocidade do fuso "
+"etc).\n"
+"Predefinição: *5*"
 
 #. type: Title ==
 #: src/man/man1/moveoff_gui.1.adoc:52
 #, no-wrap
 msgid "OTHER OPTIONS"
-msgstr ""
+msgstr "OUTRAS OPÇÕES"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:55
 msgid "These options are available for special cases:"
-msgstr ""
+msgstr "Estas opções estão disponíveis para casos especiais:"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:56
 #, no-wrap
 msgid "*-noentry*"
-msgstr ""
+msgstr "*-noentry*"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:59
@@ -163680,12 +163766,14 @@ msgid ""
 "Disables creation of entry widgets.\n"
 "Default: notused"
 msgstr ""
+"Desativa a criação de widgets de entrada.\n"
+"Predefinição: não usado"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:59
 #, no-wrap
 msgid "*-no_resume_inhibit*"
-msgstr ""
+msgstr "*-no_resume_inhibit*"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:62
@@ -163694,12 +163782,14 @@ msgid ""
 "Disable use of resume-inhibit to controlling gui.\n"
 "Default: notused"
 msgstr ""
+"Desativa o uso de resume-inhibit para controlar a gui.\n"
+"Predefinição: não usado"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:62
 #, no-wrap
 msgid "*-no_pause_requirement*"
-msgstr ""
+msgstr "*-no_pause_requirement*"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:65
@@ -163708,12 +163798,14 @@ msgid ""
 "Disable check for halui.program.is-paused.\n"
 "Default: notused"
 msgstr ""
+"Desativa verificação para halui.program.is-paused.\n"
+"Predefinição: não usado"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:65
 #, no-wrap
 msgid "*-no_cancel_autoresume*"
-msgstr ""
+msgstr "*-no_cancel_autoresume*"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:68
@@ -163722,12 +163814,14 @@ msgid ""
 "Useful for retracting offsets with simple external controls.\n"
 "Default: notused"
 msgstr ""
+"Útil para retrair desvios com comandos externos simples.\n"
+"Predefinição: não usado"
 
 #. type: Labeled list
 #: src/man/man1/moveoff_gui.1.adoc:68
 #, no-wrap
 msgid "*-no_display*"
-msgstr ""
+msgstr "*-no_display*"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:71
@@ -163736,16 +163830,19 @@ msgid ""
 "Use when both external controls and external displays are in use.\n"
 "Default: notused"
 msgstr ""
+"Usar quando ambos controles externos e mostradores externos estão a ser "
+"usados.\n"
+"Predefinição: não usado"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:75
 msgid "LinuxCNC must be running."
-msgstr ""
+msgstr "O LinuxCNC tem de estar a correr."
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:77
 msgid "Halui must be loaded, typical INI file setting:"
-msgstr ""
+msgstr "O Halui em de estar carregado, definição de ficheiro INI típica:"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:84
@@ -163754,6 +163851,8 @@ msgid ""
 "The moveoff component must be loaded with the name 'mv' as:\n"
 "**loadrt moveoff names=**_mv **personality=**_number_of_axes_"
 msgstr ""
+"O componente moveoff tem de ser carregado com o nome 'mv' como:\n"
+"**loadrt moveoff names=**_mv **personality=**_número_de_eixos_"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:89
@@ -163763,6 +163862,11 @@ msgid ""
 "pin *is* connected, *only a display* of offsets is shown and control must be "
 "made by *external* HAL connections."
 msgstr ""
+"Se o pino mv.motion-enable *não* estiver ligado quando o moveoff_gui é "
+"arrancado, *vão ser fornecidos controles* para ativar desvios e definir "
+"valores de desvios.  Se o pino *estiver* ligado, é mostrado *apenas um "
+"mostrador* de desvios e o controle tem de ser feito por ligações do HAL "
+"externas."
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:93
@@ -163805,6 +163909,12 @@ msgid ""
 "HALFILE = user_halfile_n\n"
 "HALFILE = LIB:hookup_moveoff.tcl\n"
 msgstr ""
+"[HAL]\n"
+"HALUI = halui\n"
+"HALFILE = user_halfile_1\n"
+"etc ...\n"
+"HALFILE = user_halfile_n\n"
+"HALFILE = LIB:hookup_moveoff.tcl\n"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:118
@@ -163812,6 +163922,8 @@ msgid ""
 "The `hookup_moveoff.tcl` HAL file will use INI file settings for the moveoff "
 "component control pins:"
 msgstr ""
+"O ficheiro HAL `hookup_moveoff.tcl` vai usar definições do ficheiro INI para "
+"os pinos de controle do componente moveoff:"
 
 #. type: delimited block -
 #: src/man/man1/moveoff_gui.1.adoc:125
@@ -163823,6 +163935,11 @@ msgid ""
 "WAYPOINT_THRESHOLD =\n"
 "BACKTRACK_ENABLE =\n"
 msgstr ""
+"[OFFSET]\n"
+"EPSILON =\n"
+"WAYPOINT_SAMPLE_SECS =\n"
+"WAYPOINT_THRESHOLD =\n"
+"BACKTRACK_ENABLE =\n"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:128
@@ -163830,6 +163947,8 @@ msgid ""
 "The *hookup_moveoff.tcl* will use INI file settings for the moveoff per-axis "
 "limits:"
 msgstr ""
+"O *hookup_moveoff.tcl* vai usar definições do ficheiro INI para os limites "
+"por eixo do moveoff:"
 
 #. type: delimited block -
 #: src/man/man1/moveoff_gui.1.adoc:135
@@ -163841,6 +163960,11 @@ msgid ""
 "OFFSET_MAX_LIMIT =\n"
 "OFFSET_MIN_LIMIT =\n"
 msgstr ""
+"[AXIS_m]\n"
+"OFFSET_MAX_VELOCITY =\n"
+"OFFSET_MAX_ACCELERATION =\n"
+"OFFSET_MAX_LIMIT =\n"
+"OFFSET_MIN_LIMIT =\n"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:138
@@ -163848,6 +163972,8 @@ msgid ""
 "The moveoff_gui program should be specified in the APPLICATIONS stanza of "
 "the INI file, for example:"
 msgstr ""
+"O programa moveoff_gui deve ser especificado na estrofe APPLICATIONS do "
+"ficheiro INI, por exemplo:"
 
 #. type: delimited block -
 #: src/man/man1/moveoff_gui.1.adoc:143
@@ -163857,6 +163983,9 @@ msgid ""
 "DELAY = delay_in_secs_to_allow_hal_connections\n"
 "APP = moveoff_gui -option1 -option2 ...\n"
 msgstr ""
+"[APPLICATIONS]\n"
+"DELAY = atraso-em-segundos-para-permitir-ligações-hal\n"
+"APP = moveoff_gui -opção1 -opção2 ...\n"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:149
@@ -163864,6 +163993,8 @@ msgid ""
 "Simulation configurations that demonstrate the moveoff_gui and the moveoff "
 "component are located in:"
 msgstr ""
+"Configurações de simulação que demonstram a moveoff_gui e o componente "
+"moveoff estão localizadas em:"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:152
@@ -163872,33 +164003,36 @@ msgid ""
 "configs/sim/axis/moveoff (axis-ui)\n"
 "configs/sim/touchy/ngcgui (touchy-ui)"
 msgstr ""
+"configs/sim/axis/moveoff (axis-ui)\n"
+"configs/sim/touchy/ngcgui (touchy-ui)"
 
 #. type: Plain text
 #: src/man/man1/moveoff_gui.1.adoc:153
 msgid "See also moveoff(9) for details on the component."
-msgstr ""
+msgstr "Veja também moveoff(9) para detalhes sobre o componente."
 
 #. type: Title =
 #: src/man/man1/ngcgui.1.adoc:1
 #, no-wrap
 msgid "ngcgui(1)"
-msgstr ""
+msgstr "ngcgui(1)"
 
 #. type: Plain text
 #: src/man/man1/ngcgui.1.adoc:7
 msgid ""
 "ngcgui - a framework for conversational G-code generation on the controller"
 msgstr ""
+"ngcgui - uma estrutura para geração de código G conversacional no controlador"
 
 #. type: Plain text
 #: src/man/man1/ngcgui.1.adoc:11
 msgid "*ngcgui*"
-msgstr ""
+msgstr "*ngcgui*"
 
 #. type: Plain text
 #: src/man/man1/ngcgui.1.adoc:15
 msgid "*ngcgui* details: https://linuxcnc.org/docs/html/gui/ngcgui.html"
-msgstr ""
+msgstr "*ngcgui* details: https://linuxcnc.org/docs/html/gui/ngcgui.html"
 
 #. type: Plain text
 #: src/man/man1/ngcgui.1.adoc:19 src/man/man1/qtplasmac_gcode.1.adoc:17
@@ -163911,17 +164045,17 @@ msgstr "linuxcnc(1)*"
 #: src/man/man1/panelui.1.adoc:1
 #, no-wrap
 msgid "panelui(1)"
-msgstr ""
+msgstr "panelui(1)"
 
 #. type: Plain text
 #: src/man/man1/panelui.1.adoc:6
 msgid "panelui - interface buttons to LinuxCNC or HAL"
-msgstr ""
+msgstr "panelui - botões de interface para LinuxCNC ou HAL"
 
 #. type: Plain text
 #: src/man/man1/panelui.1.adoc:10
 msgid "*panelui*"
-msgstr ""
+msgstr "*panelui*"
 
 #. type: Plain text
 #: src/man/man1/panelui.1.adoc:18
@@ -163933,6 +164067,13 @@ msgid ""
 "configurable using an INI style text file to define button types, HAL pin "
 "types, and/or commands."
 msgstr ""
+"O componente de não-tempo-real *panelui* de botões de interfaces para "
+"LinuxCNC ou HAL.  Descodifica códigos se sondagem de tecla de estilo MESA "
+"7I73 e chama a rotina apropriada.  Recebe a entrada de um componente de "
+"tempo real - sampler.  O sampler recebe as suas entradas a partir seja de "
+"MESA 7i73 ou do componente sim_matrix_kb.  O Panelui é configurável usando "
+"um ficheiro de texto de estilo INI para definir tipos de botões, tipos de "
+"pino HAL, e/ou comandos."
 
 #. type: Plain text
 #: src/man/man1/panelui.1.adoc:21
@@ -163940,23 +164081,27 @@ msgid ""
 "Full documentation can be found in the HTML or PDF docs: https://"
 "linuxcnc.org/docs/html/gui/panelui.html"
 msgstr ""
+"Documentação completa pode ser encontrada em HTML ou PDF: https://"
+"linuxcnc.org/docs/html/gui/panelui.html"
 
 #. type: Title =
 #: src/man/man1/pmx485-test.1.adoc:1
 #, no-wrap
 msgid "pmx485-test(1)"
-msgstr ""
+msgstr "pmx485-test(1)"
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:6
 msgid ""
 "pmx485-test - Modbus communications testing with a Powermax Plasma Cutter"
 msgstr ""
+"pmx485-test - Testes de comunicação Modbus com uma Cortadora de Plasma "
+"Powermax"
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:10
 msgid "*pmx485-test*"
-msgstr ""
+msgstr "*pmx485-test*"
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:15
@@ -163964,16 +164109,18 @@ msgid ""
 "pmx485 is a python script for testing communications with a Hypertherm "
 "Powermax plasma cutter using the Modbus ASCII protocol over RS485."
 msgstr ""
+"pmx485 é um script python para testar comunicações com um cortador de plasma "
+"Hypertherm Powermax usando o protocolo ASCII do Modbus sobre RS485."
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:19
 msgid "Select the correct port from the list of available ports."
-msgstr ""
+msgstr "Selecione o porto correto da lista dos portos disponíveis."
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:21
 msgid "Check RS485 to establish communications."
-msgstr ""
+msgstr "Escolha RS485 para estabelecer comunicações."
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:24
@@ -163981,33 +164128,35 @@ msgid ""
 "Changing MODE, CURRENT, or PRESSURE will change the corresponding value on "
 "the Powermax and the new value will be reported back to the test panel."
 msgstr ""
+"Mudar MODO, ATUAL, ou PRESSÃO vai mudar o valor correspondente no Powermax e "
+"o novo valor será reportado de volta ao painel de teste."
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:26
 msgid "Check PANEL to end communication."
-msgstr ""
+msgstr "Escolha PAINEL para terminar a comunicação."
 
 #. type: Plain text
 #: src/man/man1/pmx485-test.1.adoc:30 src/man/man1/pmx485.1.adoc:24
 #: src/man/man1/qtplasmac-materials.1.adoc:28
 msgid "Phillip Carter & Gregory D Carl"
-msgstr ""
+msgstr "Phillip Carter & Gregory D Carl"
 
 #. type: Title =
 #: src/man/man1/pmx485.1.adoc:1
 #, no-wrap
 msgid "pmx485(1)"
-msgstr ""
+msgstr "pmx485(1)"
 
 #. type: Plain text
 #: src/man/man1/pmx485.1.adoc:6
 msgid "pmx485 - Modbus communications with a Powermax Plasma Cutter."
-msgstr ""
+msgstr "pmx485 -  Comunicações Modbus com uma Cortadora de Plasma Powermax."
 
 #. type: Plain text
 #: src/man/man1/pmx485.1.adoc:10
 msgid "*loadusr* -Wn pmx485 pmx485 /dev/ttyUSB0"
-msgstr ""
+msgstr "*loadusr* -Wn pmx485 pmx485 /dev/ttyUSB0"
 
 #. type: Plain text
 #: src/man/man1/pmx485.1.adoc:15
@@ -164015,6 +164164,8 @@ msgid ""
 "pmx485 is a non-realtime HAL component to communicate with a Hypertherm "
 "Powermax plasma cutter using the Modbus ASCII protocol over RS485."
 msgstr ""
+"pmx485 é um componente HAL não-tempo-real para comunicar com um cortador de "
+"plasma Hypertherm Powermax usando o protocolo ASCII do Modbus sobre RS485."
 
 #. type: Plain text
 #: src/man/man1/pmx485.1.adoc:20
@@ -164022,43 +164173,45 @@ msgid ""
 "See the Drivers section of the LinuxCNC Documentation for more information "
 "on pmx485."
 msgstr ""
+"Veja a secção Drivers da documentação do LinuxCNC para mais informação sobre "
+"o pmx485."
 
 #. type: Title =
 #: src/man/man1/pncconf.1.adoc:1
 #, no-wrap
 msgid "pncconf(1)"
-msgstr ""
+msgstr "pncconf(1)"
 
 #. type: Plain text
 #: src/man/man1/pncconf.1.adoc:6
 msgid "pncconf - configuration wizard for Mesa cards"
-msgstr ""
+msgstr "pncconf - mago de configuração para placas Mesa"
 
 #. type: Plain text
 #: src/man/man1/pncconf.1.adoc:10
 msgid "*pncconf*"
-msgstr ""
+msgstr "*pncconf*"
 
 #. type: Plain text
 #: src/man/man1/pncconf.1.adoc:14
 msgid "*pncconf* is used to configure systems that use Mesa cards."
-msgstr ""
+msgstr "*pncconf* é usado para configurar sistemas que usam placas Mesa."
 
 #. type: Plain text
 #: src/man/man1/pncconf.1.adoc:16
 msgid "Details: https://linuxcnc.org/docs/html/config/pncconf.html"
-msgstr ""
+msgstr "Detalhes: https://linuxcnc.org/docs/html/config/pncconf.html"
 
 #. type: Title =
 #: src/man/man1/puma560gui.1.adoc:1
 #, no-wrap
 msgid "puma560gui(1)"
-msgstr ""
+msgstr "puma560gui(1)"
 
 #. type: Plain text
 #: src/man/man1/puma560gui.1.adoc:6
 msgid "puma560gui - Vismach Virtual Machine GUI"
-msgstr ""
+msgstr "puma560gui - GUI de Máquina Virtual Vismach"
 
 #. type: Plain text
 #: src/man/man1/puma560gui.1.adoc:11
@@ -164066,17 +164219,19 @@ msgid ""
 "*puma560gui* is one of the sample *Vismach* GUIs for LinuxCNC, simulating a "
 "Puma 560 robot arm."
 msgstr ""
+"*puma560gui* é uma das GUIs *Vismach* exemplo para LinuxCNC, que simula um "
+"braço robótico Puma 560."
 
 #. type: Title =
 #: src/man/man1/pumagui.1.adoc:1
 #, no-wrap
 msgid "pumagui(1)"
-msgstr ""
+msgstr "pumagui(1)"
 
 #. type: Plain text
 #: src/man/man1/pumagui.1.adoc:6
 msgid "pumagui - Vismach Virtual Machine GUI"
-msgstr ""
+msgstr "pumagui - GUI de Máquina Virtual Vismach"
 
 #. type: Plain text
 #: src/man/man1/pumagui.1.adoc:11
@@ -164084,22 +164239,24 @@ msgid ""
 "*pumagui* is one of the sample *Vismach* GUIs for LinuxCNC, simulating a "
 "generic Puma style robot arm."
 msgstr ""
+"*pumagui* é uma das GUIs *Vismach* exemplo para LinuxCNC, que simula um "
+"braço robótico de estilo Puma genérico."
 
 #. type: Title =
 #: src/man/man1/pyngcgui.1.adoc:1
 #, no-wrap
 msgid "pyngcgui(1)"
-msgstr ""
+msgstr "pyngcgui(1)"
 
 #. type: Plain text
 #: src/man/man1/pyngcgui.1.adoc:6
 msgid "pyngcgui - Python implementation of NGCGUI"
-msgstr ""
+msgstr "pyngcgui - Implementação Python de NGCGUI"
 
 #. type: Plain text
 #: src/man/man1/pyngcgui.1.adoc:10
 msgid "*pyngcgui*"
-msgstr ""
+msgstr "*pyngcgui*"
 
 #. type: Plain text
 #: src/man/man1/pyngcgui.1.adoc:15
@@ -164107,48 +164264,50 @@ msgid ""
 "*pyngcgui* is an alternative implenentation of NGCGUI: https://linuxcnc.org/"
 "docs/html/gui/ngcgui.html"
 msgstr ""
+"*pyngcgui* é uma implementação alternativa de NGCGUI: https://linuxcnc.org/"
+"docs/html/gui/ngcgui.html"
 
 #. type: Plain text
 #: src/man/man1/pyngcgui.1.adoc:19
 msgid "ngcgui(1), linuxcnc(1)"
-msgstr ""
+msgstr "ngcgui(1), linuxcnc(1)"
 
 #. type: Title =
 #: src/man/man1/pyui.1.adoc:1
 #, no-wrap
 msgid "pyui(1)"
-msgstr ""
+msgstr "pyui(1)"
 
 #. type: Plain text
 #: src/man/man1/pyui.1.adoc:6
 msgid "pyui - utility for panelui"
-msgstr ""
+msgstr "pyui - utilitário para o panelui"
 
 #. type: Plain text
 #: src/man/man1/pyui.1.adoc:10
 msgid "*loadusr pyui*"
-msgstr ""
+msgstr "*loadusr pyui*"
 
 #. type: Plain text
 #: src/man/man1/pyui.1.adoc:14
 msgid "*pyui* validates panelui.ini files."
-msgstr ""
+msgstr "*pyui* valida ficheiros panelui.ini."
 
 #. type: Title =
 #: src/man/man1/pyvcp.1.adoc:1
 #, no-wrap
 msgid "pyvcp(1)"
-msgstr ""
+msgstr "pyvcp(1)"
 
 #. type: Plain text
 #: src/man/man1/pyvcp.1.adoc:6
 msgid "pyvcp - Virtual Control Panel for LinuxCNC"
-msgstr ""
+msgstr "pyvcp - Painel de Controle Virtual para LinuxCNC"
 
 #. type: Plain text
 #: src/man/man1/pyvcp.1.adoc:10
 msgid "*pyvcp* [*-g* _WxH+X+Y_] [*-c* _component-name_] _myfile.xml_"
-msgstr ""
+msgstr "*pyvcp* [*-g* _WxH+X+Y_] [*-c* _nome-componente_] _meu-ficheiro.xml_"
 
 #. type: Plain text
 #: src/man/man1/pyvcp.1.adoc:17
@@ -164157,6 +164316,10 @@ msgid ""
 "'+X+Y' for just position, or 'WxH+X+Y' for both.  Size / position use pixel "
 "units. Position is referenced from top left."
 msgstr ""
+"Isto define a geometria inicial da janela raiz.  Use 'WxH' para apenas "
+"tamanho, '+X+Y' para apenas posição, ou 'WxH+X+Y' para ambos. Tamanho / "
+"posição usam unidades pixel. A posição é referenciada a partir do topo "
+"esquerdo."
 
 #. type: Plain text
 #: src/man/man1/pyvcp.1.adoc:20
@@ -164164,6 +164327,8 @@ msgid ""
 "Use _component-name_ as the HAL component name.  If the component name is "
 "not specified, the basename of the XML file is used."
 msgstr ""
+"Use _component-name_ como o nome de componente HAL.  Se o nome de componente "
+"não for especificado, é usado o nome base do ficheiro XML."
 
 #. type: Plain text
 #: src/man/man1/pyvcp.1.adoc:24
@@ -164171,58 +164336,62 @@ msgid ""
 "_Python Virtual Control Panel_ in the LinuxCNC documentation for a "
 "description of the xml syntax, along with examples."
 msgstr ""
+"_Painel de Controle Virtual Python_ na documentação do LinuxCNC para uma "
+"descrição da sintaxe xml, juntamente com exemplos."
 
 #. type: Title =
 #: src/man/man1/pyvcp_demo.1.adoc:1
 #, no-wrap
 msgid "pyvcp_demo(1)"
-msgstr ""
+msgstr "pyvcp_demo(1)"
 
 #. type: Plain text
 #: src/man/man1/pyvcp_demo.1.adoc:6
 msgid "pyvcp_demo - Python Virtual Control Panel demonstration component"
 msgstr ""
+"pyvcp_demo - Componente de demonstração do Painel de Controle Virtual Python"
 
 #. type: Plain text
 #: src/man/man1/pyvcp_demo.1.adoc:10
 msgid "*pyvcp_demo*"
-msgstr ""
+msgstr "*pyvcp_demo*"
 
 #. type: Plain text
 #: src/man/man1/pyvcp_demo.1.adoc:14
 msgid "*pyvcp_demo* is mainly used by sample configurations."
-msgstr ""
+msgstr "*pyvcp_demo* é usado principalmente por configurações de exemplo."
 
 #. type: Plain text
 #: src/man/man1/pyvcp_demo.1.adoc:18
 msgid "pyvcp_demo filename1.xml filename2.hal [compname]"
-msgstr ""
+msgstr "pyvcp_demo nome-ficheiro1.xml nome-ficheiro2.hal [compname]"
 
 #. type: Plain text
 #: src/man/man1/pyvcp_demo.1.adoc:20
 msgid "If not provided, use compname == pyvcp"
-msgstr ""
+msgstr "Se não fornecido, usa compname == pyvcp"
 
 #. type: Title =
 #: src/man/man1/qtplasmac-materials.1.adoc:1
 #, no-wrap
 msgid "qtplasmac-materials(1)"
-msgstr ""
+msgstr "qtplasmac-materials(1)"
 
 #. type: Plain text
 #: src/man/man1/qtplasmac-materials.1.adoc:6
 msgid "qtplasmac-materials - Create a plasma materials file."
-msgstr ""
+msgstr "qtplasmac-materials - Cria um ficheiro de materiais de plasma."
 
 #. type: Plain text
 #: src/man/man1/qtplasmac-materials.1.adoc:10
 msgid "*qtplasmac-materials*"
-msgstr ""
+msgstr "*qtplasmac-materials*"
 
 #. type: Plain text
 #: src/man/man1/qtplasmac-materials.1.adoc:14
 msgid "qtplasmac-materials is a Python script for creating a materials file."
 msgstr ""
+"qtplasmac-materials é um script Python para criar um ficheiro de materiais."
 
 #. type: Plain text
 #: src/man/man1/qtplasmac-materials.1.adoc:17
@@ -164230,12 +164399,15 @@ msgid ""
 "The file can be created by text entry or by importing text from a CAM tool "
 "file."
 msgstr ""
+"O ficheiro pode ser criado por entrada de texto ou por importar texto de um "
+"ficheiro de ferramenta CAM."
 
 #. type: Plain text
 #: src/man/man1/qtplasmac-materials.1.adoc:22
 msgid ""
 "See the QtPlasmaC section of the LinuxCNC Documentation for more information."
 msgstr ""
+"Veja a secção QtPlasmaC da Documentação do LinuxCNC para mais informação."
 
 #. type: Plain text
 #: src/man/man1/qtplasmac-materials.1.adoc:24
@@ -164243,12 +164415,14 @@ msgid ""
 "https://linuxcnc.org/docs/devel/html/plasma/"
 "qtplasmac.html#_material_converter"
 msgstr ""
+"https://linuxcnc.org/docs/devel/html/plasma/"
+"qtplasmac.html#_material_converter"
 
 #. type: Title =
 #: src/man/man1/qtplasmac_gcode.1.adoc:1
 #, no-wrap
 msgid "qtplasmac_gcode(1)"
-msgstr ""
+msgstr "qtplasmac_gcode(1)"
 
 #. type: Plain text
 #: src/man/man1/qtplasmac_gcode.1.adoc:6
@@ -164256,6 +164430,8 @@ msgid ""
 "qtplasmac_gcode - Python script shipping with Plasmac, a Plasma cutting "
 "system."
 msgstr ""
+"qtplasmac_gcode - script Python expedido com o Plasmac, um sistema de corte "
+"de Plasma."
 
 #. type: Plain text
 #: src/man/man1/qtplasmac_gcode.1.adoc:10
@@ -164263,6 +164439,8 @@ msgid ""
 "*qtplasmac_gcode* is used by qtplasmac and is not intended to be used "
 "standalone."
 msgstr ""
+"*qtplasmac_gcode* é usado pelo qtplasmac e não se destina a ser usado em "
+"modo autónomo."
 
 #. type: Plain text
 #: src/man/man1/qtplasmac_gcode.1.adoc:13
@@ -164270,86 +164448,91 @@ msgid ""
 "See the QtPlasmaC section of the LinuxCNC Documentation for more "
 "information. https://linuxcnc.org/docs/devel/html/plasma/qtplasmac.html"
 msgstr ""
+"Veja a secção QtPlasmaC da Documentação do LinuxCNC para mais informação. "
+"https://linuxcnc.org/docs/devel/html/plasma/qtplasmac.html"
 
 #. type: Title =
 #: src/man/man1/qtvcp.1.adoc:1
 #, no-wrap
 msgid "qtvcp(1)"
-msgstr ""
+msgstr "qtvcp(1)"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:6
 msgid "qtvcp - Qt-based virtual control panels"
-msgstr ""
+msgstr "qtvcp - Painéis de controle virtual baseados em Qt"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:10
 msgid "*qtvcp* [_OPTIONS_] myfile.ui"
-msgstr ""
+msgstr "*qtvcp* [_OPÇÕES_] meu-ficheiro.ui"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:14
 msgid "*QtVCP* is a system for creating user interfaces for LinuxCNC."
 msgstr ""
+"*QtVCP* é um sistema para se criar interfaces de utilizador para o LinuxCNC."
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:16
 msgid "Full documentation at https://linuxcnc.org/docs/html/gui/qtvcp.html"
-msgstr ""
+msgstr "Documentação completa em https://linuxcnc.org/docs/html/gui/qtvcp.html"
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:19
 #, no-wrap
 msgid "*-h, --help*"
-msgstr ""
+msgstr "*-h, --help*"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:21
 msgid "Show this help message and exit."
-msgstr ""
+msgstr "Mostra esta mensagem de ajuda e termina."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:21
 #, no-wrap
 msgid "*-c* [_<NAME>_]"
-msgstr ""
+msgstr "*-c* [_<NOME>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:23
 msgid "Set component name to NAME. Default is basename of UI file."
 msgstr ""
+"Define o nome de componente para NOME. A predefinido é o nome base do "
+"ficheiro da UI."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:23
 #, no-wrap
 msgid "*-a*"
-msgstr ""
+msgstr "*-a*"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:25
 msgid "Set the window to always be on top."
-msgstr ""
+msgstr "Define a janela para estar sempre por cima."
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:27
 msgid "Enable debug output."
-msgstr ""
+msgstr "Ativa saída de depuração."
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:29
 msgid "Enable verbose debug output."
-msgstr ""
+msgstr "Ativa saída de depuração detalhada."
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:31
 msgid "Enable only error debug output."
-msgstr ""
+msgstr "Ativa apenas saída de depuração de erros."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:31
 #, no-wrap
 msgid "*-g* [_<GEOMETRY>_]"
-msgstr ""
+msgstr "*-g* [_<GEOMETRIA>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:37
@@ -164359,12 +164542,16 @@ msgid ""
 "for just setting size or -g +XOFFSET+YOFFSET for just position.  + Example: "
 "`-g 200x400+0+100`"
 msgstr ""
+"Define geometria WIDTHxHEIGHT+XOFFSET+YOFFSET.  Valores são em unidades "
+"pixel, XOFFSET/YOFFSET é referenciado a partir de topo esquerdo do ecrã.  "
+"Use -g WIDTHxHEIGHT para apenas definir tamanho ou -g +XOFFSET+YOFFSET para "
+"apenas posição.  + Exemplo: `-g 200x400+0+100`"
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:37
 #, no-wrap
 msgid "*-H* [_<FILE>_]"
-msgstr ""
+msgstr "*-H* [_<FICHEIRO>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:39
@@ -164372,56 +164559,58 @@ msgid ""
 "Execute HAL statements from _FILE_ with halcmd after the component is set up "
 "and ready."
 msgstr ""
+"Executa declarações HAL a partir de _FICHEIRO_ com halcmd após o componente "
+"estar configurado e pronto."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:39
 #, no-wrap
 msgid "*-i*"
-msgstr ""
+msgstr "*-i*"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:41
 msgid "Enable info output."
-msgstr ""
+msgstr "Ativa saída informativa."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:41
 #, no-wrap
 msgid "*-m*"
-msgstr ""
+msgstr "*-m*"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:43
 msgid "Force panel window to maximize."
-msgstr ""
+msgstr "Força a janela do painel a maximizar."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:43
 #, no-wrap
 msgid "*-f*"
-msgstr ""
+msgstr "*-f*"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:45
 msgid "Force panel window to fullscreen."
-msgstr ""
+msgstr "Força a janela do painel a ecrã completo."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:45
 #, no-wrap
 msgid "*-t* [_<THEME>_]"
-msgstr ""
+msgstr "*-t* [_<TEMA>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:47
 msgid "Set Qt style. Default is system theme."
-msgstr ""
+msgstr "Define estilo Qt. A predefinição é o tema do sistema."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:47
 #, no-wrap
 msgid "*-x* [_<XID>_]"
-msgstr ""
+msgstr "*-x* [_<XID>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:49
@@ -164429,52 +164618,58 @@ msgid ""
 "Reparent QtVCP into an existing window XID instead of creating a new top "
 "level window."
 msgstr ""
+"Re-parenta QtVCP num XID de janela existente em vez de criar nova janela de "
+"nível de topo."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:49
 #, no-wrap
 msgid "*--push_xid*"
-msgstr ""
+msgstr "*--push_xid*"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:51
 msgid ""
 "Reparent window into a plug add push the plug xid number to standardout."
 msgstr ""
+"Re-parenta janela numa tomada adicionada, empurra o número xid da tomada "
+"para a saída standard."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:51
 #, no-wrap
 msgid "*-u* [_<USERMOD>_]"
-msgstr ""
+msgstr "*-u* [_<USERMOD>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:53
 msgid "File path of user defined handler file."
-msgstr ""
+msgstr "Caminho de ficheiro do ficheiro manipulador definido pelo utilizador."
 
 #. type: Labeled list
 #: src/man/man1/qtvcp.1.adoc:53
 #, no-wrap
 msgid "*-o* [_<USEROPTS>_]"
-msgstr ""
+msgstr "*-o* [_<USEROPTS>_]"
 
 #. type: Plain text
 #: src/man/man1/qtvcp.1.adoc:55
 msgid ""
 "Pass _USEROPTS_ strings to handler under self.w.USEROPTIONS_ list variable."
 msgstr ""
+"Passa strings _USEROPTS_ ao manipulador sob a lista variável "
+"self.w.USEROPTIONS_."
 
 #. type: Title =
 #: src/man/man1/rotarydelta.1.adoc:1
 #, no-wrap
 msgid "rotarydelta(1)"
-msgstr ""
+msgstr "rotarydelta(1)"
 
 #. type: Plain text
 #: src/man/man1/rotarydelta.1.adoc:6
 msgid "rotarydelta - Vismach Virtual Machine GUI"
-msgstr ""
+msgstr "rotarydelta - GUI de Máquina Virtual Vismach"
 
 #. type: Plain text
 #: src/man/man1/rotarydelta.1.adoc:11
@@ -164482,17 +164677,19 @@ msgid ""
 "*rotarydelta* is one of the sample *Vismach* GUIs for LinuxCNC, simulating a "
 "delta robot with rotary actuators"
 msgstr ""
+"*rotarydelta* é uma das GUIs *Vismach* exemplo para LinuxCNC, que simula um "
+"robot delta com atuadores rotativos"
 
 #. type: Title =
 #: src/man/man1/rs274.1.adoc:1
 #, no-wrap
 msgid "rs274(1)"
-msgstr ""
+msgstr "rs274(1)"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:6
 msgid "rs274 - standalone G-code interpreter"
-msgstr ""
+msgstr "rs274 - interpretador de código G autónomo"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:10
@@ -164500,11 +164697,13 @@ msgid ""
 "*rs274* [*-p* interp.so] [*-t* tool.tbl] [*-v* var-file.var] [*-n* 0|1|2] [*-"
 "b*] [*-s*] [*-g*] [ __input_file__ [__output_file__] ]"
 msgstr ""
+"*rs274* [*-p* interp.so] [*-t* tool.tbl] [*-v* ficheiro-var.var] [*-n* "
+"0|1|2] [*-b*] [*-s*] [*-g*] [ __ficheiro_entrada__ [__ficheiro_saída__] ]"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:14
 msgid "*rs274* Standalone G-code interpreter interface"
-msgstr ""
+msgstr "*rs274* Interpretador de código G autónomo"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:16
@@ -164512,39 +164711,41 @@ msgid ""
 "Usage: rs274 [-p interp.so] [-t tool.tbl] [-v var-file.var] [-n 0|1|2] [-b] "
 "[-s] [-g] [input file [output file]]"
 msgstr ""
+"Utilização: rs274 [-p interp.so] [-t tool.tbl] [-v ficheiro-var.var] [-n "
+"0|1|2] [-b] [-s] [-g] [ficheiro entrada [ficheiro saída]]"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:19
 #, no-wrap
 msgid "-p"
-msgstr ""
+msgstr "-p"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:20
 msgid "Specify the pluggable interpreter to use"
-msgstr ""
+msgstr "Especifica o intérprete acoplável a usar"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:20
 #, no-wrap
 msgid "-t"
-msgstr ""
+msgstr "-t"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:21
 msgid "Specify the .tbl (tool table) file to use"
-msgstr ""
+msgstr "Especifica o ficheiro .tbl (tabela de ferramenta) a usar"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:21
 #, no-wrap
 msgid "-v"
-msgstr ""
+msgstr "-v"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:22
 msgid "Specify the .var (parameter) file to use"
-msgstr ""
+msgstr "Especifica o ficheiro .var (parâmetro) a usar"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:26
@@ -164555,66 +164756,70 @@ msgid ""
 "1: enter MDI mode\n"
 "2: stop (default)"
 msgstr ""
+"Especifica o modo de continuar:\n"
+"0: continuar\n"
+"1: entrar em modo MDI\n"
+"2: parar (predefinição)"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:26
 #, no-wrap
 msgid "-b"
-msgstr ""
+msgstr "-b"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:27
 msgid "Toggle the 'block delete' flag (default: OFF)"
-msgstr ""
+msgstr "Comuta a bandeira 'apagar bloco' (predefinição: DESLIGADO)"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:27
 #, no-wrap
 msgid "-s"
-msgstr ""
+msgstr "-s"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:28
 msgid "Toggle the 'print stack' flag (default: OFF)"
-msgstr ""
+msgstr "Comuta a bandeira 'escreve pilha' (predefinição: DESLIGADO)"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:28
 #, no-wrap
 msgid "-g"
-msgstr ""
+msgstr "-g"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:29
 msgid "Toggle the 'go (batch mode)' flag (default: OFF)"
-msgstr ""
+msgstr "Comuta a bandeira 'vai (modo de lote)' (predefinição: DESLIGADO)"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:30
 msgid "specify the .ini file (default: no ini file)"
-msgstr ""
+msgstr "especifica o ficheiro .ini (predefinição: nenhum ficheiro ini)"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:30
 #, no-wrap
 msgid "-T"
-msgstr ""
+msgstr "-T"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:31
 msgid "call task_init()"
-msgstr ""
+msgstr "chama task_init()"
 
 #. type: Labeled list
 #: src/man/man1/rs274.1.adoc:31
 #, no-wrap
 msgid "-l"
-msgstr ""
+msgstr "-l"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:32
 msgid "specify the log_level (default: -1)"
-msgstr ""
+msgstr "especifica o nível de relatório (predefinição: -1)"
 
 #. type: Plain text
 #: src/man/man1/rs274.1.adoc:40
@@ -164628,27 +164833,29 @@ msgid ""
 "#<test> = 123.352 o101 while [[#<test> MOD 60 ] NE 0]\n"
 "(debug,#<test>) #<test> = [#<test> + 1] 101 endwhile M2\n"
 msgstr ""
+"#<test> = 123.352 o101 while [[#<test> MOD 60 ] NE 0]\n"
+"(debug,#<test>) #<test> = [#<test> + 1] 101 endwhile M2\n"
 
 #. type: Title =
 #: src/man/man1/rtapi_app.1.adoc:1
 #, no-wrap
 msgid "rtapi_app(1)"
-msgstr ""
+msgstr "rtapi_app(1)"
 
 #. type: Plain text
 #: src/man/man1/rtapi_app.1.adoc:6
 msgid "rtapi_app - creates a simulated real time environment"
-msgstr ""
+msgstr "rtapi_app - cria um ambiente de tempo real simulado"
 
 #. type: Plain text
 #: src/man/man1/rtapi_app.1.adoc:10
 msgid "*rtapi_app*"
-msgstr ""
+msgstr "*rtapi_app*"
 
 #. type: Plain text
 #: src/man/man1/rtapi_app.1.adoc:14
 msgid "*rtapi_app* Creates a simulated real time environment."
-msgstr ""
+msgstr "*rtapi_app* Cria um ambiente de tempo real simulado."
 
 #. type: Plain text
 #: src/man/man1/rtapi_app.1.adoc:16
@@ -164656,17 +164863,19 @@ msgid ""
 "Used for loading real time modules on systems without real time (for "
 "simulation)."
 msgstr ""
+"Útil para carregar módulos de tempo real em sistemas sem tempo real (para "
+"simulação)."
 
 #. type: Title =
 #: src/man/man1/scaragui.1.adoc:1
 #, no-wrap
 msgid "scaragui(1)"
-msgstr ""
+msgstr "scaragui(1)"
 
 #. type: Plain text
 #: src/man/man1/scaragui.1.adoc:6
 msgid "scaragui - Vismach Virtual Machine GUI"
-msgstr ""
+msgstr "scaragui - GUI de Máquina Virtual Vismach"
 
 #. type: Plain text
 #: src/man/man1/scaragui.1.adoc:10
@@ -164674,17 +164883,19 @@ msgid ""
 "*scaragui* is one of the sample *Vismach* GUIs for LinuxCNC, simulating a "
 "SCARA style robot arm."
 msgstr ""
+"*scaragui* é uma das GUIs *Vismach* exemplo para LinuxCNC, que simula um "
+"braço robótico de estilo SCARA."
 
 #. type: Title =
 #: src/man/man1/schedrmt.1.adoc:1
 #, no-wrap
 msgid "schedrmt(1)"
-msgstr ""
+msgstr "schedrmt(1)"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:6
 msgid "schedrmt - telnet based scheduler for LinuxCNC"
-msgstr ""
+msgstr "schedrmt - planeador baseado em telnet para LinuxCNC"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:10
@@ -164693,12 +164904,15 @@ msgid ""
 "connectpw* _<password>_ *--enablepw* _<password>_ *--sessions* _<max "
 "sessions>_ *--path* _<path>_ *-ini* _<INI file>_}"
 msgstr ""
+"*schedrmt* {*--* *--port* _<número porto>_ *--name* _<nome servidor>_ *--"
+"connectpw* _<palavra passe>_ *--enablepw* _<palavra passe>_ *--sessions* "
+"_<maximo sessões>_ *--path* _<caminho>_ *-ini* _<ficheiro INI>_}"
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:13
 #, no-wrap
 msgid "With -- --port"
-msgstr ""
+msgstr "With -- --port"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:15
@@ -164706,40 +164920,44 @@ msgid ""
 "Waits for socket connections (Telnet) on specified socket, without port uses "
 "default port 5007."
 msgstr ""
+"Espera por ligações de socket (Telnet) no socket especificado, sem o porto "
+"usa o porto predefinido 5007."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:15
 #, no-wrap
 msgid "With -- --name _<server name>_"
-msgstr ""
+msgstr "With -- --name _<nome servidor>_"
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:17
 #, no-wrap
 msgid "With -- --connectpw _<password>_"
-msgstr ""
+msgstr "With -- --connectpw _<palavra-passe>_"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:19
 msgid "Sets the connection password to _password_.  Default 'EMC'."
 msgstr ""
+"Define a palavra passe da ligação para _palavra passe_. Predefinição 'EMC'."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:19
 #, no-wrap
 msgid "With -- --enablepw _<password>_"
-msgstr ""
+msgstr "With -- --enablepw _<palavra-passe>_"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:21
 msgid "Sets the enable password to _password_. Default 'EMCTOO'."
 msgstr ""
+"Define a palavra passe de ativar para _palavra passe_. Predefinição 'EMCTOO'."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:21
 #, no-wrap
 msgid "With -- --sessions <max sessions>"
-msgstr ""
+msgstr "With -- --sessions <maximo sessões>"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:24
@@ -164747,12 +164965,14 @@ msgid ""
 "Sets the maximum number of simultaneous connextions to max sessions.  "
 "Default is no limit (-1)."
 msgstr ""
+"Define o número máximo de ligações simultâneas para o máximo de sessões.  A "
+"predefinição é nenhum limite (-1)."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:24
 #, no-wrap
 msgid "With -- --path"
-msgstr ""
+msgstr "With -- --path"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:26
@@ -164760,17 +164980,19 @@ msgid ""
 "Sets the base path to program (G-Code) files, default is \"../../nc_files/"
 "\". Make sure to include the final slash (/)."
 msgstr ""
+"Define o caminho base dos ficheiros de programa (código G), a predefinição é "
+"\"../../nc_files/\". Certifique de incluir a barra final (/)."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:26
 #, no-wrap
 msgid "With -- -ini _<INI file>_"
-msgstr ""
+msgstr "With -- -ini _<ficheiro INI>_"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:28
 msgid "Uses specified _INI file_ instead of default 'emc.ini'."
-msgstr ""
+msgstr "Usa o _ficheiro INI_ especificado em vez do 'emc.ini' predefinido."
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:33
@@ -164780,12 +165002,17 @@ msgid ""
 "where the \"emc_\" prefix is omitted.  Commands and most parameters are not "
 "case-sensitive.  The exceptions are passwords, file paths and text strings."
 msgstr ""
+"Existem seis comandos suportados, para os quais os comandos set e get contêm "
+"sub-comandos específicos do LinuxCNC baseados nos comandos suportados pelo "
+"emcsh, mas onde o prefixo \"emc_\" é omitido.  Os comandos e a maioria dos "
+"parâmetros não são sensíveis a maiúsculas/minúsculas.  As exceções são as "
+"palavras passe, caminhos de ficheiros e strings de texto."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:35
 #, no-wrap
 msgid "==> HELLO <=="
-msgstr ""
+msgstr "==> HELLO <=="
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:39
@@ -164794,12 +165021,18 @@ msgid ""
 "Hello _<password>_ _<client>_ _<version>_\n"
 "If a valid password was entered the server will respond with HELLO ACK _<Server Name>_ _<Server Version>_, here server name and server version are looked up from the implementation. If an invalid password or any other syntax error occurs then the server responds with: `HELLO NAK`."
 msgstr ""
+"Hello _<palavra passe>_ _<cliente>_ _<versão>_\n"
+"Se for inserida uma palavra passe válida o servidor vai responder com HELLO "
+"ACK _<Nome Servidor>_ _<Versão do Servidor>_, aqui o nome de servidor e "
+"versão de servidor são obtidos a partir da implementação. Se a palavra passe "
+"for inválida ou se ocorrer qualquer outro erro de sintaxe, então o servidor "
+"vai responder com: `HELLO NAK`."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:39
 #, no-wrap
 msgid "==> Get <=="
-msgstr ""
+msgstr "==> Get <=="
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:40
@@ -164807,12 +165040,14 @@ msgid ""
 "The get command includes one of the emc sub-commands, described below and "
 "zero or more additional parameters."
 msgstr ""
+"O comando get inclui um dos sub-comandos emc, descritos em baixo e zero ou "
+"mais parâmetros adicionais."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:40
 #, no-wrap
 msgid "==> Set <=="
-msgstr ""
+msgstr "==> Set <=="
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:41
@@ -164820,12 +165055,14 @@ msgid ""
 "The set command inclides one of the emc sub-commands, described below and "
 "one or more additional parameters."
 msgstr ""
+"O comando set inclui um dos sub-comandos emc, descritos em baixo e um ou "
+"mais parâmetros adicionais."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:41
 #, no-wrap
 msgid "==> Quit <=="
-msgstr ""
+msgstr "==> Quit <=="
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:49
@@ -164845,7 +165082,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:51
 msgid "*EMC sub-commands*:"
-msgstr ""
+msgstr "*sub-comandos EMC*:"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:55
@@ -164854,6 +165091,9 @@ msgid ""
 "When echo is on, all commands will be echoed upon receipt.  This state is "
 "local to each connection."
 msgstr ""
+"Com get vai retornar o estado de eco atual, com set, define o estado de "
+"eco.  Quando o eco está ligado, todos os comandos vão ecoar ao serem "
+"recebidos.  Este estado é local para cada ligação."
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:59
@@ -164864,12 +165104,17 @@ msgid ""
 "messages will be issued when in verbose mode.  This state is local to each "
 "connection."
 msgstr ""
+"Com get vai retornar o estado de detalhe atual, com set, define o estado de "
+"detalhe.  Quando o modo detalhado está ligado, todos os comandos set "
+"retornam reconhecimento positivo no formato SET _<COMANDO>_ ACK.  "
+"Adicionalmente, vão ser emitidas mensagens de texto de erros quando em modo "
+"detalhado.  Este estado é local para cada ligação."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:60
 #, no-wrap
 msgid "enable _<pwd>_ | off"
-msgstr ""
+msgstr "enable _<pwd>_ | off"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:64
@@ -164884,19 +165129,19 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:65
 #, no-wrap
 msgid "config"
-msgstr ""
+msgstr "config"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:66 src/remap/remap.adoc:1678
 #: src/remap/remap.adoc:1682 src/remap/remap.adoc:1686
 msgid "TBD"
-msgstr ""
+msgstr "TBD"
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:67
 #, no-wrap
 msgid "comm_mode ascii | binary"
-msgstr ""
+msgstr "comm_mode ascii | binary"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:71
@@ -164904,12 +165149,14 @@ msgid ""
 "With get, will return the current communications mode.  With set, will set "
 "the communications mode to the specified mode.  The binary protocol is TBD."
 msgstr ""
+"Com get, vai retornar o modo de comunicações atual.  Com set, vai definir o "
+"modo de comunicações para o modo especificado.  O protocolo binário é TBD."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:72
 #, no-wrap
 msgid "comm_prot _<version no>_"
-msgstr ""
+msgstr "comm_prot _<número versão>_"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:76
@@ -164924,41 +165171,42 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:77
 #, no-wrap
 msgid "INIFILE"
-msgstr ""
+msgstr "INIFILE"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:78
 msgid "Returns the path and file name of the current configuration INI file."
 msgstr ""
+"Retorna o caminho e nome de ficheiro do ficheiro INI da configuração atual."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:79
 #, no-wrap
 msgid "plat"
-msgstr ""
+msgstr "plat"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:80
 msgid "Returns the platform for which this was compiled, e.g., linux_2_0_36"
-msgstr ""
+msgstr "Retorna a plataforma para qual isto foi compilado, ex., inux_2_0_36"
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:81
 #, no-wrap
 msgid "ini _<var>_ _<section>_"
-msgstr ""
+msgstr "ini _<var>_ _<secção>_"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:82
 msgid ""
 "Returns the string value of _<var>_ in section _<section>_, in EMC_INIFILE."
-msgstr ""
+msgstr "Retorna o valor da string _<var>_ na secção _<secção>_, em EMC_INIFILE."
 
 #. type: Labeled list
 #: src/man/man1/schedrmt.1.adoc:83
 #, no-wrap
 msgid "debug {__<new value>__}"
-msgstr ""
+msgstr "debug {__<novo valor>__}"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:88
@@ -164978,6 +165226,7 @@ msgstr ""
 #, no-wrap
 msgid "QMode _<mode>_ stop | run | pause | resume (Set only) | error (Get only)"
 msgstr ""
+"QMode _<modo>_ stop | run | pause | resume (apenas Set) | error (apenas Get)"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:93
@@ -165008,7 +165257,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:102
 #, no-wrap
 msgid "AutoTagId _<Start Id>_"
-msgstr ""
+msgstr "AutoTagId _<Id Inicial>_"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:105
@@ -165067,7 +165316,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:123
 #, no-wrap
 msgid "PgmAll"
-msgstr ""
+msgstr "PgmAll"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:125
@@ -165081,7 +165330,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:126
 #, no-wrap
 msgid "PriorityById <_tag id_> <_priority_>"
-msgstr ""
+msgstr "PriorityById <_id de etiqueta_> <_prioridade_>"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:129
@@ -165095,7 +165344,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:130
 #, no-wrap
 msgid "PriorityByIndex <_tag id_> <_priority_>"
-msgstr ""
+msgstr "PriorityByIndex <_id de etiqueta_> <_prioridade_>"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:133
@@ -165109,7 +165358,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:134
 #, no-wrap
 msgid "DeleteById <_tag id_>"
-msgstr ""
+msgstr "DeleteById <_id de etiqueta_>"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:135
@@ -165120,7 +165369,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:136
 #, no-wrap
 msgid "DeleteByIndex <_index_>"
-msgstr ""
+msgstr "DeleteByIndex <_índice_>"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:137
@@ -165133,7 +165382,7 @@ msgstr ""
 #: src/man/man1/schedrmt.1.adoc:138
 #, no-wrap
 msgid "PollRate <_rate_>"
-msgstr ""
+msgstr "PollRate <_taxa_>"
 
 #. type: Plain text
 #: src/man/man1/schedrmt.1.adoc:141
@@ -165146,13 +165395,14 @@ msgstr ""
 #: src/man/man1/scorbot-er-3.1.adoc:1
 #, no-wrap
 msgid "scorbot-er-3(1)"
-msgstr ""
+msgstr "scorbot-er-3(1)"
 
 #. type: Plain text
 #: src/man/man1/scorbot-er-3.1.adoc:6
 msgid ""
 "scorbot-er-3 - to link the Intellitek Scorbot educational robot to LinuxCNC"
 msgstr ""
+"scorbot-er-3 - para ligar o robot educativo Intellitek Scorbot ao LinuxCNC"
 
 #. type: Plain text
 #: src/man/man1/scorbot-er-3.1.adoc:10
@@ -165170,7 +165420,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/scorbot-er-3.1.adoc:12
 msgid "rotation around the base"
-msgstr ""
+msgstr "rotação em redor da base"
 
 #. type: Labeled list
 #: src/man/man1/scorbot-er-3.1.adoc:12
@@ -165181,7 +165431,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/scorbot-er-3.1.adoc:13
 msgid "shoulder"
-msgstr ""
+msgstr "ombro"
 
 #. type: Labeled list
 #: src/man/man1/scorbot-er-3.1.adoc:13
@@ -165192,7 +165442,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/scorbot-er-3.1.adoc:14
 msgid "elbow"
-msgstr ""
+msgstr "cotovelo"
 
 #. type: Labeled list
 #: src/man/man1/scorbot-er-3.1.adoc:14
@@ -165225,7 +165475,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/scorbot-er-3.1.adoc:17 src/man/man1/scorbot-er-3.1.adoc:18
 msgid "unused"
-msgstr ""
+msgstr "não usado"
 
 #. type: Labeled list
 #: src/man/man1/scorbot-er-3.1.adoc:17
@@ -165248,7 +165498,7 @@ msgstr ""
 #: src/man/man1/sendkeys.1.adoc:1
 #, no-wrap
 msgid "sendkeys(1)"
-msgstr ""
+msgstr "sendkeys(1)"
 
 #. type: Plain text
 #: src/man/man1/sendkeys.1.adoc:6
@@ -165258,7 +165508,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man1/sendkeys.1.adoc:10
 msgid "*loadusr sendkeys config=s8t5, 16, t12*"
-msgstr ""
+msgstr "*loadusr sendkeys config=s8t5, 16, t12*"
 
 #. type: Plain text
 #: src/man/man1/sendkeys.1.adoc:17
@@ -165310,6 +165560,8 @@ msgid ""
 "sudo groupadd -f uinput\n"
 "sudo gpasswd -a username uinput\n"
 msgstr ""
+"sudo groupadd -f uinput\n"
+"sudo gpasswd -a username uinput\n"
 
 #. type: Plain text
 #: src/man/man1/sendkeys.1.adoc:40
@@ -165321,6 +165573,8 @@ msgstr ""
 #, no-wrap
 msgid "sudo echo KERNEL==\"uinput\", GROUP=\"uinput\", MODE:=\"0660\" | sudo tee /etc/udev/rules.d/88-input.rules\n"
 msgstr ""
+"sudo echo KERNEL==\"uinput\", GROUP=\"uinput\", MODE:=\"0660\" | sudo tee /"
+"etc/udev/rules.d/88-input.rules\n"
 
 #. type: Plain text
 #: src/man/man1/sendkeys.1.adoc:46
@@ -165334,6 +165588,8 @@ msgid ""
 "ls -l /dev/uinput\n"
 "crw-rw---- 1 root uinput 10, 223 Nov 11 15:35 /dev/uinput\n"
 msgstr ""
+"ls -l /dev/uinput\n"
+"crw-rw---- 1 root uinput 10, 223 Nov 11 15:35 /dev/uinput\n"
 
 #. type: Plain text
 #: src/man/man1/sendkeys.1.adoc:55
@@ -169753,7 +170009,7 @@ msgstr ""
 #: src/man/man1/xyzab-tdr-gui.1.adoc:1
 #, no-wrap
 msgid "xyzab-tdr-gui(1)"
-msgstr ""
+msgstr "xyzab-tdr-gui(1)"
 
 #. type: Plain text
 #: src/man/man1/xyzab-tdr-gui.1.adoc:6
@@ -171354,7 +171610,7 @@ msgstr ""
 #: src/man/man3/hal_port.3.adoc:103 src/man/man3/hal_type_t.3.adoc:59
 #, no-wrap
 msgid "hal_port_t"
-msgstr ""
+msgstr "hal_port_t"
 
 #. type: Plain text
 #: src/man/man3/hal_port.3.adoc:105
@@ -171365,7 +171621,7 @@ msgstr ""
 #: src/man/man3/hal_port.3.adoc:105
 #, no-wrap
 msgid "dest"
-msgstr ""
+msgstr "dest"
 
 #. type: Plain text
 #: src/man/man3/hal_port.3.adoc:108
@@ -171385,7 +171641,7 @@ msgstr ""
 #: src/man/man3/hal_port.3.adoc:111
 #, no-wrap
 msgid "src"
-msgstr ""
+msgstr "src"
 
 #. type: Plain text
 #: src/man/man3/hal_port.3.adoc:114
@@ -171560,7 +171816,7 @@ msgstr ""
 #: src/man/man3/hal_signal_new.3.adoc:3
 #, no-wrap
 msgid "hal_signal_new(3)"
-msgstr ""
+msgstr "hal_signal_new(3)"
 
 #. type: Plain text
 #: src/man/man3/hal_signal_new.3.adoc:9
@@ -171593,7 +171849,7 @@ msgstr ""
 #: src/man/man3/hal_signal_new.3.adoc:22
 #, no-wrap
 msgid "signal_name"
-msgstr ""
+msgstr "signal_name"
 
 #. type: Plain text
 #: src/man/man3/hal_signal_new.3.adoc:24
@@ -171604,7 +171860,7 @@ msgstr ""
 #: src/man/man3/hal_signal_new.3.adoc:24
 #, no-wrap
 msgid "pin_name"
-msgstr ""
+msgstr "pin_name"
 
 #. type: Plain text
 #: src/man/man3/hal_signal_new.3.adoc:26
@@ -171654,7 +171910,7 @@ msgstr ""
 #: src/man/man3/hal_start_threads.3.adoc:1
 #, no-wrap
 msgid "hal_start_threads(3)"
-msgstr ""
+msgstr "hal_start_threads(3)"
 
 #. type: Plain text
 #: src/man/man3/hal_start_threads.3.adoc:6
@@ -171664,12 +171920,12 @@ msgstr ""
 #. type: Plain text
 #: src/man/man3/hal_start_threads.3.adoc:10
 msgid "int hal_start_threads()"
-msgstr ""
+msgstr "int hal_start_threads()"
 
 #. type: Plain text
 #: src/man/man3/hal_start_threads.3.adoc:12
 msgid "int hal_stop_threads()"
-msgstr ""
+msgstr "int hal_stop_threads()"
 
 #. type: Plain text
 #: src/man/man3/hal_start_threads.3.adoc:17
@@ -171695,7 +171951,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:1
 #, no-wrap
 msgid "hal_stream(3)"
-msgstr ""
+msgstr "hal_stream(3)"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:6
@@ -171750,6 +172006,10 @@ msgid ""
 "void hal_stream_wait_readable(hal_stream_t* stream, sig_atomic_t* stop);\n"
 "#endif\n"
 msgstr ""
+"#ifdef ULAPI\n"
+"void hal_stream_wait_writable(hal_stream_t* stream, sig_atomic_t* stop);\n"
+"void hal_stream_wait_readable(hal_stream_t* stream, sig_atomic_t* stop);\n"
+"#endif\n"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:44
@@ -171774,7 +172034,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:49
 #, no-wrap
 msgid "*hal_stream_create*"
-msgstr ""
+msgstr "*hal_stream_create*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:52
@@ -171788,7 +172048,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:53
 #, no-wrap
 msgid "*hal_stream_destroy*"
-msgstr ""
+msgstr "*hal_stream_destroy*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:59
@@ -171804,7 +172064,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:60
 #, no-wrap
 msgid "*hal_stream_attach*"
-msgstr ""
+msgstr "*hal_stream_attach*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:64
@@ -171819,7 +172079,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:65
 #, no-wrap
 msgid "*hal_stream_detach*"
-msgstr ""
+msgstr "*hal_stream_detach*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:69
@@ -171834,7 +172094,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:70
 #, no-wrap
 msgid "*hal_stream_element_count*"
-msgstr ""
+msgstr "*hal_stream_element_count*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:71
@@ -171845,7 +172105,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:72
 #, no-wrap
 msgid "*hal_stream_element_type*"
-msgstr ""
+msgstr "*hal_stream_element_type*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:73
@@ -171856,7 +172116,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:74
 #, no-wrap
 msgid "*hal_stream_readable*"
-msgstr ""
+msgstr "*hal_stream_readable*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:75
@@ -171867,7 +172127,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:76 src/man/man3/hal_stream.3.adoc:92
 #, no-wrap
 msgid "*hal_stream_read*"
-msgstr ""
+msgstr "*hal_stream_read*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:77
@@ -171878,7 +172138,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:78
 #, no-wrap
 msgid "*hal_stream_writable*"
-msgstr ""
+msgstr "*hal_stream_writable*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:79
@@ -171890,7 +172150,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:80
 #, no-wrap
 msgid "*hal_stream_depth*"
-msgstr ""
+msgstr "*hal_stream_depth*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:81
@@ -171901,7 +172161,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:82
 #, no-wrap
 msgid "*hal_stream_maxdepth*"
-msgstr ""
+msgstr "*hal_stream_maxdepth*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:83
@@ -171912,7 +172172,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:84
 #, no-wrap
 msgid "*hal_stream_num_overruns*"
-msgstr ""
+msgstr "*hal_stream_num_overruns*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:85
@@ -171925,7 +172185,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:86
 #, no-wrap
 msgid "*hal_stream_num_underruns*"
-msgstr ""
+msgstr "*hal_stream_num_underruns*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:87
@@ -171938,7 +172198,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:88
 #, no-wrap
 msgid "*hal_stream_wait_readable*"
-msgstr ""
+msgstr "*hal_stream_wait_readable*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:89
@@ -171949,7 +172209,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:90
 #, no-wrap
 msgid "*hal_stream_wait_writable*"
-msgstr ""
+msgstr "*hal_stream_wait_writable*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:91
@@ -171970,7 +172230,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:97
 #, no-wrap
 msgid "*hal_stream_write*"
-msgstr ""
+msgstr "*hal_stream_write*"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:102
@@ -171986,7 +172246,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:105
 #, no-wrap
 msgid "stream"
-msgstr ""
+msgstr "stream"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:110
@@ -172001,7 +172261,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:110
 #, no-wrap
 msgid "hal_id"
-msgstr ""
+msgstr "hal_id"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:112
@@ -172012,7 +172272,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:112 src/man/man3/rtapi_shmem.3.adoc:20
 #, no-wrap
 msgid "key"
-msgstr ""
+msgstr "key"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:114
@@ -172023,7 +172283,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:114
 #, no-wrap
 msgid "depth"
-msgstr ""
+msgstr "depth"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:117
@@ -172036,7 +172296,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:117
 #, no-wrap
 msgid "typestring"
-msgstr ""
+msgstr "typestring"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:122
@@ -172075,7 +172335,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:129
 #, no-wrap
 msgid "buf"
-msgstr ""
+msgstr "buf"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:131
@@ -172086,7 +172346,7 @@ msgstr ""
 #: src/man/man3/hal_stream.3.adoc:131
 #, no-wrap
 msgid "sampleno"
-msgstr ""
+msgstr "sampleno"
 
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:136
@@ -172155,7 +172415,7 @@ msgstr ""
 #. type: Plain text
 #: src/man/man3/hal_stream.3.adoc:173
 msgid "sampler(9), streamer(9), halsampler(1), halstreamer(1)"
-msgstr ""
+msgstr "sampler(9), streamer(9), halsampler(1), halstreamer(1)"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:8
@@ -172168,7 +172428,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:11
 #, no-wrap
 msgid "typedef ... *hal_bool;*"
-msgstr ""
+msgstr "typedef ... *hal_bool;*"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:13
@@ -172179,7 +172439,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:13
 #, no-wrap
 msgid "typedef ... *hal_bit_t;*"
-msgstr ""
+msgstr "typedef ... *hal_bit_t;*"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:15
@@ -172190,7 +172450,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:15
 #, no-wrap
 msgid "typedef ... *hal_s32_t*;"
-msgstr ""
+msgstr "typedef ... *hal_s32_t*;"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:17
@@ -172201,7 +172461,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:17
 #, no-wrap
 msgid "typedef ... *hal_u32_t*;"
-msgstr ""
+msgstr "typedef ... *hal_u32_t*;"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:19
@@ -172212,7 +172472,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:19
 #, no-wrap
 msgid "typedef ... *hal_port_t*;"
-msgstr ""
+msgstr "typedef ... *hal_port_t*;"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:21
@@ -172223,7 +172483,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:21
 #, no-wrap
 msgid "typedef ... *hal_float_t*;"
-msgstr ""
+msgstr "typedef ... *hal_float_t*;"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:24
@@ -172236,7 +172496,7 @@ msgstr ""
 #: src/man/man3/hal_type_t.3.adoc:24
 #, no-wrap
 msgid "typedef ... *real_t*;"
-msgstr ""
+msgstr "typedef ... *real_t*;"
 
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:27
@@ -172321,7 +172581,7 @@ msgstr "hal_bit_t"
 #. type: Plain text
 #: src/man/man3/hal_type_t.3.adoc:56 src/man/man3/hal_type_t.3.adoc:60
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #. type: Labeled list
 #: src/man/man3/hal_type_t.3.adoc:56
@@ -173542,6 +173802,8 @@ msgid ""
 "#include <rtapi_app.h>\n"
 "void rtapi_app_exit(void);\n"
 msgstr ""
+"#include <rtapi_app.h>\n"
+"void rtapi_app_exit(void);\n"
 
 #. type: Plain text
 #: src/man/man3/rtapi_app_exit.3.adoc:24
@@ -174179,7 +174441,7 @@ msgstr ""
 #: src/man/man3/rtapi_firmware.3.adoc:1
 #, no-wrap
 msgid "rtapi_firmware(3)"
-msgstr ""
+msgstr "rtapi_firmware(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_firmware.3.adoc:6
@@ -174209,7 +174471,7 @@ msgstr ""
 #: src/man/man3/rtapi_get_time.3.adoc:3
 #, no-wrap
 msgid "rtapi_get_time(3)"
-msgstr ""
+msgstr "rtapi_get_time(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_get_time.3.adoc:8
@@ -174318,7 +174580,7 @@ msgstr ""
 #: src/man/man3/rtapi_gfp.3.adoc:1
 #, no-wrap
 msgid "rtapi_gfp(3)"
-msgstr ""
+msgstr "rtapi_gfp(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_gfp.3.adoc:6
@@ -174334,6 +174596,10 @@ msgid ""
 "RTAPI_GFP_xxx\n"
 "typedef ... rtapi_gfp_t;\n"
 msgstr ""
+"#include <rtapi_gfp.h>\n"
+"enum rtapi_gfp_e;\n"
+"RTAPI_GFP_xxx\n"
+"typedef ... rtapi_gfp_t;\n"
 
 #. type: Plain text
 #: src/man/man3/rtapi_gfp.3.adoc:26
@@ -174348,7 +174614,7 @@ msgstr ""
 #: src/man/man3/rtapi_init.3.adoc:1
 #, no-wrap
 msgid "rtapi_init(3)"
-msgstr ""
+msgstr "rtapi_init(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_init.3.adoc:6
@@ -174400,7 +174666,7 @@ msgstr ""
 #: src/man/man3/rtapi_io.3.adoc:1
 #, no-wrap
 msgid "rtapi_io(3)"
-msgstr ""
+msgstr "rtapi_io(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_io.3.adoc:6
@@ -174421,6 +174687,15 @@ msgid ""
 "int rtapi_ioperm(unsigned long from, unsigned long num, int turn_on);\n"
 "unsigned void rtapi_outl(unsigned int value, unsigned short int port);\n"
 msgstr ""
+"#include <rtapi_io.h>\n"
+"unsigned char rtapi_inb(unsigned short int port);\n"
+"unsigned short rtapi_inw(unsigned short int port);\n"
+"unsigned int rtapi_inl(unsigned short int port);\n"
+"unsigned void rtapi_outb(unsigned char value, unsigned short int port);\n"
+"unsigned void rtapi_outw(unsigned short value, unsigned short int port);\n"
+"unsigned void rtapi_inl(unsigned int value, unsigned short int port);\n"
+"int rtapi_ioperm(unsigned long from, unsigned long num, int turn_on);\n"
+"unsigned void rtapi_outl(unsigned int value, unsigned short int port);\n"
 
 #. type: Plain text
 #: src/man/man3/rtapi_io.3.adoc:32
@@ -174463,13 +174738,13 @@ msgstr ""
 #: man/man9/threadtest.9:52 man/man9/timedelta.9:101 man/man9/tristate_bit.9:65
 #: man/man9/tristate_float.9:65 man/man9/wcomp.9:88
 msgid "Jeff Epler"
-msgstr ""
+msgstr "Jeff Epler"
 
 #. type: Title =
 #: src/man/man3/rtapi_is.3.adoc:1
 #, no-wrap
 msgid "rtapi_is(3)"
-msgstr ""
+msgstr "rtapi_is(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_is.3.adoc:6
@@ -174521,7 +174796,7 @@ msgstr ""
 #: src/man/man3/rtapi_list.3.adoc:1
 #, no-wrap
 msgid "rtapi_list(3)"
-msgstr ""
+msgstr "rtapi_list(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_list.3.adoc:6
@@ -174584,7 +174859,7 @@ msgstr ""
 #: src/man/man3/rtapi_print.3.adoc:22
 #, no-wrap
 msgid "level"
-msgstr ""
+msgstr "level"
 
 #. type: Plain text
 #: src/man/man3/rtapi_get_msg_level.3.adoc:21
@@ -174616,13 +174891,13 @@ msgstr ""
 #. type: Plain text
 #: src/man/man3/rtapi_get_msg_level.3.adoc:38
 msgid "rtapi_print_msg(3)"
-msgstr ""
+msgstr "rtapi_print_msg(3)"
 
 #. type: Title =
 #: src/man/man3/rtapi_module_param.3.adoc:3
 #, no-wrap
 msgid "rtapi_module_param(3)"
-msgstr ""
+msgstr "rtapi_module_param(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:11
@@ -174653,7 +174928,7 @@ msgstr ""
 #: src/man/man3/rtapi_module_param.3.adoc:30
 #, no-wrap
 msgid "var"
-msgstr ""
+msgstr "var"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:32
@@ -174664,7 +174939,7 @@ msgstr ""
 #: src/man/man3/rtapi_module_param.3.adoc:32
 #, no-wrap
 msgid "description"
-msgstr ""
+msgstr "description"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:34
@@ -174675,7 +174950,7 @@ msgstr ""
 #: src/man/man3/rtapi_module_param.3.adoc:34
 #, no-wrap
 msgid "num"
-msgstr ""
+msgstr "num"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:36
@@ -174686,7 +174961,7 @@ msgstr ""
 #: src/man/man3/rtapi_module_param.3.adoc:36
 #, no-wrap
 msgid "license"
-msgstr ""
+msgstr "license"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:38
@@ -174697,7 +174972,7 @@ msgstr ""
 #: src/man/man3/rtapi_module_param.3.adoc:38
 #, no-wrap
 msgid "author"
-msgstr ""
+msgstr "author"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:40
@@ -174708,7 +174983,7 @@ msgstr ""
 #: src/man/man3/rtapi_module_param.3.adoc:40
 #, no-wrap
 msgid "function"
-msgstr "função"
+msgstr "function"
 
 #. type: Plain text
 #: src/man/man3/rtapi_module_param.3.adoc:42
@@ -174851,7 +175126,7 @@ msgstr ""
 #: src/man/man3/rtapi_mutex.3.adoc:12
 #, no-wrap
 msgid "#include <rtapi_mutex.h>\n"
-msgstr ""
+msgstr "#include <rtapi_mutex.h>\n"
 
 #. type: delimited block -
 #: src/man/man3/rtapi_mutex.3.adoc:16
@@ -174921,7 +175196,7 @@ msgstr ""
 #: src/man/man3/rtapi_open_as_root.3.adoc:1
 #, no-wrap
 msgid "rtapi_open_as_root(3)"
-msgstr ""
+msgstr "rtapi_open_as_root(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_open_as_root.3.adoc:6
@@ -174935,6 +175210,8 @@ msgid ""
 "#include <rtapi.h>\n"
 "int rtapi_open_as_root(const char *filename, int flags);\n"
 msgstr ""
+"#include <rtapi.h>\n"
+"int rtapi_open_as_root(const char *filename, int flags);\n"
 
 #. type: Labeled list
 #: src/man/man3/rtapi_open_as_root.3.adoc:17
@@ -175030,7 +175307,7 @@ msgstr ""
 #: src/man/man3/rtapi_outb.3.adoc:21
 #, no-wrap
 msgid "byte"
-msgstr ""
+msgstr "byte"
 
 #. type: Plain text
 #: src/man/man3/rtapi_outb.3.adoc:23
@@ -175061,13 +175338,13 @@ msgstr ""
 #: src/man/man3/rtapi_outb.3.adoc:44 src/man/man3/rtapi_region.3.adoc:3
 #, no-wrap
 msgid "rtapi_region(3)"
-msgstr ""
+msgstr "rtapi_region(3)"
 
 #. type: Title =
 #: src/man/man3/rtapi_parport.3.adoc:1
 #, no-wrap
 msgid "rtapi_parport(3)"
-msgstr ""
+msgstr "rtapi_parport(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_parport.3.adoc:6
@@ -175078,7 +175355,7 @@ msgstr ""
 #: src/man/man3/rtapi_parport.3.adoc:12
 #, no-wrap
 msgid "#include \"rtapi_parport.h\"\n"
-msgstr ""
+msgstr "#include \"rtapi_parport.h\"\n"
 
 #. type: delimited block -
 #: src/man/man3/rtapi_parport.3.adoc:17
@@ -175186,7 +175463,7 @@ msgstr ""
 #: src/man/man3/rtapi_pci.3.adoc:1
 #, no-wrap
 msgid "rtapi_pci(3)"
-msgstr ""
+msgstr "rtapi_pci(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_pci.3.adoc:6
@@ -175197,7 +175474,7 @@ msgstr ""
 #: src/man/man3/rtapi_pci.3.adoc:12
 #, no-wrap
 msgid "#include <rtapi_pci.h>\n"
-msgstr ""
+msgstr "#include <rtapi_pci.h>\n"
 
 #. type: delimited block -
 #: src/man/man3/rtapi_pci.3.adoc:32
@@ -175237,7 +175514,7 @@ msgstr ""
 #: src/man/man3/rtapi_print.3.adoc:3
 #, no-wrap
 msgid "rtapi_print(3)"
-msgstr ""
+msgstr "rtapi_print(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_print.3.adoc:8
@@ -175279,7 +175556,7 @@ msgstr ""
 #: src/man/man3/rtapi_print.3.adoc:27
 #, no-wrap
 msgid "fmt, ..."
-msgstr ""
+msgstr "fmt, ..."
 
 #. type: Plain text
 #: src/man/man3/rtapi_print.3.adoc:29
@@ -175350,12 +175627,16 @@ msgid ""
 "int rtapi_prio_next_higher(int _prio_);\n"
 "int rtapi_prio_next_lower(int _prio_);\n"
 msgstr ""
+"int rtapi_prio_highest();\n"
+"int rtapi_prio_lowest();\n"
+"int rtapi_prio_next_higher(int _prio_);\n"
+"int rtapi_prio_next_lower(int _prio_);\n"
 
 #. type: Labeled list
 #: src/man/man3/rtapi_prio.3.adoc:21 src/man/man3/rtapi_task_new.3.adoc:24
 #, no-wrap
 msgid "prio"
-msgstr ""
+msgstr "prio"
 
 #. type: Plain text
 #: src/man/man3/rtapi_prio.3.adoc:23
@@ -175471,7 +175752,7 @@ msgstr ""
 #: src/man/man3/rtapi_shmem.3.adoc:3
 #, no-wrap
 msgid "rtapi_shmem(3)"
-msgstr ""
+msgstr "rtapi_shmem(3)"
 
 #. type: Plain text
 #: src/man/man3/rtapi_shmem.3.adoc:8
@@ -175510,7 +175791,7 @@ msgstr ""
 #: src/man/man3/rtapi_shmem.3.adoc:27
 #, no-wrap
 msgid "ptr"
-msgstr ""
+msgstr "ptr"
 
 #. type: Plain text
 #: src/man/man3/rtapi_shmem.3.adoc:30
@@ -234373,10 +234654,8 @@ msgstr ""
 
 #. type: Plain text
 #: man/man9/plasmac.9:41
-#, fuzzy
-#| msgid "14+"
 msgid "014"
-msgstr "14+"
+msgstr "014"
 
 #. type: SS
 #: man/man9/plasmac.9:41
@@ -234927,10 +235206,8 @@ msgstr ""
 
 #. type: Plain text
 #: man/man9/plasmac.9:306
-#, fuzzy
-#| msgid "B<plasmac>\\&.B<kerf-width> float in"
 msgid "B<plasmac>\\&.B<material-thickness> float in"
-msgstr "B<plasmac>\\&.B<kerf-width> entrada float"
+msgstr "B<plasmac>\\&.B<material-thickness> float entrada"
 
 #. type: Plain text
 #: man/man9/plasmac.9:308
@@ -235455,10 +235732,8 @@ msgstr ""
 
 #. type: Plain text
 #: man/man9/plasmac.9:566
-#, fuzzy
-#| msgid "B<plasmac>\\&.B<safe-height> float in"
 msgid "B<plasmac>\\&.B<slat-height> float in"
-msgstr "B<plasmac>\\&.B<safe-height> entrada float"
+msgstr "B<plasmac>\\&.B<slat-height> float entrada"
 
 #. type: Plain text
 #: man/man9/plasmac.9:568
