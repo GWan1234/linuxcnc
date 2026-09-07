@@ -15,15 +15,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:51+0000\n"
-"Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
+"PO-Revision-Date: 2026-09-07 00:51+0000\n"
+"Last-Translator: Salvador Peña <salvadorp74@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -29525,7 +29525,7 @@ msgid ""
 "<<sec:the-spindle-dictionary, The spindle dictionary>>."
 msgstr ""
 "'(devuelve tupla de diccionarios)' - devuelve el estado actual del husillo "
-"ver <sec:the-spindle-dictionary, El diccionario spindle>>."
+"ver <<sec:the-spindle-dictionary, El diccionario spindle>>."
 
 #. type: Labeled list
 #: src/config/python-interface.adoc:336
@@ -48899,10 +48899,10 @@ msgid ""
 "workpiece is known but current tool location may not be known."
 msgstr ""
 "Se desaconseja el uso de 'G92' para programar con sistemas de coordenadas "
-"locales en un programa de pieza. En su lugar, vea <<sec:g52-and-g92-"
-"offsets,'G52'>>, un offset local del sistema de coordenadas es más intuitivo "
-"cuando se conoce el offset deseado relativo a la pieza de trabajo, pero es "
-"posible que no se conozca la ubicación actual de la herramienta."
+"locales en un programa de pieza. En su lugar, vea <<sec:g52,'G52'>>, un "
+"offset local del sistema de coordenadas es más intuitivo cuando se conoce el "
+"offset deseado relativo a la pieza de trabajo, pero es posible que no se "
+"conozca la ubicación actual de la herramienta."
 
 #. type: NOTE
 #: src/gcode/coordinates.adoc:295
@@ -55336,13 +55336,12 @@ msgstr "images/g76-01.png"
 
 #. type: Title ==
 #: src/gcode/g-code.adoc:1999
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G80-G89 Canned Cycles"
-msgstr "Creando nuevos ciclos de codigo G"
+msgstr "G80-G89 Ciclos fijos"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2003
-#, fuzzy
 msgid ""
 "The canned cycles 'G81' through 'G89' and the canned cycle stop 'G80' are "
 "described in this section."
@@ -55372,7 +55371,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2017
-#, fuzzy
 msgid ""
 "Rotary axis words are not allowed in canned cycles. When the active plane is "
 "one of the XYZ family, the UVW axis words are not allowed. Likewise, when "
@@ -55386,13 +55384,12 @@ msgstr ""
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2018
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Common Words"
 msgstr "Palabras comunes"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2024
-#, fuzzy
 msgid ""
 "All canned cycles use X, Y, Z, or U, V, W groups depending on the plane "
 "selected and R words. The R (usually meaning retract) position is along the "
@@ -55407,9 +55404,9 @@ msgstr ""
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2025
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Sticky Words"
-msgstr "Palabras Sticky"
+msgstr "Palabras pegajosas"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2032
@@ -55420,12 +55417,12 @@ msgid ""
 "value on the rest of the lines if they are not explicitly programmed to be "
 "different. The R number is always sticky."
 msgstr ""
-"Para los ciclos fijos, llamaremos a un número 'sticky' si, cuando el mismo "
-"ciclo se utiliza en varias líneas de código en fila, el número debe ser "
+"Para los ciclos fijos, llamaremos a un número 'pegajoso' si, cuando el mismo "
+"ciclo se utiliza en varias líneas de código en una fila; el número debe ser "
 "usado la primera vez, pero es opcional en el resto de las líneas. Los "
-"números sticky mantienen su valor en el resto de las líneas si no son "
+"números pegajosos mantienen su valor en el resto de las líneas si no son "
 "programados explícitamente con valor diferente. El número R siempre es "
-"sticky."
+"pegajoso."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2038
@@ -55443,13 +55440,12 @@ msgstr ""
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2039
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Repeat Cycle"
 msgstr "Repetir ciclo"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2055
-#, fuzzy
 msgid ""
 "The L number is optional and represents the number of repeats.  L=0 is not "
 "allowed. If the repeat feature is used, it is normally used in incremental "
@@ -55465,29 +55461,28 @@ msgid ""
 "same cycle in the same place several times', Omitting the L word is "
 "equivalent to specifying L=1."
 msgstr ""
-"El número L es opcional y representa el número de repeticiones.  L = 0 no "
-"está permitido. Si se utiliza la función de repetición, normalmente se usa "
-"en modo de distancia incremental, de modo que la misma secuencia de "
-"movimientos se repite en varios lugares igualmente espaciados a lo largo de "
-"una línea recta. Cuando L- es mayor que 1 en modo incremental con el plano "
-"XY seleccionado, las posiciones X e Y se determinan sumando los números X e "
-"Y dados a las posiciones X e Y actuales (en el primera vuelta) o a las "
-"posiciones X e Y al final de la anterior vuelta (en las repeticiones). Por "
-"lo tanto, si programa 'L10', obtendra 10 ciclos El primer ciclo será la "
-"distancia X, Y desde la ubicación original. Las posiciones R y Z no cambian "
-"durante la repeticion. El número L no es sticky. En modo de distancia "
-"absoluta, L > 1 significa 'hacer el mismo ciclo en el mismo lugar varias "
-"veces'. Omitir la palabra L es equivalente a especificar L = 1."
+"El número L es opcional y representa el número de repeticiones.  L=0 no está "
+"permitido. Si se utiliza la función de repetición, normalmente se usa en "
+"modo de distancia incremental, de modo que la misma secuencia de movimientos "
+"se repite en varios lugares igualmente espaciados a lo largo de una línea "
+"recta. Cuando L- es mayor que 1 en modo incremental con el plano XY "
+"seleccionado, las posiciones X e Y se determinan sumando los números X e Y "
+"dados a las posiciones X e Y actuales (en el primera vuelta) o a las "
+"posiciones X e Y al final de la vuelta anterior (en las repeticiones). Por "
+"lo tanto, si programas 'L10', obtendrás 10 ciclos. El primer ciclo será la "
+"distancia X,Y desde la ubicación original. Las posiciones R y Z no cambian "
+"durante la repetición. El número L no es pegajoso. En modo de distancia "
+"absoluta, L>1 significa 'hacer el mismo ciclo en el mismo lugar varias "
+"veces'. Omitir la palabra L equivale a especificar L=1."
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2056
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Retract Mode"
 msgstr "Modo de retracción"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2063
-#, fuzzy
 msgid ""
 "The height of the retract move at the end of each repeat (called 'clear Z' "
 "in the descriptions below) is determined by the setting of the retract mode, "
@@ -55496,50 +55491,45 @@ msgid ""
 "<<gcode:g98-g99,G98 G99>> section."
 msgstr ""
 "La altura del movimiento de retracción al final de cada repetición (llamada "
-"'despejar Z' en las descripciones) está determinado por la configuración del "
-"modo de retracción, ya sea a la posición Z original (si está por encima de "
-"la posición R y el modo de retracción es 'G98', OLD_Z) o, de lo contrario, a "
-"la posición R. Consulte la sección <<gcode:g98-g99,G98 G99>>."
+"'despejar Z' en las descripciones abajo) está determinada por la "
+"configuración del modo de retracción, ya sea a la posición Z original (si "
+"está por encima de la posición R y el modo de retracción es 'G98', OLD_Z) o, "
+"de lo contrario, a la posición R. Consulte la sección <<gcode:g98-g99,G98 "
+"G99>>."
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2065
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Canned Cycle Errors"
-msgstr "Creando nuevos ciclos de codigo G"
+msgstr "Errores de ciclo fijo"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2070
-#, fuzzy
 msgid "axis words are all missing during a canned cycle,"
 msgstr "faltan palabras de eje durante un ciclo fijo,"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2071
-#, fuzzy
 msgid "axis words from different groups (XYZ) (UVW) are used together,"
 msgstr "se usan juntas palabras de eje de diferentes grupos (XYZ) (UVW),"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2072
-#, fuzzy
 msgid "a P number is required and a negative P number is used,"
 msgstr "se requiere un número P pero se usa un número P negativo,"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2073
-#, fuzzy
 msgid "an L number is used that does not evaluate to a positive integer,"
 msgstr "se utiliza un número L que no evalúa a un entero positivo,"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2074
-#, fuzzy
 msgid "rotary axis motion is used during a canned cycle,"
 msgstr "se usa movimiento de eje giratorio durante un ciclo fijo,"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2075
-#, fuzzy
 msgid "inverse time feed rate is active during a canned cycle,"
 msgstr ""
 "la velocidad de alimentación de tiempo inverso está activa durante un ciclo "
@@ -55547,20 +55537,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2076
-#, fuzzy
 msgid "or cutter compensation is active during a canned cycle."
 msgstr "o la compensación del cortador está activa durante un ciclo fijo."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2079
-#, fuzzy
 msgid ""
 "If the XY plane is active, the Z number is sticky, and it is an error if:"
-msgstr "Si el plano XY está activo, el número Z es sticky y es un error si:"
+msgstr "Si el plano XY está activo, el número Z es pegajoso y es un error si:"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2082
-#, fuzzy
 msgid ""
 "the Z number is missing and the same canned cycle was not already active,"
 msgstr "falta el número Z y el mismo ciclo fijo no estaba activo,"
@@ -55572,7 +55559,6 @@ msgstr "o el número R es menor que el número Z."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2086
-#, fuzzy
 msgid ""
 "If other planes are active, the error conditions are analogous to the XY "
 "conditions above."
@@ -55582,13 +55568,12 @@ msgstr ""
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2088
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Preliminary and In-Between Motion"
 msgstr "Movimientos preliminares e intermedios"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2094
-#, fuzzy
 msgid ""
 "Preliminary motion is a set of motions that is common to all of the milling "
 "canned cycles. If the current Z position is below the R position, the Z axis "
@@ -55614,12 +55599,10 @@ msgstr ""
 msgid ""
 "A <<gcode:g0,rapid move>> parallel to the XY-plane to the given XY-position."
 msgstr ""
-"Un <<gcode:g0,movimiento rápido>> paralelo al plano XY para la posición XY "
-"dada."
+"Un <<gcode:g0,movimiento rápido>> paralelo al plano XY a la posición XY dada."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2102
-#, fuzzy
 msgid ""
 "The Z-axis make a rapid move to the R position, if it is not already at the "
 "R position."
@@ -55629,33 +55612,30 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2105
-#, fuzzy
 msgid ""
 "If another plane is active, the preliminary and in-between motions are "
 "analogous."
 msgstr ""
 "Si otro plano está activo, los movimientos preliminares y intermedios son "
-"análogo."
+"análogos."
 
 #. type: Title ===
 #: src/gcode/g-code.adoc:2106
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Why use a canned cycle?"
 msgstr "¿Por qué usar un ciclo fijo?"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2111
-#, fuzzy
 msgid ""
 "There are at least two reasons for using canned cycles. The first is the "
 "economy of code. A single bore would take several lines of code to execute."
 msgstr ""
-"Hay al menos dos razones para usar ciclos fijos. El primero es economía del "
-"código. Un solo orificio tomaría varias líneas de código para definirlo."
+"Hay por lo menos dos razones para usar ciclos fijos. La primera es economía "
+"de código. Un solo orificio tomaría varias líneas de código para definirlo."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2119
-#, fuzzy
 msgid ""
 "The G81 <<gcode:g81-example,Example 1>> demonstrates how a canned cycle "
 "could be used to produce 8 holes with ten lines of G-code within the canned "
@@ -55664,13 +55644,12 @@ msgid ""
 "nor does it drill in the same order as the earlier example. But the program "
 "writing economy of a good canned cycle should be obvious."
 msgstr ""
-"El <<gcode:g81-example,Ejemplo 1>> G81 demuestra cómo podría ser un ciclo "
-"fijo.  Se utiliza para producir 8 agujeros con diez líneas de código G "
-"dentro del modo de ciclo fijo.  El siguiente programa producirá el mismo "
-"conjunto de 8 agujeros usando cinco líneas.  para el ciclo fijo. No sigue "
-"exactamente el mismo camino ni perfora en el mismo orden que el ejemplo "
-"anterior, pero la economía de la escritura de un buen ciclo fijo debería ser "
-"obvia."
+"El <<gcode:g81-example,Ejemplo 1>>  de G81 demuestra cómo podría usarse un "
+"ciclo fijo para producir 8 agujeros con diez líneas de código G dentro del "
+"modo de ciclo fijo.  El siguiente programa producirá el mismo conjunto de 8 "
+"agujeros usando cinco líneas para el ciclo fijo. No sigue exactamente el "
+"mismo camino ni perfora en el mismo orden que el ejemplo anterior, pero la "
+"economía de escritura de programa de un buen ciclo fijo debería ser obvia."
 
 #. type: NOTE
 #: src/gcode/g-code.adoc:2122
@@ -55680,13 +55659,13 @@ msgstr ""
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2123
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Eight Holes"
 msgstr "Ocho agujeros"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2135
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "N100 G90 G0 X0 Y0 Z0 (move coordinate home)\n"
 "N110 G1 F10 X0 G4 P0.1\n"
@@ -55697,13 +55676,13 @@ msgid ""
 "N160 G80 (turn off canned cycle)\n"
 "N170 M2 (program end)\n"
 msgstr ""
-"N100 G90 G0 X0 Y0 Z0 (home)\n"
+"N100 G90 G0 X0 Y0 Z0 (movimiento coordinado a casa)\n"
 "N110 G1 F10 X0 G4 P0.1\n"
-"N120 G91 G81 X1 Y0 Z-1 R1 L4 (ciclo de taladro)\n"
+"N120 G91 G81 X1 Y0 Z-1 R1 L4 (ciclo fijo de taladrado)\n"
 "N130 G90 G0 X0 Y1\n"
 "N140 Z0\n"
-"N150 G91 G81 X1 Y0 Z-0.5 R1 L4 (ciclo de taladro)\n"
-"N160 G80 (apagar ciclo fijo)\n"
+"N150 G91 G81 X1 Y0 Z-0.5 R1 L4 (ciclo fijo de taladrado)\n"
+"N160 G80 (apaga ciclo fijo)\n"
 "N170 M2 (final del programa)\n"
 
 #. type: Plain text
@@ -55724,13 +55703,12 @@ msgstr "images/eight-holes_es.svg"
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2143
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Twelve Holes in a Square"
 msgstr "Doce agujeros en un cuadrado"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2149
-#, fuzzy
 msgid ""
 "This example demonstrates the use of the L word to repeat a set of "
 "incremental drill cycles for successive blocks of code within the same G81 "
@@ -55740,11 +55718,11 @@ msgstr ""
 "Este ejemplo demuestra el uso de la palabra L para repetir un conjunto de "
 "ciclos de taladrado incrementales para bloques sucesivos de código dentro "
 "del mismo modo de movimiento G81. Aquí producimos 12 agujeros usando cinco "
-"líneas de código en el modo de movimiento de ciclo."
+"líneas de código en el modo de movimiento fijo."
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2163
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "N1000 G90 G0 X0 Y0 Z0 (move coordinate home)\n"
 "N1010 G1 F50 X0 G4 P0.1\n"
@@ -55758,14 +55736,14 @@ msgid ""
 "N1090 Z0\n"
 "N1100 M2 (program end)\n"
 msgstr ""
-"N1000 G90 G0 X0 Y0 Z0 (home)\n"
+"N1000 G90 G0 X0 Y0 Z0 (movimiento coordinado a casa)\n"
 "N1010 G1 F50 X0 G4 P0.1\n"
-"N1020 G91 G81 X1 Y0 Z-0.5 R1 L4 (ciclo de taladro)\n"
+"N1020 G91 G81 X1 Y0 Z-0.5 R1 L4 (ciclo fijo de taladrado)\n"
 "N1030 X0 Y1 R0 L3 (repetir)\n"
 "N1040 X-1 Y0 L3 (repetir)\n"
 "N1050 X0 Y-1 L2 (repetir)\n"
-"N1060 G80 (apagar ciclo fijo)\n"
-"N1070 G90 G0 X0 (traslado rápido a home)\n"
+"N1060 G80 (apaga ciclo fijo)\n"
+"N1070 G90 G0 X0 (movimiento rápido a casa)\n"
 "N1080 Y0\n"
 "N1090 Z0\n"
 "N1100 M2 (fin del programa)\n"
@@ -55778,7 +55756,6 @@ msgstr "images/twelve-holes_es.svg"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2170
-#, fuzzy
 msgid ""
 "The second reason to use a canned cycle is that they all produce preliminary "
 "moves and returns that you can anticipate and control regardless of the "
@@ -55790,20 +55767,17 @@ msgstr ""
 
 #. type: Index entry
 #: src/gcode/g-code.adoc:2172
-#, fuzzy
 msgid "G80 Cancel Modal Motion"
-msgstr "G80 Cancelar ciclo fijo(((G80 Cancel Modal Motion)))"
+msgstr "G80 Cancelar ciclo fijo"
 
 #. type: Title ==
 #: src/gcode/g-code.adoc:2172
-#, fuzzy, no-wrap
-#| msgid "Cancel Canned Cycle"
+#, no-wrap
 msgid "G80 Cancel Canned Cycle"
-msgstr "Cancelar Ciclo Fijo"
+msgstr "G80 Cancelar Ciclo Fijo"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2177
-#, fuzzy
 msgid ""
 "'G80' - cancel canned cycle modal motion. 'G80' is part of modal group 1, so "
 "programming any other G-code from modal group 1 will also cancel the canned "
@@ -55815,19 +55789,18 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2181
-#, fuzzy
 msgid "Axis words are programmed when G80 is active."
 msgstr "Se programan palabras de eje cuando G80 está activo."
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2182
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G80 Example"
-msgstr "Ejemplo G80"
+msgstr "Ejemplo de G80"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2188
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "G90 G81 X1 Y1 Z1.5 R2.8 (absolute distance canned cycle)\n"
 "G80 (turn off canned cycle motion)\n"
@@ -55839,7 +55812,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2192
-#, fuzzy
 msgid ""
 "The following code produces the same final position and machine state as the "
 "previous code."
@@ -55849,17 +55821,16 @@ msgstr ""
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2198
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "G90 G81 X1 Y1 Z1.5 R2.8 (absolute distance canned cycle)\n"
 "G0 X0 Y0 Z0 (rapid move to coordinate home)\n"
 msgstr ""
 "G90 G81 X1 Y1 Z1.5 R2.8 (ciclo fijo de distancia absoluta)\n"
-"G0 X0 Y0 Z0 (movimiento rápido para coordinar inicio)\n"
+"G0 X0 Y0 Z0 (movimiento rápido a coordenadas de casa)\n"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2204
-#, fuzzy
 msgid ""
 "The advantage of the first set is that, the G80 line clearly turns off the "
 "G81 canned cycle. With the first set of blocks, the programmer must turn "
@@ -55873,7 +55844,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2209
-#, fuzzy
 msgid ""
 "If a canned cycle is not turned off with G80 or another motion word, the "
 "canned cycle will attempt to repeat itself using the next block of code that "
@@ -55882,18 +55852,18 @@ msgid ""
 msgstr ""
 "Si un ciclo fijo no se apaga con G80 u otra palabra de movimiento, el ciclo "
 "fijo intentará repetirse usando el siguiente bloque de código que contenga "
-"una palabra X, Y o Z. El siguiente archivo explora (G81) un conjunto de ocho "
+"una palabra X, Y o Z. El siguiente archivo perfora (G81) un conjunto de ocho "
 "agujeros como se muestra en lo siguiente."
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2210
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G80 Example 1"
-msgstr "G80 Ejemplo 1"
+msgstr "Ejemplo 1 de G80"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2228
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "N100 G90 G0 X0 Y0 Z0 (coordinate home)\n"
 "N110 G1 X0 G4 P0.1\n"
@@ -55911,9 +55881,9 @@ msgid ""
 "N230 Z0\n"
 "N240 M2 (program end)\n"
 msgstr ""
-"N100 G90 G0 X0 Y0 Z0 (home)\n"
+"N100 G90 G0 X0 Y0 Z0 (coordinado a casa)\n"
 "N110 G1 X0 G4 P0.1\n"
-"N120 G81 X1 Y0 Z0 R1 (ciclo de taladro fijo)\n"
+"N120 G81 X1 Y0 Z0 R1 (ciclo de taladrado fijo)\n"
 "N130 X2\n"
 "N140 X3\n"
 "N150 X4\n"
@@ -55922,26 +55892,24 @@ msgstr ""
 "N180 X2\n"
 "N190 X1\n"
 "N200 G80 (apagar ciclo fijo)\n"
-"N210 G0 X0 (traslado rápido a home)\n"
+"N210 G0 X0 (movimiento rápido a casa)\n"
 "N220 Y0\n"
 "N230 Z0\n"
 "N240 M2 (final del programa)\n"
 
 #. type: NOTE
 #: src/gcode/g-code.adoc:2234
-#, fuzzy
 msgid ""
 "Notice the Z position change after the first four holes.  Also, this is one "
 "of the few places where line numbers have some value, being able to point a "
 "reader to a specific line of code."
 msgstr ""
-"Observe el cambio de posición z después de los primeros cuatro agujeros.  "
+"Observe el cambio de posición Z después de los primeros cuatro agujeros.  "
 "Además, este es uno de los pocos lugares donde los números de línea tienen "
-"algún valor; ser capaz de señalar a un lector una línea específica de código."
+"algún valor, ser capaz de señalar a un lector una línea específica de código."
 
 #. type: NOTE
 #: src/gcode/g-code.adoc:2240
-#, fuzzy
 msgid ""
 "The use of G80 in line N200 is optional because the G0 on the next line will "
 "turn off the G81 cycle. But using the G80 as shown in Example 1, will "
@@ -55950,30 +55918,28 @@ msgid ""
 msgstr ""
 "El uso de G80 en la línea N200 es opcional porque el G0 en la siguiente "
 "línea apagará el ciclo G81. Pero usando el G80 como se muestra en el ejemplo "
-"1 proporcionará un ciclo fijo más fácil de leer. Sin el, no es tan obvio que "
+"1 proporcionará un ciclo fijo más fácil de leer. Sin él, no es tan obvio que "
 "todos los bloques entre N120 y N200 pertenecen al ciclo fijo."
 
 #. type: Title ==
 #: src/gcode/g-code.adoc:2242
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G81 Drilling Cycle"
-msgstr "G73 Ciclo de taladrado con rotura de viruta(((G73 Drilling Cycle Chip Break)))"
+msgstr "G81 Ciclo de taladrado"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2247
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G81 (X- Y- Z-) or (U- V- W-) R- L-\n"
 msgstr "G81 (X- Y- Z-) o (U- V- W-) R- L-\n"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2250
-#, fuzzy
 msgid "The 'G81' cycle is intended for drilling."
 msgstr "El ciclo 'G81' está destinado a taladrado."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2252
-#, fuzzy
 msgid "The cycle functions as follows:"
 msgstr "El ciclo funciona de la siguiente manera:"
 
@@ -55989,13 +55955,12 @@ msgstr ""
 #. type: Plain text
 #: src/gcode/g-code.adoc:2258 src/gcode/g-code.adoc:2394
 #: src/gcode/g-code.adoc:2434 src/gcode/g-code.adoc:2513
-#, fuzzy
 msgid "The Z-axis does a <<gcode:g0,rapid move>> to clear Z."
 msgstr "El eje Z hace un <<gcode:g0,movimiento rápido>> para despejar Z."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: src/gcode/g-code.adoc:2259 src/gcode/g-code.adoc:2260
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G81 Cycle"
 msgstr "Ciclo G81"
 
@@ -56007,13 +55972,13 @@ msgstr "images/g81mult_es.svg"
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2263
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Example 1 - Absolute Position G81"
 msgstr "Ejemplo 1 - Posición absoluta G81"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2267 src/gcode/g-code.adoc:2336
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G90 G98 G81 X4 Y5 Z1.5 R2.8\n"
 msgstr "G90 G98 G81 X4 Y5 Z1.5 R2.8\n"
 
@@ -56028,7 +55993,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2274
-#, fuzzy
 msgid ""
 "This calls for absolute distance mode (G90) and OLD_Z retract mode (G98) and "
 "calls for the G81 drilling cycle to be performed once."
@@ -56038,57 +56002,49 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2276
-#, fuzzy
 msgid "The X value and X position are 4."
 msgstr "El valor X y la posición X es 4."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2277
-#, fuzzy
 msgid "The Y value and Y position are 5."
 msgstr "El valor Y y la posición Y es 5."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2278
-#, fuzzy
 msgid "The Z value and Z position are 1.5."
 msgstr "El valor Z y la posición Z es 1.5."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2279
-#, fuzzy
 msgid "The R value and clear Z are 2.8. OLD_Z is 3."
 msgstr "El valor R y la Z de despeje son 2.8. OLD_Z es 3."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2281
-#, fuzzy
 msgid "The following moves take place:"
 msgstr "Se realizan los siguientes movimientos:"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2283
-#, fuzzy
 msgid "A <<gcode:g0,rapid move>> parallel to the XY plane to (X4, Y5)"
-msgstr "un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X4, Y5)"
+msgstr "Un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X4, Y5)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2284
-#, fuzzy
 msgid "A rapid move move parallel to the Z-axis to (Z2.8)."
-msgstr "un movimiento rápido paralelo al eje Z hacia (Z2.8)."
+msgstr "Un movimiento rápido paralelo al eje Z hacia (Z2.8)."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2286
-#, fuzzy
 msgid ""
 "Move parallel to the Z-axis at the <<sec:set-feed-rate,feed rate>> to (Z1.5)"
 msgstr ""
-"movimiento paralelo al eje Z al <<sec:set-feed-rate,avance>> actual a (Z1.5)"
+"Movimiento paralelo al eje Z a la <<sec:set-feed-rate,velocidad de "
+"alimentación>> actual a (Z1.5)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2287
-#, fuzzy
 msgid "A rapid move parallel to the Z-axis to (Z3)"
 msgstr "Un movimiento rápido paralelo al eje Z a (Z3)"
 
@@ -56100,19 +56056,18 @@ msgstr "images/g81ex1_es.svg"
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2290
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Example 2 - Relative Position G81"
-msgstr "Ejemplo 2 - posición relativa G81"
+msgstr "Ejemplo 2 - Posición relativa G81"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2294 src/gcode/g-code.adoc:2355
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G91 G98 G81 X4 Y5 Z-0.6 R1.8 L3\n"
 msgstr "G91 G98 G81 X4 Y5 Z-0.6 R1.8 L3\n"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2305
-#, fuzzy
 msgid ""
 "This calls for incremental distance mode (G91) and OLD_Z retract mode (G98). "
 "It also calls for the G81 drilling cycle to be repeated three times. The X "
@@ -56124,19 +56079,17 @@ msgstr ""
 "Esto requiere el modo de distancia incremental (G91) y el modo de retracción "
 "OLD_Z (G98). También exige que el ciclo de taladrado G81 se repita tres "
 "veces. El valor X es 4, el valor Y es 5, el valor Z es -0.6 y el valor R es "
-"1.8. La posición X inicial es 5 (= 1 + 4), la Y inicial es 7 (= 2 + 5), la "
-"posición Z de despeje es 4.8 (= 1.8 + 3), y la Z es 4.2 (= 4.8-0.6). OLD_Z "
-"es 3."
+"1.8. La posición X inicial es 5 (=1+4), la Y inicial es 7 (=2+5), la "
+"posición Z de despeje es 4.8 (=1.8+3), y la Z es 4.2 (=4.8-0.6). OLD_Z es 3."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2308
-#, fuzzy
 msgid ""
 "The first preliminary move is a maximum rapid move along the Z axis to "
 "(X1,Y2,Z4.8), since OLD_Z < clear Z."
 msgstr ""
-"El primer movimiento preliminar es un movimiento rápido a lo largo del eje Z "
-"para (X1, Y2, Z4.8), ya que OLD_Z < Z de despeje."
+"El primer movimiento preliminar es un movimiento rápido máximo a lo largo "
+"del eje Z para (X1, Y2, Z4.8), ya que OLD_Z < Z de despeje."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2310
@@ -56145,81 +56098,70 @@ msgstr "La primera repetición consiste en 3 movimientos."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2312
-#, fuzzy
 msgid "A <<gcode:g0,rapid move>> parallel to the XY-plane to (X5, Y7)"
-msgstr "un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X5, Y7)"
+msgstr "Un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X5, Y7)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2314
-#, fuzzy
 msgid ""
 "Move parallel to the Z-axis at the <<sec:set-feed-rate,feed rate>> to (Z4.2)"
 msgstr ""
-"movimiento paralelo al eje Z a <<sec:set-feed-rate,avance>> hacia (Z4.2)"
+"Movimiento paralelo al eje Z a <<sec:set-feed-rate,velocidad de "
+"alimentación>> hacia (Z4.2)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2315
-#, fuzzy
 msgid "A rapid move parallel to the Z-axis to (X5, Y7, Z4.8)"
 msgstr "Un movimiento rápido paralelo al eje Z a (X5, Y7, Z4.8)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2318
-#, fuzzy
 msgid ""
 "The second repeat consists of 3 moves. The X position is reset to 9 (=5+4) "
 "and the Y position to 12 (=7+5)."
 msgstr ""
 "La segunda repetición consiste en 3 movimientos. La posición X se restablece "
-"a 9 (= 5 + 4) y la posición Y a 12 (= 7 + 5)."
+"a 9 (=5+4) y la posición Y a 12 (=7+5)."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2320
-#, fuzzy
 msgid "A <<gcode:g0,rapid move>> parallel to the XY-plane to (X9, Y12, Z4.8)"
 msgstr ""
-"un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X9, Y12, Z4.8)"
+"Un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X9, Y12, Z4.8)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2321
-#, fuzzy
 msgid "Move parallel to the Z-axis at the feed rate to (X9, Y12, Z4.2)"
-msgstr ""
-"movimiento paralelo al eje Z a la velocidad de avance a (X9, Y12, Z4.2)"
+msgstr "Movimiento paralelo al eje Z a la velocidad de avance a (X9, Y12, Z4.2)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2322
-#, fuzzy
 msgid "A rapid move parallel to the Z-axis to (X9, Y12, Z4.8)"
 msgstr "Un movimiento rápido paralelo al eje Z a (X9, Y12, Z4.8)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2325
-#, fuzzy
 msgid ""
 "The third repeat consists of 3 moves. The X position is reset to 13 (=9+4) "
 "and the Y position to 17 (=12+5)."
 msgstr ""
 "La tercera repetición consiste en 3 movimientos. La posición X se restablece "
-"a 13 (= 9 + 4) y la posición Y a 17 (= 12 + 5)."
+"a 13 (=9+4) y la posición Y a 17 (=12+5)."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2327
-#, fuzzy
 msgid "A <<gcode:g0,rapid move>> parallel to the XY-plane to (X13, Y17, Z4.8)"
 msgstr ""
-"un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X13, Y17, Z4.8)"
+"Un <<gcode:g0,movimiento rápido>> paralelo al plano XY a (X13, Y17, Z4.8)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2328
-#, fuzzy
 msgid "Move parallel to the Z-axis at the feed rate to (X13, Y17, Z4.2)"
 msgstr ""
-"movimiento paralelo al eje Z a la velocidad de avance a (X13, Y17, Z4.2)"
+"Movimiento paralelo al eje Z a la velocidad de avance a (X13, Y17, Z4.2)"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2329
-#, fuzzy
 msgid "A rapid move parallel to the Z-axis to (X13, Y17, Z4.8)"
 msgstr "Un movimiento rápido paralelo al eje Z a (X13, Y17, Z4.8)"
 
@@ -56231,18 +56173,17 @@ msgstr "images/g81ex2_es.svg"
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2332
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Example 3 - Relative Position G81"
 msgstr "Ejemplo 3 - Posición relativa G81"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2340
-#, fuzzy
 msgid ""
 "Now suppose that you execute the first G81 block of code but from (X0, Y0, "
 "Z0) rather than from (X1, Y2, Z3)."
 msgstr ""
-"Ahora suponga que ejecuta el primer bloque de código G81 pero desde (X0, Y0, "
+"Ahora supón que ejecutas el primer bloque de código G81 pero desde (X0, Y0, "
 "Z0) en lugar de desde (X1, Y2, Z3)."
 
 #. type: Plain text
@@ -56264,30 +56205,27 @@ msgstr "images/g81_es.svg"
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2348
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Example 4 - Absolute G81 R > Z"
-msgstr "Ejemplo 4 - G81 Absoluto R> Z"
+msgstr "Ejemplo 4 - G81 Absoluto R > Z"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2351
-#, fuzzy
 msgid "This is a plot of the path of motion for the second g81 block of code."
 msgstr ""
-"Este es un diagrama de la ruta de movimiento para el segundo bloque de "
-"código g81."
+"Este es un plan de ruta de movimiento para el segundo bloque de código g81."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2361
-#, fuzzy
 msgid ""
 "Since this plot starts with (X0, Y0, Z0), the interpreter adds the initial "
 "Z0 and R1.8 and rapid moves to that location. After that initial Z move, the "
 "repeat feature works the same as it did in example 3 with the final Z depth "
 "being 0.6 below the R value."
 msgstr ""
-"Como esta trama comienza con (X0, Y0, Z0), el intérprete agrega Z0 y R1.8 "
-"iniciales y movimientos rápidos a esa ubicación. Después de esa Z inicial, "
-"la función de repetición funciona igual que en el ejemplo 3 con la "
+"Como este plan comienza con (X0, Y0, Z0), el intérprete agrega Z0 y R1.8 "
+"iniciales y movimientos rápidos a esa ubicación. Después de ese movimiento Z "
+"inicial, la función de repetición funciona igual que en el ejemplo 3 con la "
 "profundidad Z final de 0.6 por debajo del valor R."
 
 #. type: Target for macro image
@@ -56298,19 +56236,18 @@ msgstr "images/g81a_es.svg"
 
 #. type: Block title
 #: src/gcode/g-code.adoc:2364
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Example 5 - Relative position R > Z"
-msgstr "Ejemplo 5 - Posición relativa R> Z"
+msgstr "Ejemplo 5 - Posición relativa R > Z"
 
 #. type: delimited block -
 #: src/gcode/g-code.adoc:2369
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "G90 G98 G81 X4 Y5 Z-0.6 R1.8\n"
 msgstr "G90 G98 G81 X4 Y5 Z-0.6 R1.8\n"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2376
-#, fuzzy
 msgid ""
 "Since this plot starts with (X0, Y0, Z0), the interpreter adds the initial "
 "Z0 and R1.8 and rapid moves to that location as in 'Example 4'.  After that "
@@ -56318,11 +56255,12 @@ msgid ""
 "final Z depth being 0.6 below the R value. The repeat function would make "
 "the Z move in the same location again."
 msgstr ""
-"Como este gráfico comenzaria con (X0, Y0, Z0), el intérprete agrega el Z0 "
-"inicial y R1.8 y movimientos rápidos a esa ubicación como en el 'Ejemplo 4'. "
-"Después de esa Z inicial, se realiza el <<gcode:g0,movimiento rápido>> a X4 "
-"Y5. Entonces la profundidad Z final es 0.6 por debajo del valor R. La "
-"función de repetición haría que la Z se moviera al mismo lugar nuevamente."
+"Como este plan comienza con (X0, Y0, Z0), el intérprete agrega Z0 y R1.8 "
+"iniciales y movimientos rápidos a esa ubicación como en el 'Ejemplo 4'.  "
+"Después de ese movimiento Z inicial, se realiza el <<gcode:g0,movimiento "
+"rápido>> a X4 Y5.  Entonces la profundidad Z final es 0.6 por debajo del "
+"valor R. La función de repetición haría el movimiento Z en la misma "
+"ubicación nuevamente."
 
 #. type: Index entry
 #: src/gcode/g-code.adoc:2378
@@ -62116,7 +62054,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/o-code.adoc:133
-#, fuzzy
 msgid ""
 "Subroutines can change the value of parameters above #30 and those changes "
 "will be visible to the calling code.  Subroutines may also change the value "
@@ -62124,8 +62061,10 @@ msgid ""
 "names begin with the underscore character \"`_`\")."
 msgstr ""
 "Las subrutinas pueden cambiar el valor de los parámetros por encima de #30 y "
-"esos cambios serán visible para el código de llamada. Las subrutinas también "
-"pueden cambiar el valor de parámetros globales con nombre."
+"esos cambios serán visibles para el código que llama. Las subrutinas también "
+"pueden cambiar el valor de los <<gcode:named-parameters,parámetros globales "
+"con nombre>> (es decir, parámetros cuyo nombre empieza con el carácter de "
+"subrayado \"`_`\")."
 
 #. type: Table
 #: src/gcode/o-code.adoc:135 src/remap/remap.adoc:1993
@@ -73887,7 +73826,8 @@ msgid ""
 "information."
 msgstr ""
 "'Editor Ladder' - Si se ha cargado ClassicLadder, se puede editar desde "
-"aquí. Ver el capítulo Classicladder para más información."
+"aquí. Ver el <<cha:classicladder,capítulo de ClassicLadder>> para más "
+"información."
 
 #. type: NOTE
 #: src/gui/axis.adoc:150
@@ -89291,7 +89231,6 @@ msgstr "¡Así que tenemos 67 reacciones con sólo 10 pines de HAL!"
 
 #. type: Plain text
 #: src/gui/gmoccapy.adoc:639
-#, fuzzy
 msgid ""
 "These pins are made available to be able to use the screen without a touch "
 "panel, or protect it from excessive use by placing hardware buttons around "
@@ -89299,8 +89238,9 @@ msgid ""
 "<<gmoccapy-sim-hardware-button,image below>>."
 msgstr ""
 "Estos pines están disponibles para poder utilizar la pantalla sin un panel "
-"tactil, o protégerlos del uso excesivo colocando botones de hardware "
-"alrededor el panel."
+"táctil, o protegerlos del uso excesivo colocando botones de hardware "
+"alrededor del panel. Están disponibles en una configuración de ejemplo como "
+"se muestra en la <<gmoccapy-sim-hardware-button,imagen de abajo>>."
 
 #. type: Block title
 #: src/gui/gmoccapy.adoc:641
@@ -93103,7 +93043,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:61
-#, fuzzy
 msgid ""
 "<<cha:glade-vcp,GladeVCP>> binds LinuxCNC, HAL, PyGTK and Glade all "
 "together.  LinuxCNC requires some special widgets so GladeVCP supplies "
@@ -93113,13 +93052,14 @@ msgid ""
 "widgets, to make them do things not available in their default form.  If you "
 "can build a GladeVCP panel you can customize Gscreen!"
 msgstr ""
-"GladeVCP enlaza LinuxCNC, HAL, PyGTK y Glade, todos juntos.  LinuxCNC "
-"requiere algunos widgets especiales; GladeVCP los suministra. Muchos son "
-"solo extensiones HAL a los widgets PyGTK existentes. GladeVCP crea los pines "
-"HAL para los widgets especiales descritos en el archivo Glade. GladeVCP "
-"también permite agregar comandos Python para interactuar con los widgets, de "
-"forma que hagan cosas que no estan disponibles en su forma predeterminada. "
-"Si puede construir un panel GladeVCP, puede personalizar Gscreen!"
+"<<cha:glade-vcp,GladeVCP>> enlaza LinuxCNC, HAL, PyGTK y Glade, todos "
+"juntos. LinuxCNC requiere algunos widgets especiales; GladeVCP los "
+"suministra. Muchos son solo extensiones HAL a los widgets PyGTK existentes. "
+"GladeVCP crea los pines HAL para los widgets especiales descritos en el "
+"archivo Glade. GladeVCP también permite agregar comandos Python para "
+"interactuar con los widgets, de forma que hagan cosas que no están "
+"disponibles en su forma predeterminada. ¡Si puede construir un panel "
+"GladeVCP, puede personalizar Gscreen!"
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:69
@@ -93225,7 +93165,6 @@ msgstr "Archivos Handler"
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:103
-#, fuzzy
 msgid ""
 "A handler file is a file containing Python code, which Gscreen adds to its "
 "default routines.  A handler file allows one to modify defaults, or add "
@@ -93244,25 +93183,25 @@ msgid ""
 "vcp,GladeVCP Chapter>> for the basics to GladeVCP handler files.  Gscreen "
 "uses a very similar technique."
 msgstr ""
-"Un archivo handler es un archivo que contiene código python que Gscreen "
-"agrega a su rutinas por defecto. Un archivo handler permite modificar "
-"valores predeterminados o agregar lógica a una skin Gscreen sin tener que "
-"modificar Gscreen propiamente dicho. Puede combinar nuevas funciones con "
-"funciones de Gscreen para modificar el comportamiento a su gusto. Usted "
-"puede omitir por completo todas las funciones de Gscreen y hacer que "
-"funcionen de forma completamente diferente. Si esta presente un archivo "
-"handler llamado gscreen_handler.py (o MYNAME_handler.py si usa el "
-"interruptor INI) se cargará y registrará. Gscreen solo permite buscar un "
-"archivo handler; si lo encuentra, tomara nota de los nombres de funciones "
-"específicas y las llamara en lugar de las predeterminadas. Si se agregan "
-"widgets, puede configurar llamadas de señal desde el editor de Glade para "
-"llamar a rutinas que haya escrito en el archivo handler. De esta forma "
-"podrás tener un comportamiento personalizado. Las rutinas del handler pueden "
-"llamar a las rutinas predeterminadas de Gscreen, ya sea antes o después de "
-"ejecutar su propio código. De esta manera se puede añadir comportamiento "
-"extra, como añadir un sonido. Por favor vea el capitulo GladeVCP para "
-"entender los fundamentos de los archivos handler GladeVCP. Gscreen utiliza "
-"una técnica muy similar."
+"Un archivo handler es un archivo que contiene código Python que Gscreen "
+"agrega a sus rutinas por defecto. Un archivo handler permite modificar "
+"valores predeterminados o agregar lógica a una apariencia (skin) de Gscreen "
+"sin tener que modificar Gscreen propiamente dicho. Puede combinar nuevas "
+"funciones con las funciones de Gscreen para modificar el comportamiento a su "
+"gusto. Puede omitir por completo todas las funciones de Gscreen y hacer que "
+"funcione de forma completamente diferente. Si está presente un archivo "
+"handler llamado gscreen_handler.py (o MYNAME_handler.py si usa la opción INI)"
+", se cargará y registrará (solo se permite un archivo). Gscreen busca el "
+"archivo handler y, si lo encuentra, buscará nombres de funciones específicas "
+"y las llamará en lugar de las predeterminadas. Si agrega widgets, puede "
+"configurar llamadas a señales desde el editor Glade para llamar a rutinas "
+"que haya escrito en el archivo handler. De esta forma podrá tener un "
+"comportamiento personalizado. Las rutinas del handler pueden llamar a las "
+"rutinas predeterminadas de Gscreen, ya sea antes o después de ejecutar su "
+"propio código. De esta manera se puede añadir un comportamiento extra, como "
+"añadir un sonido. Por favor consulte el <<cha:glade-vcp,Capítulo GladeVCP>> "
+"para conocer los conceptos básicos de los archivos handler de GladeVCP. "
+"Gscreen utiliza una técnica muy similar."
 
 #. type: Title ===
 #: src/gui/gscreen.adoc:104 src/gui/qtvcp.adoc:181
@@ -93364,7 +93303,6 @@ msgstr "Comandos en compilados RIP"
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:143
-#, fuzzy
 msgid ""
 "Using a compiled from source version of https://wiki.linuxcnc.org/cgi-bin/"
 "wiki.pl?Installing_LinuxCNC[LinuxCNC] open a terminal and <<faq:cd,cd>> to "
@@ -93375,15 +93313,15 @@ msgid ""
 "share/gscreen/skins/.  This should be copied to a configuration folder.  Or "
 "you can make a clean-sheet Glade file by saving it in a configuration folder."
 msgstr ""
-"Usando un compilado de la versión fuente de http://wiki.linuxcnc.org/cgi-bin/"
-"wiki.pl?Installing_LinuxCNC[LinuxCNC], abra un terminal y cambie de "
-"directorio a la parte superior de la carpeta LinuxCNC. Configure el entorno "
-"entrando '. ./scripts/rip-environment ' y ahora ingrese 'glade'. Usted vera "
-"un montón de advertencias en el terminal que puede ignorar y el editor debe "
-"abrirse. El archivo de Gscreen Glade está en: src/emc/usr_intf/gscreen/.  "
-"Las skins de muestra están en /share/gscreen/skins/. Esto debe ser copiado a "
-"una carpeta de configuración, o puede hacer un archivo Glade limpio "
-"guardándolo en una carpeta de configuración."
+"Usando una versión compilada desde el código fuente de https://"
+"wiki.linuxcnc.org/cgi-bin/wiki.pl?Installing_LinuxCNC[LinuxCNC], abra un "
+"terminal y haga <<faq:cd,cd>> a la raíz de la carpeta LinuxCNC. Configure el "
+"entorno ingresando '. ./scripts/rip-environment' y ahora ingrese 'glade', "
+"verá un montón de advertencias en el terminal que puede ignorar y el editor "
+"debería abrirse. El archivo Glade original de Gscreen está en: src/emc/"
+"usr_intf/gscreen/, las skins de muestra están en /share/gscreen/skins/. Esto "
+"debe copiarse a una carpeta de configuración. O puede crear un archivo Glade "
+"en blanco guardándolo en una carpeta de configuración."
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:148
@@ -93424,7 +93362,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:158
-#, fuzzy
 msgid ""
 "Gscreen leverages GladeVCP widgets as much as possible, to avoid adding "
 "Python code.  Learning about <<cha:glade-vcp,GladeVCP>> widgets is a "
@@ -93434,13 +93371,14 @@ msgid ""
 "some Python programming.  The name of the parent window needs to be window1. "
 "Gscreen assumes this name."
 msgstr ""
-"Gscreen aprovecha los widgets de GladeVCP tanto como sea posible, para "
-"evitar agregar código python.  Aprender acerca de los widgets de GladeVCP es "
-"un requisito previo.  Si los widgets existentes le brindan la función que "
-"desea o necesita, entonces no es necesario agregar código Python; solo "
-"guarde el archivo Glade en su carpeta de configuración.  Si necesita algo "
-"más personalizado, entonces debe hacer algo de programación en Python.  El "
-"nombre de la ventana principal debe ser window1. Gscreen asume este nombre."
+"Gscreen aprovecha los widgets de <<cha:glade-vcp,GladeVCP>> tanto como sea "
+"posible, para evitar agregar código Python. Aprender acerca de los widgets "
+"de GladeVCP es un requisito previo. Si los widgets existentes le brindan la "
+"función que desea o necesita, entonces no es necesario agregar código "
+"Python; solo guarde el archivo Glade en su carpeta de configuración. Si "
+"necesita algo más personalizado, entonces debe hacer algo de programación en "
+"Python. El nombre de la ventana principal debe ser window1. Gscreen asume "
+"este nombre."
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:160
@@ -106001,16 +105939,16 @@ msgstr "Primeros pasos"
 
 #. type: NOTE
 #: src/gui/qtdragon.adoc:64
-#, fuzzy
 msgid ""
 "If your configuration is not currently set up to use QtDragon, you can "
 "change it by editing the INI file sections.  For an exhaustive list of "
 "options, see the <<sub:ini:sec:display,display section>> of the INI file "
 "documentation."
 msgstr ""
-"Si su configuración no está configurada actualmente para usar AXIS, puede "
-"cambiarlo editando el archivo .ini. En la sección '[DISPLAY]' indiquelo con "
-"la linea 'DISPLAY = axis'."
+"Si su configuración no está actualmente preparada para usar QtDragon, puede "
+"cambiarla editando las secciones del archivo ini. Para una lista exhaustiva "
+"de opciones, vea la <<sub:ini:sec:display,sección display>> de la "
+"documentación del archivo ini."
 
 #. type: NOTE
 #: src/gui/qtdragon.adoc:68
@@ -113542,21 +113480,18 @@ msgstr "Más información"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1148
-#, fuzzy
 msgid "<<cha:qtvcp:panels,QtVCP Builtin Virtual Control Panels>>"
-msgstr "Removed all-Englush _es file: qtvcp-libraries,bibliotecas QtVCP"
+msgstr "<<cha:qtvcp:panels,Paneles de control virtuales integrados de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1150
-#, fuzzy
 msgid "<<cha:qtvcp:widgets,QtVCP Widgets>>"
-msgstr "Removed all-English _es file: cha:qtvcp-widgets,widgets QtVCP"
+msgstr "<<cha:qtvcp:widgets,QtVCP Widgets>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1152
-#, fuzzy
 msgid "<<cha:qtvcp:libraries,QtVCP Libraries>>"
-msgstr "Removed all-Englush _es file: qtvcp-libraries,bibliotecas QtVCP"
+msgstr "<<cha:qtvcp:libraries,Bibliotecas QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1154
@@ -113565,25 +113500,19 @@ msgstr "<<cha:qtvcp:vismach,Qt Vismach>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1156
-#, fuzzy
 msgid "<<cha:qtvcp:code,QtVCP Handler File Code Snippets>>"
-msgstr ""
-"Removed all-English _es file: cha:qtvcp-code,fragmentos de código de archivo "
-"del controlador QtVCP"
+msgstr "<<cha:qtvcp:code,Fragmentos de código del archivo handler de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1158
-#, fuzzy
 msgid "<<cha:qtvcp:devel,QtVCP Development>>"
-msgstr "Removed all-English _es file: cha:qtvcp-development,QtVCP Development"
+msgstr "<<cha:qtvcp:devel,Desarrollo de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1160
-#, fuzzy
 msgid "<<cha:qtvcp:custom-widgets,QtVCP Custom Qt Designer Widgets>>"
 msgstr ""
-"Removed all-English _es file: cha:qtvcp-custom-widgets,QtVCP Custom Designer "
-"Widgets"
+"<<cha:qtvcp:custom-widgets,Widgets personalizados de Qt Designer para QtVCP>>"
 
 #. type: Title =
 #: src/gui/qtvcp-code-snippets.adoc:5
@@ -124685,9 +124614,8 @@ msgstr "Builtin panels"
 
 #. type: Plain text
 #: src/gui/qtvcp-vismach.adoc:638
-#, fuzzy
 msgid "<<sub:qtvcp:panels:vismach,QtVCP builtin Vismach Panels>>"
-msgstr "Removed all-Englush _es file: qtvcp-libraries,bibliotecas QtVCP"
+msgstr "<<sub:qtvcp:panels:vismach,Paneles Vismach integrados de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp-widgets.adoc:15
@@ -143748,9 +143676,9 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:275 src/hal/components.adoc:367
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Software PWM/PDM generation, see <<sec:pwmgen,description>>."
-msgstr "(((pwmgen))) Software de generación PWM/PDM."
+msgstr "Generación de PWM/PDM por software, ver <<sec:pwmgen,description>>."
 
 #. type: Table
 #: src/hal/components.adoc:276 src/hal/components.adoc:403
@@ -143760,9 +143688,9 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:276 src/hal/components.adoc:403
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Signal generator, see <<sec:siggen,description>>."
-msgstr "Generador de señal."
+msgstr "Generador de señal, ver <<sec:siggen,description>>."
 
 #. type: Table
 #: src/hal/components.adoc:277
@@ -143772,9 +143700,11 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:277
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Simulated quadrature encoder, see <<sec:simulated-encoder,description>>."
-msgstr "(((sim_encoder))) codificador de cuadratura simulado."
+msgstr ""
+"Codificador de cuadratura simulado, ver <<sec:simulated-encoder,description>>"
+"."
 
 #. type: Table
 #: src/hal/components.adoc:278 src/hal/components.adoc:368
@@ -143784,9 +143714,10 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:278 src/hal/components.adoc:368
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Software step pulse generation, see <<sec:stepgen,description>>."
-msgstr "(((stepgen))) Generación de pulsos de pasos de software."
+msgstr ""
+"Generación de pulsos de paso por software, ver <<sec:stepgen,description>>."
 
 #. type: Title ====
 #: src/hal/components.adoc:281
@@ -144606,9 +144537,11 @@ msgstr "link:../man/man9/encoder.9.html[encoder]"
 
 #. type: Table
 #: src/hal/components.adoc:365
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Software counting of quadrature encoder signals, see <<sec:encoder,description>>."
-msgstr "(((encoder))) Conteo por software de señales de encoder en cuadratura."
+msgstr ""
+"Conteo por software de señales de codificador en cuadratura, ver "
+"<<sec:encoder,description>>."
 
 #. type: Table
 #: src/hal/components.adoc:366
@@ -144618,9 +144551,9 @@ msgstr "link:../man/man9/pid.9.html[pid]"
 
 #. type: Table
 #: src/hal/components.adoc:366
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Proportional/integral/derivative controller, <<sec:pid,description>>."
-msgstr "Controlador proporcional/integral/derivativo."
+msgstr "Controlador proporcional/integral/derivativo, <<sec:pid,description>>."
 
 #. type: Title ===
 #: src/hal/components.adoc:372
@@ -144762,9 +144695,11 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:390
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Realtime software PLC based on ladder logic. See <<cha:classicladder,ClassicLadder>> chapter for more information."
-msgstr "(((classicladder)))Software PLC en tiempo real basado en lógica de escalera. Consulte el capítulo ClassicLadder para obtener más información."
+msgstr ""
+"PLC de software en tiempo real basado en lógica de escalera. Consulte el "
+"capítulo <<cha:classicladder,ClassicLadder>> para más información."
 
 #. type: Table
 #: src/hal/components.adoc:392
@@ -152259,7 +152194,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/hal/rtcomps.adoc:223
-#, fuzzy
 msgid ""
 "'Output type 1' - PWM/PDM and direction pins.  Positive and negative inputs "
 "will be output as positive and negative PWM.  The direction pin is false for "
@@ -152268,12 +152202,12 @@ msgid ""
 "component to convert your PWM signal to positive value, when a negative "
 "input is input."
 msgstr ""
-"'Tipo de salida 1' - pines PWM/PDM y de dirección. Entradas positivas y "
-"negativas saldran como PWM positivo y negativo. El pin de dirección es FALSO "
-"para comandos positivos, y VERDADERO para comandos negativos. Si su control "
-"necesita PWM positivo para CW y CCW, use el componente <<sub:abs,abs>> para "
-"convertir su señal PWM a un valor positivo cuando se ingrese una entrada "
-"negativa."
+"'Tipo de salida 1' - pines de PWM/PDM y de dirección. Las entradas positivas "
+"y negativas se emitirán como PWM positivo y negativo. El pin de dirección es "
+"falso para comandos positivos y verdadero para comandos negativos. Si su "
+"control necesita PWM positivo tanto para CW como para CCW, use el componente "
+"link:../man/man9/abs.9.html[abs] para convertir su señal PWM a un valor "
+"positivo cuando se ingrese una entrada negativa."
 
 #. type: Plain text
 #: src/hal/rtcomps.adoc:227
@@ -154194,7 +154128,6 @@ msgstr "images/hal-meter02.png"
 
 #. type: Plain text
 #: src/hal/tools.adoc:98
-#, fuzzy
 msgid ""
 "`halshow` (<<cha:halshow,complete usage description>>) can be started from "
 "the command line to show details for selected components, pins, parameters, "
@@ -154204,15 +154137,15 @@ msgid ""
 "existing watch list.  The watch list items can also be loaded automatically "
 "on startup.  For command line usage:"
 msgstr ""
-"Halshow (ver sección separada para descripción completa de uso)  se puede "
-"iniciar desde la línea de comando para mostrar los detalles de los "
-"componentes seleccionados, pines, parámetros, señales, funciones e hilos de "
-"un HAL en ejecución.  La pestaña WATCH proporciona una visualización "
-"continua de pines, parámetros y elementos de señal. El menú Archivo "
-"proporciona botones para 1) guardar los elementos observados en una lista de "
-"vigilancia y para cargar una lista de vigilancia existente. Los elementos de "
-"la lista de observación pueden también cargarse automáticamente al inicio. "
-"Para su uso, en línea de comandos:"
+"`halshow` (<<cha:halshow,descripción completa de uso>>) se puede iniciar "
+"desde la línea de comandos para mostrar los detalles de los componentes "
+"seleccionados, pines, parámetros, señales, funciones e hilos de un HAL en "
+"ejecución. La pestaña WATCH proporciona una visualización continua de pines, "
+"parámetros y elementos de señal seleccionados. El menú Archivo proporciona "
+"botones para guardar los elementos observados en una lista de vigilancia y "
+"para cargar una lista de vigilancia existente. Los elementos de la lista de "
+"vigilancia también pueden cargarse automáticamente al inicio. Para uso en "
+"línea de comandos:"
 
 #. type: delimited block -
 #: src/hal/tools.adoc:107
@@ -210229,10 +210162,10 @@ msgstr ""
 
 #. type: Plain text
 #: src/motion/kinematics.adoc:285
-#, fuzzy
 msgid ""
 "Implements the <<sec:Forward-transformation,forward kinematics function>>."
-msgstr "Implementa la función cinemática directa."
+msgstr ""
+"Implementa la <<sec:Forward-transformation,función de cinemática directa>>."
 
 #. type: delimited block -
 #: src/motion/kinematics.adoc:290
@@ -225880,17 +225813,13 @@ msgstr "Pero los siguientes no lo son:"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3248
-#, fuzzy
 msgid "<<plasma:button-cmds,External commands>>"
-msgstr ""
-"Comandos en la terminal [[sec:Terminal-Commands]](((Terminal Commands)))"
+msgstr "<<plasma:button-cmds,Comandos externos>>"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3249
-#, fuzzy
 msgid "<<plasma:button-py,External python scripts>>"
-msgstr ""
-"Comandos en la terminal [[sec:Terminal-Commands]](((Terminal Commands)))"
+msgstr "<<plasma:button-py,Scripts python externos>>"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3250
@@ -225899,10 +225828,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3251
-#, fuzzy
 msgid "<<plasma:button-dual,Dual code>>"
-msgstr ""
-"Comandos en la terminal [[sec:Terminal-Commands]](((Terminal Commands)))"
+msgstr "<<plasma:button-dual,Código dual>>"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3252
@@ -225983,10 +225910,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3267
-#, fuzzy
 msgid "<<plasma:button-joint,Toggle between joint and teleop modes>>"
-msgstr ""
-"soporte para alternar entre los modos articulacion y teleop con la tecla '$'"
+msgstr "<<plasma:button-joint,Alternar entre modos articulación y teleop>>"
 
 #. type: Block title
 #: src/plasma/qtplasmac.adoc:3269
@@ -226173,6 +226098,10 @@ msgid ""
 "and <<plasma:button-code,G-code>>. Multiple codes as well as mixing codes "
 "are allowed."
 msgstr ""
+"code1 y code2 siguen ambos la regla de las explicaciones de código "
+"anteriores, <<plasma:button-cmds,External commands>>, <<plasma:button-"
+"py,Python code>>, y <<plasma:button-code,G-code>>. Se permiten múltiples "
+"códigos así como mezclar códigos."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3362
@@ -231760,11 +231689,12 @@ msgstr "`argspec=`'<argspec>'"
 
 #. type: Plain text
 #: src/remap/remap.adoc:271
-#, fuzzy
 msgid ""
 "See <<sub:argspec-parameter,description of the argspec parameter options>>. "
 "Optional."
-msgstr "Ver descripción de opciones de parámetros argspec. Opcional."
+msgstr ""
+"Ver <<sub:argspec-parameter,descripción de las opciones del parámetro "
+"argspec>>. Opcional."
 
 #. type: Labeled list
 #: src/remap/remap.adoc:272

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:52+0000\n"
+"PO-Revision-Date: 2026-09-07 00:52+0000\n"
 "Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
 "Language-Team: none\n"
 "Language: ta\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -32557,13 +32557,6 @@ msgstr "*முடுக்கம்*"
 
 #. type: Plain text
 #: src/config/stepconf.adoc:174
-#, fuzzy
-#| msgid ""
-#| "'Maximum Acceleration' - (((Maximum Acceleration)))  The correct values "
-#| "for these items can only be determined through experimentation.  See "
-#| "<<sub:finding-maximum-velocity,Finding Maximum Velocity>> to set the "
-#| "speed and <<sub:finding-maximum-acceleration,Finding Maximum "
-#| "Acceleration>> to set the acceleration."
 msgid ""
 "'Maximum Acceleration' - The correct values for these items can only be "
 "determined through experimentation.  See <<sub:finding-maximum-"
@@ -32571,9 +32564,9 @@ msgid ""
 "maximum-acceleration,Finding Maximum Acceleration>> to set the acceleration."
 msgstr ""
 "'அதிகபட்ச முடுக்கம்' - ((அதிகபட்ச முடுக்கம்))) இந்த உருப்படிகளுக்கான சரியான மதிப்புகளை "
-"ஆய்வு மூலம் மட்டுமே தீர்மானிக்க முடியும். << சப்:-அதிகபட்ச-வேகத்தைக் கண்டறிதல், அதிகபட்ச "
-"வேகத்தைக் கண்டறிதல் >> வேகத்தை அமைக்கவும் << துணை: அதிகபட்சமாக-முடுக்கம் கண்டறிதல், "
-"அதிகபட்ச முடுக்கம் கண்டறிதல்> முடுக்கம் அமைக்க."
+"ஆய்வு மூலம் மட்டுமே தீர்மானிக்க முடியும். <<sub:finding-maximum-velocity,அதிகபட்ச "
+"வேகத்தைக் கண்டறிதல்>> வேகத்தை அமைக்கவும் <<sub:finding-maximum-acceleration, "
+"அதிகபட்ச முடுக்கம் கண்டறிதல்>> முடுக்கம் அமைக்க."
 
 #. type: Index entry
 #: src/config/stepconf.adoc:176
@@ -49666,7 +49659,7 @@ msgstr "எம்-குறியீடு விரைவான குறிப
 #: src/gcode/g-code.adoc:61
 #, no-wrap
 msgid "<<gcode:g0,G0>>"
-msgstr "<<gcode: G0, G0 >>"
+msgstr "<<gcode:g0,G0 >>"
 
 #. type: Table
 #: src/gcode/g-code.adoc:62
@@ -49739,7 +49732,7 @@ msgstr "இருபடி பி-ச்பைன்"
 #: src/gcode/g-code.adoc:67
 #, no-wrap
 msgid "<<gcode:g5.2-g5.3,G5.2,G5.3>>"
-msgstr "<<<gcode:g5.2-g5.3, G5.2, G5.3 >> >>"
+msgstr "<<gcode:g5.2-g5.3,G5.2,G5.3>>"
 
 #. type: Table
 #: src/gcode/g-code.adoc:68
@@ -50588,7 +50581,7 @@ msgid ""
 "The direction (CW, CCW) is as viewed from the positive end of the axis about "
 "which the circular motion occurs."
 msgstr ""
-"தற்போதைய <<sub:ini:sec:display,ஃபீட் வீதம் >> இல் 'சி 2' (கடிகார திசையில் ஏ.ஆர்.சி) "
+"தற்போதைய <<sec:set-feed-rate,ஃபீட் வீதம் >> இல் 'சி 2' (கடிகார திசையில் ஏ.ஆர்.சி) "
 "அல்லது 'சி 3' (எதிரெதிர் திசையில் வில்) ஐப் பயன்படுத்தி ஒரு வட்ட அல்லது எலிகல் வளைவு "
 "குறிப்பிடப்படுகிறது. திசை (சி.டபிள்யூ, சி.சி.டபிள்யூ) வட்ட இயக்கம் நிகழும் அச்சின் "
 "நேர்மறை முனையிலிருந்து பார்க்கப்படுகிறது."
@@ -50894,7 +50887,7 @@ msgstr "'ஃச்' - எலிக்ச்"
 #: src/gcode/g-code.adoc:360
 msgid "No feed rate is set with the <<sec:set-feed-rate,F>> word."
 msgstr ""
-"<<sub:ini:sec:display,எஃப் >> வார்த்தையுடன் எந்த தீவன விகிதமும் அமைக்கப்படவில்லை."
+"<<sec:set-feed-rate,எஃப் >> வார்த்தையுடன் எந்த தீவன விகிதமும் அமைக்கப்படவில்லை."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:361
@@ -54465,17 +54458,14 @@ msgstr "'Q' - அப்பாவியாக கேம் சகிப்பு�
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:1632
-#, fuzzy
-#| msgid ""
-#| "'G64' - best possible speed. Without P means to keep the best speed "
-#| "possible, no matter how far away from the programmed point you end up."
 msgid ""
 "'G64' - best possible speed. Without P (Or a default value in "
 "<<sub:ini:sec:rs274ngc,RS274NGC>>) means to keep the best speed possible, no "
 "matter how far away from the programmed point you end up."
 msgstr ""
-"'G64' - சிறந்த விரைவு. P இல்லாமல், சிறந்த வேகத்தை வைத்திருக்க வேண்டும், நீங்கள் "
-"திட்டமிடப்பட்ட புள்ளியிலிருந்து எவ்வளவு தொலைவில் இருந்தாலும், நீங்கள் முடிவடையும்."
+"'G64' - சிறந்த விரைவு. P இல்லாமல் (அல்லது <<sub:ini:sec:rs274ngc,RS274NGC>>-இல் "
+"இயல்புநிலை மதிப்புடன்), சிறந்த வேகத்தை வைத்திருக்க வேண்டும், நீங்கள் திட்டமிடப்பட்ட "
+"புள்ளியிலிருந்து எவ்வளவு தொலைவில் இருந்தாலும், நீங்கள் முடிவடையும்."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:1633
@@ -54508,19 +54498,19 @@ msgstr ""
 "சிறந்த சமரசத்திற்காக உங்கள் கணினியை நன்றாக மாற்றுவதற்கான ஒரு வழியாகும். பி-சகிப்புத்தன்மை "
 "என்பது உண்மையான பாதை திட்டமிடப்பட்ட இறுதிப் புள்ளியிலிருந்து பி-ஐ விட அதிகமாக இருக்காது "
 "என்பதாகும். பாதையை பராமரிக்க தேவைப்பட்டால் விரைவு குறைக்கப்படும். நீங்கள் Q ஐ பூச்சியமற்ற "
-"மதிப்புக்கு அமைத்தால், அது 'அப்பாவியாக கேம் டிடெக்டரை' இயக்குகிறது: அதே "
-"<<sub:ini:sec:display,ஃபீட் வீதம் >> இல் தொடர்ச்சியான நேரியல் XYZ தீவனங்கள் இருக்கும்போது "
-"அவை குறைவாக உள்ளன Q- கோலைனியர் என்பதிலிருந்து விலகி, அவை ஒற்றை நேரியல் நகர்வாக "
-"சரிந்தன. G17 (XY) விமானத்தில் G2/G3 நகர்வுகளில் ஒரு நேர் கோட்டிலிருந்து ஒரு வளைவின் "
-"அதிகபட்ச விலகல் G64 p- சகிப்புத்தன்மையை விட குறைவாக இருக்கும்போது, வில் இரண்டு வரிகளாக "
-"உடைக்கப்படுகிறது (வளைவின் தொடக்கத்திலிருந்து நடுப்பகுதி வரை, மற்றும் நடுப்பகுதி வரை "
-"முடிவு). அந்த வரிகள் பின்னர் வரிகளுக்கான அப்பாவியாக இருக்கும் கேம் வழிமுறைக்கு உட்பட்டவை. "
-"இவ்வாறு, லைன்-ஆர்க், ஆர்க்-ஆர்க் மற்றும் ஆர்க்-லைன் வழக்குகள் மற்றும் 'அப்பாவியாக கேம் டிடெக்டர்' "
-"இலிருந்து வரி-வரி நன்மை. இது பாதையை எளிதாக்குவதன் மூலம் செயல்திறனை மேம்படுத்துகிறது. "
-"ஏற்கனவே செயலில் உள்ள பயன்முறைக்கு நிரல் செய்வது சரி. இந்த முறைகள் பற்றிய கூடுதல் "
-"தகவலுக்கு <<sec:trajectory-control, பாதை கட்டுப்பாடு >> பிரிவு. Q "
-"குறிப்பிடப்படவில்லை என்றால், அது முன்பு இருந்த அதே நடத்தை கொண்டிருக்கும் மற்றும் p- இன் "
-"மதிப்பைப் பயன்படுத்தும். 'அப்பாவியாக கேம் டிடெக்டரை' முடக்க Q ஐ பூச்சியமாக அமைக்கவும்."
+"மதிப்புக்கு அமைத்தால், அது 'அப்பாவியாக கேம் டிடெக்டரை' இயக்குகிறது: அதே <<sec:set-feed-"
+"rate,ஃபீட் வீதம் >> இல் தொடர்ச்சியான நேரியல் XYZ தீவனங்கள் இருக்கும்போது அவை குறைவாக உள்ளன "
+"Q- கோலைனியர் என்பதிலிருந்து விலகி, அவை ஒற்றை நேரியல் நகர்வாக சரிந்தன. G17 (XY) "
+"விமானத்தில் G2/G3 நகர்வுகளில் ஒரு நேர் கோட்டிலிருந்து ஒரு வளைவின் அதிகபட்ச விலகல் G64 "
+"p- சகிப்புத்தன்மையை விட குறைவாக இருக்கும்போது, வில் இரண்டு வரிகளாக உடைக்கப்படுகிறது "
+"(வளைவின் தொடக்கத்திலிருந்து நடுப்பகுதி வரை, மற்றும் நடுப்பகுதி வரை முடிவு). அந்த "
+"வரிகள் பின்னர் வரிகளுக்கான அப்பாவியாக இருக்கும் கேம் வழிமுறைக்கு உட்பட்டவை. இவ்வாறு, லைன்-"
+"ஆர்க், ஆர்க்-ஆர்க் மற்றும் ஆர்க்-லைன் வழக்குகள் மற்றும் 'அப்பாவியாக கேம் டிடெக்டர்' இலிருந்து வரி-"
+"வரி நன்மை. இது பாதையை எளிதாக்குவதன் மூலம் செயல்திறனை மேம்படுத்துகிறது. ஏற்கனவே செயலில் "
+"உள்ள பயன்முறைக்கு நிரல் செய்வது சரி. இந்த முறைகள் பற்றிய கூடுதல் தகவலுக்கு "
+"<<sec:trajectory-control, பாதை கட்டுப்பாடு >> பிரிவு. Q குறிப்பிடப்படவில்லை என்றால், "
+"அது முன்பு இருந்த அதே நடத்தை கொண்டிருக்கும் மற்றும் p- இன் மதிப்பைப் பயன்படுத்தும். "
+"'அப்பாவியாக கேம் டிடெக்டரை' முடக்க Q ஐ பூச்சியமாக அமைக்கவும்."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:1658
@@ -55333,9 +55323,9 @@ msgstr ""
 "'எல்-' - நூலின் எந்த முனைகள் துணியைப் பெறுகின்றன என்பதைக் குறிப்பிடுகிறது. 'L0' நிரல் "
 "நோ டேப்பர் (இயல்புநிலை), நுழைவு டேப்பருக்கான 'எல் 1', வெளியேறும் டேப்பருக்கு 'எல் 2' "
 "அல்லது நுழைவு மற்றும் வெளியேறும் டேப்பர்கள் இரண்டிற்கும் 'எல் 3'. குறியீட்டு துடிப்புடன் "
-"ஒத்திசைக்க இயக்கி வரிசையில் நுழைவு டேப்பர்கள் இடைநிறுத்தப்படும், பின்னர் "
-"<<sub:ini:sec:display,ஃபீட் வீதம் >> இன் தொடக்கத்தில் நகரும். நுழைவு டேப்பர் இல்லை மற்றும் "
-"கருவி வெட்டு ஆழத்திற்கு விரைவானது, பின்னர் ஒத்திசைக்கப்பட்டு வெட்டைத் தொடங்கும்."
+"ஒத்திசைக்க இயக்கி வரிசையில் நுழைவு டேப்பர்கள் இடைநிறுத்தப்படும், பின்னர் <<sec:set-feed-"
+"rate,ஃபீட் வீதம் >> இன் தொடக்கத்தில் நகரும். நுழைவு டேப்பர் இல்லை மற்றும் கருவி வெட்டு "
+"ஆழத்திற்கு விரைவானது, பின்னர் ஒத்திசைக்கப்பட்டு வெட்டைத் தொடங்கும்."
 
 #. type: WARNING
 #: src/gcode/g-code.adoc:1941
@@ -56193,7 +56183,7 @@ msgstr "Z- அச்சுக்கு இணையாக (Z2.8) ஒரு வ�
 msgid ""
 "Move parallel to the Z-axis at the <<sec:set-feed-rate,feed rate>> to (Z1.5)"
 msgstr ""
-"<<sub:ini:sec:display,ஃபீட் ரேட் >> க்கு (Z1.5) Z- அச்சுக்கு இணையாக நகர்த்தவும்"
+"<<sec:set-feed-rate,ஃபீட் ரேட் >> க்கு (Z1.5) Z- அச்சுக்கு இணையாக நகர்த்தவும்"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2287
@@ -56258,7 +56248,7 @@ msgstr "ஒரு <<gcode:g0,விரைவான நகர்வு >> XY- வ
 msgid ""
 "Move parallel to the Z-axis at the <<sec:set-feed-rate,feed rate>> to (Z4.2)"
 msgstr ""
-"<<sub:ini:sec:display,ஃபீட் வீதம் >> க்கு (Z4.2) Z- அச்சுக்கு இணையாக நகர்த்தவும்"
+"<<sec:set-feed-rate,ஃபீட் வீதம் >> க்கு (Z4.2) Z- அச்சுக்கு இணையாக நகர்த்தவும்"
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2315
@@ -56522,8 +56512,8 @@ msgid ""
 "Move the Z-axis at the current <<sec:set-feed-rate,feed rate>> downward by "
 "delta or to the Z position, whichever is less deep."
 msgstr ""
-"தற்போதைய <<sub:ini:sec:display,ஃபீட் வீதம் >> டெல்டாவால் அல்லது சட் நிலைக்கு கீழ்நோக்கி, "
-"எது குறைவாக இருந்தால்."
+"தற்போதைய <<sec:set-feed-rate,ஃபீட் வீதம் >> டெல்டாவால் அல்லது சட் நிலைக்கு கீழ்நோக்கி, எது "
+"குறைவாக இருந்தால்."
 
 #. type: Plain text
 #: src/gcode/g-code.adoc:2430
@@ -57050,7 +57040,9 @@ msgstr ""
 msgid ""
 "G92.1 only clears G92 offsets, to change G53-G59.3 coordinate system offsets "
 "in G-code use either <<gcode:g10-l2,G10 L2>> or <<gcode:g10-l20,G10 L20>>."
-msgstr "G92.1 G53-G59.3 ஐ மாற்ற G92 ஆஃப்செட்களை மட்டுமே அழிக்கிறது."
+msgstr ""
+"G92.1 G92 ஆஃப்செட்களை மட்டுமே அழிக்கும். G53-G59.3 ஆஃப்செட்களை மாற்ற <<gcode:g10-"
+"l2,G10 L2>> அல்லது <<gcode:g10-l20,G10 L20>> பயன்படுத்தவும்."
 
 #. type: Title ==
 #: src/gcode/g-code.adoc:2648
@@ -63608,7 +63600,8 @@ msgid ""
 "DEBUG, etc. See the <<gcode:comments,section on comments>>."
 msgstr ""
 "கருத்துகளை ஒரு வரியில் அடைப்புக்குறிக்குள் () அல்லது மீதமுள்ள ஒரு வரியில் அரை காலனைப் "
-"பயன்படுத்தி உட்பொதிக்கலாம். எம்.எச்.சி, பிழைத்திருத்தம் போன்ற 'செயலில்' கருத்துகளும் உள்ளன."
+"பயன்படுத்தி உட்பொதிக்கலாம். எம்.எச்.சி, பிழைத்திருத்தம் போன்ற 'செயலில்' கருத்துகளும் உள்ளன. "
+"<<gcode:comments,கருத்துகள் பற்றிய பகுதியை>>ப் பார்க்கவும்."
 
 #. type: Index entry
 #: src/gcode/overview.adoc:170 src/gcode/overview.adoc:174
@@ -72541,8 +72534,8 @@ msgid ""
 "Open Synaptic using the instructions in <<_setting_apt_sources,Setting apt "
 "sources>> above."
 msgstr ""
-"<< _ settion_apt_sources இல் உள்ள வழிமுறைகளைப் பயன்படுத்தி சினாப்டிக் திறக்கவும், "
-"மேலே உள்ள APT ஆதாரங்களை அமைக்கவும்."
+"மேலே உள்ள <<_setting_apt_sources,apt ஆதாரங்களை அமைத்தல்>> -இல் உள்ள வழிமுறைகளைப் "
+"பயன்படுத்தி Synaptic-ஐத் திறக்கவும்."
 
 #. type: Plain text
 #: src/getting-started/updating-linuxcnc.adoc:123
@@ -74604,7 +74597,7 @@ msgstr ""
 #. type: Plain text
 #: src/gui/axis.adoc:521
 msgid "See <<axis:touchoff-actual>> for more information."
-msgstr "மேலும் தகவலுக்கு <<gcode:g0,G0 >> பிரிவு பார்க்கவும்."
+msgstr "மேலும் தகவலுக்கு <<axis:touchoff-actual>> பிரிவு பார்க்கவும்."
 
 #. type: Plain text
 #: src/gui/axis.adoc:526
@@ -79153,10 +79146,10 @@ msgid ""
 "HAL_VScale>>, <<gladevcp:jogwheel,Jog Wheel>>, <<gladevcp:speedcontrol,Speed "
 "Control>>"
 msgstr ""
-"\"எண்\" சமிக்ஞைகளைக் கட்டுப்படுத்துவதற்கான விட்செட்டுகள்: << gladevcp: hal-spinbutton, "
-"hal_spinbutton >>, << gladevcp: hal-scales, hal_hscale மற்றும் hal_vscale >>, "
-"<< gladevcp: jogwheel, jog whewhel >>, <gladvcp: weadevcpp , வேகக் கட்டுப்பாடு "
-">>"
+"\"எண்\" சமிக்ஞைகளைக் கட்டுப்படுத்துவதற்கான விட்செட்டுகள்: <<gladevcp:hal-"
+"spinbutton,HAL_SpinButton>>, <<gladevcp:hal-scales,HAL_HScale மற்றும் "
+"HAL_VScale>>, <<gladevcp:jogwheel,ஜாக் சக்கரம்>>, <<gladevcp:speedcontrol,வேகக் "
+"கட்டுப்பாடு>>"
 
 #. type: Plain text
 #: src/gui/gladevcp.adoc:477
@@ -79443,9 +79436,11 @@ msgid ""
 "been created by the +hal_glib.GPin(halcomp.newpin(<name>,<type>,<direction>))"
 "+ method (see <<gladevcp:programming,GladeVCP Programming>> for an example)."
 msgstr ""
-"வெளியீட்டு ஆல் முள் மதிப்பை +ஆல்காம்ப் [பின்னேம்] = மதிப்பு +உடன் அமைப்பது மிகவும் சரி, "
-"இந்த ஆல் முள் ஒரு விட்செட்டுடன் தொடர்புடையதாக இல்லை என்றால், அதாவது +hal_glib.gpin "
-"(halcomp.newpin (<amane> ."
+"இந்த HAL பின் ஒரு விட்ஜெட்டுடன் தொடர்புடையதாக இல்லை என்றால்—அதாவது +hal_glib.GPin"
+"(halcomp.newpin(<name>,<type>,<direction>))+ முறையின் மூலம் உருவாக்கப்பட்டிருந்தால்—"
+"வெளியீட்டு HAL பின்னின் மதிப்பை +halcomp[pinname] = value+ கொண்டு அமைப்பது முற்றிலும் "
+"சரியாகும் (உதாரணத்திற்கு <<gladevcp:programming,GladeVCP Programming>>-ஐப் பார்க்கவும்)"
+"."
 
 #. type: Title ===
 #: src/gui/gladevcp.adoc:541
@@ -88269,11 +88264,11 @@ msgid ""
 "and keyboard settings, etc., see <<gmoccapy:settings-page,settings page>> "
 "for more details."
 msgstr ""
-"_Preference_file_path_ - பயன்படுத்த வேண்டிய விருப்பத்தேர்வுகள் கோப்பின் இருப்பிடத்தையும் "
-"பெயரையும் தருகிறது. பெரும்பாலான சந்தர்ப்பங்களில், இந்த வரி தேவையில்லை, கருப்பொருள்கள், "
-"டி.ஆர்.ஓ அலகுகள், வண்ணங்கள் மற்றும் விசைப்பலகை அமைப்புகள் போன்ற GUI இன் அமைப்புகளை சேமிக்க "
-"இது GMOCCAPY ஆல் பயன்படுத்தப்படுகிறது, << gmoccapy: அமைப்புகள்-பக்கம், அமைப்புகள் "
-"பக்கம்> > மேலும் விவரங்களுக்கு."
+"_PREFERENCE_FILE_PATH_ - பயன்படுத்த வேண்டிய விருப்பத்தேர்வுகள் கோப்பின் இருப்பிடத்தையும் "
+"பெயரையும் தருகிறது. பெரும்பாலான சந்தர்ப்பங்களில், இந்த வரி தேவையில்லை; கருப்பொருள்கள், DRO "
+"அலகுகள், வண்ணங்கள் மற்றும் விசைப்பலகை அமைப்புகள் போன்ற GUI-ன் அமைப்புகளைச் சேமிக்க இது "
+"GMOCCAPY-ஆல் பயன்படுத்தப்படுகிறது. மேலும் விவரங்களுக்கு <<gmoccapy:settings-"
+"page,அமைப்புகள் பக்கத்தைப்>> பார்க்கவும்."
 
 #. type: NOTE
 #: src/gui/gmoccapy.adoc:132
@@ -93369,16 +93364,15 @@ msgstr "விசைப்பலகை குறுக்குவழிகள�
 
 #. type: WARNING
 #: src/gui/gmoccapy.adoc:1444
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Some users want to jog there machine using the keyboard buttons and there are others that will never allow this. So everybody can select whether to use them or not.\n"
-#| "Keyboard shortcuts are disabled by default. They can be activated in the <<gmoccapy:advanced-settings,Advanced Settings>>."
+#, no-wrap
 msgid ""
 "Some users want to jog their machine using the keyboard buttons and there are others that will never allow this. So everybody can select whether to use them or not.\n"
 "Keyboard shortcuts are disabled by default. They can be activated by the checkbox"
 msgstr ""
-"சில பயனர்கள் விசைப்பலகை பொத்தான்களைப் பயன்படுத்தி இயந்திரத்தை சாக் செய்ய விரும்புகிறார்கள், இதை ஒருபோதும் அனுமதிக்காத மற்றவர்களும் உள்ளனர். எனவே ஒவ்வொருவரும் அவற்றைப் பயன்படுத்தலாமா வேண்டாமா என்பதைத் தேர்ந்தெடுக்கலாம்.\n"
-" விசைப்பலகை குறுக்குவழிகள் இயல்பாகவே முடக்கப்படுகின்றன. அவற்றை << gmoccapy: மேம்பட்ட-அமைத்தல், மேம்பட்ட அமைப்புகள் >> இல் செயல்படுத்தலாம்."
+"சில பயனர்கள் விசைப்பலகைப் பொத்தான்களைப் பயன்படுத்தித் தங்கள் இயந்திரத்தை ஜாக் (jog) செய்ய "
+"விரும்புகிறார்கள், வேறு சிலர் இதை ஒருபோதும் அனுமதிப்பதில்லை. \n"
+"எனவே அனைவரும் அவற்றைப் பயன்படுத்துவதா இல்லையா என்பதைத் தேர்ந்தெடுக்கலாம். விசைப்பலகைக் "
+"குறுக்குவழிகள் இயல்பாகவே முடக்கப்பட்டிருக்கும். அவற்றைச் தேர்வுப்பெட்டியின் மூலம் செயல்படுத்தலாம்"
 
 #. type: WARNING
 #: src/gui/gmoccapy.adoc:1446
@@ -111817,14 +111811,6 @@ msgstr ""
 
 #. type: NOTE
 #: src/gui/qtdragon.adoc:1056
-#, fuzzy
-#| msgid ""
-#| "These techniques are useful for machines that do not have repeatable tool "
-#| "holders and do not have automatic tool changing devices. (For machines "
-#| "with repeatable tool holders, see the section on <<sub:touch-"
-#| "plate,measuring tool length>>. For machines with automatic tool changing "
-#| "devices, consult work done under the linuxcnc repository at configs/sim/"
-#| "axis/remap/rack-toolchange)"
 msgid ""
 "These techniques are useful for machines that do not have repeatable tool "
 "holders and do not have automatic tool changing devices.  (For machines with "
@@ -111833,8 +111819,12 @@ msgid ""
 "done under the LinuxCNC repository at `configs/sim/axis/remap/rack-"
 "toolchange`.)"
 msgstr ""
-"மீண்டும் மீண்டும் செய்யக்கூடிய கருவி வைத்திருப்பவர்கள் இல்லாத மற்றும் தானியங்கி கருவி மாற்றும் "
-"சாதனங்கள் இல்லாத இயந்திரங்களுக்கு இந்த நுட்பங்கள் பயனுள்ளதாக இருக்கும். . ரேக்-கோல்சேஞ்ச்)"
+"ஒரே நிலையில் மீண்டும் பொருத்தக்கூடிய கருவித் தாங்கிகள் மற்றும் தானியங்கி கருவி மாற்றும் "
+"சாதனங்கள் இல்லாத இயந்திரங்களுக்கு இந்த நுட்பங்கள் பயனுள்ளதாக இருக்கும். (மீண்டும் பொருத்தக்கூடிய "
+"கருவித் தாங்கிகளைக் கொண்ட இயந்திரங்களுக்கு, <<sub:touch-plate,கருவியின் நீளத்தை "
+"அளவிடுதல்>> என்ற பகுதியைப் பார்க்கவும். தானியங்கி கருவி மாற்றும் சாதனங்களைக் கொண்ட "
+"இயந்திரங்களுக்கு, LinuxCNC களஞ்சியத்தில் `configs/sim/axis/remap/rack-toolchange` "
+"என்பதன் கீழ் செய்யப்பட்டுள்ள பணிகளைப் பார்க்கவும்.)"
 
 #. type: NOTE
 #: src/gui/qtdragon.adoc:1058
@@ -165214,15 +165204,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/install/latency-test.adoc:107
-#, fuzzy
-#| msgid ""
-#| "In the example above, latency-test only ran for a few seconds.  You "
-#| "should run the test for at least several minutes; sometimes the worst "
-#| "case latency doesn't happen very often, or only happens when you do some "
-#| "particular action. For instance, one Intel motherboard worked pretty well "
-#| "most of the time, but every 64 seconds it had a very bad 300&thinsp;µs "
-#| "latency. Fortunately that was fixable, see https://wiki.linuxcnc.org/cgi-"
-#| "bin/wiki.pl?FixingSMIIssues ."
 msgid ""
 "In the example above, latency-test only ran for a few seconds.  You should "
 "run the test for at least several minutes; sometimes the worst case latency "
@@ -165231,13 +165212,12 @@ msgid ""
 "time, but every 64 seconds it had a very bad 300 µs latency. Fortunately "
 "that was fixable, see <<_latency_tuning>>."
 msgstr ""
-"மேலே உள்ள எடுத்துக்காட்டில், தாமத-சோதனை சில நொடிகள் மட்டுமே ஓடியது. நீங்கள் குறைந்தது "
-"பல நிமிடங்களுக்கு சோதனையை இயக்க வேண்டும்; சில நேரங்களில் மோசமான நிலை நேரந்தவறுகை "
-"அடிக்கடி நடக்காது, அல்லது நீங்கள் சில குறிப்பிட்ட செயல்களைச் செய்யும்போது மட்டுமே நடக்கும். "
-"உதாரணமாக, ஒரு இன்டெல் மதர்போர்டு பெரும்பாலான நேரங்களில் நன்றாக வேலை செய்தது, ஆனால் "
-"ஒவ்வொரு 64 விநாடிகளிலும் இது மிகவும் மோசமான 300 & thinsp; µs தாமதத்தைக் "
-"கொண்டிருந்தது. அதிர்ச்டவசமாக அது சரிசெய்யக்கூடியது, https://wiki.linuxcnc.org/cgi-"
-"bin/wiki.pl?fixingsmiissues ஐப் பார்க்கவும்."
+"மேலே உள்ள எடுத்துக்காட்டில், தாமத-சோதனை சில நொடிகள் மட்டுமே ஓடியது. நீங்கள் குறைந்தது பல "
+"நிமிடங்களுக்கு சோதனையை இயக்க வேண்டும்; சில நேரங்களில் மோசமான நிலை நேரந்தவறுகை அடிக்கடி "
+"நடக்காது, அல்லது நீங்கள் சில குறிப்பிட்ட செயல்களைச் செய்யும்போது மட்டுமே நடக்கும். உதாரணமாக, "
+"ஒரு இன்டெல் மதர்போர்டு பெரும்பாலான நேரங்களில் நன்றாக வேலை செய்தது, ஆனால் ஒவ்வொரு 64 "
+"விநாடிகளிலும் இது மிகவும் மோசமான 300 µs தாமதத்தைக் கொண்டிருந்தது. அதிர்ச்டவசமாக அது "
+"சரிசெய்யக்கூடியது, <<_latency_tuning>> ஐப் பார்க்கவும்."
 
 #. type: Plain text
 #: src/install/latency-test.adoc:109
@@ -235920,9 +235900,10 @@ msgid ""
 "panel.  Please see <<plasma:cut-recovery,CUT RECOVERY>> for a detailed "
 "description of the cut recovery functionality."
 msgstr ""
-"இடைநிறுத்தப்பட்ட இயக்கத்தின் போது, இந்த பிரிவு சாகிங் பேனலின் மேல் காண்பிக்கப்படும். இந்த "
-"குழுவில் எதிர்கொள்ளும் ஒவ்வொரு பொத்தானையும் பின்வரும் பிரிவு உள்ளடக்கும். வெட்டு மீட்பு "
-"செயல்பாட்டின் விரிவான விளக்கத்திற்கு <<plasma:cut-recovery, வெட்டு மீட்பு> ஐப் பார்க்கவும்."
+"இடைநிறுத்தப்பட்ட இயக்கத்தின் போது, இந்தப் பிரிவு ஜாக்கிங் (JOGGING) பேனலின் மேல் "
+"காண்பிக்கப்படும். இந்த பேனலில் உள்ள ஒவ்வொரு பொத்தானைப் பற்றியும் பின்வரும் பிரிவு விளக்கும். "
+"வெட்டு மீட்பு (CUT RECOVERY) செயல்பாட்டின் விரிவான விளக்கத்திற்கு <<plasma:cut-"
+"recovery,வெட்டு மீட்பு>> ஐப் பார்க்கவும்."
 
 #. type: Table
 #: src/plasma/qtplasmac.adoc:863
@@ -237809,10 +237790,10 @@ msgid ""
 "makes a backup of the configuration from the <<plasma:settings-tab,SETTINGS "
 "Tab>> then the machine log is also included in the backup."
 msgstr ""
-"* இயந்திர பதிவு * <<plasma:statistics-tab, புள்ளிவிவர தாவலிலும் காட்டப்படும், இந்த "
-"பதிவு தற்போதைய லினக்ச் சிஎன்சி அமர்வின் போது ஏற்படும் பிழைகள் மற்றும்/அல்லது முக்கியமான "
-"தகவல்களைக் காண்பிக்கும். <<plasma:settings-tab, அமைப்புகள் தாவல் >> இலிருந்து உள்ளமைவின் "
-"காப்புப்பிரதியை பயனர் செய்தால், இயந்திரப் பதிவும் காப்புப்பிரதியில் சேர்க்கப்பட்டுள்ளது."
+"*MACHINE LOG* <<plasma:statistics-tab,STATISTICS Tab>> இலும் காட்டப்படும், இந்தப் "
+"பதிவு தற்போதைய LinuxCNC அமர்வின் போது ஏற்படும் பிழைகள் மற்றும்/அல்லது முக்கியமான "
+"தகவல்களைக் காண்பிக்கும். பயனர் <<plasma:settings-tab,SETTINGS Tab>> இலிருந்து "
+"உள்ளமைவின் காப்புப்பிரதி எடுத்தால், இயந்திரப் பதிவும் அந்தக் காப்புப்பிரதியில் சேர்க்கப்படும்."
 
 #. type: Target for macro image
 #: src/plasma/qtplasmac.adoc:1254
@@ -238396,9 +238377,10 @@ msgid ""
 "possible to achieve this by using <<plasma:magic-comments,magic comments>> "
 "in a G-code file."
 msgstr ""
-"<<plasma:parameters-tab,அளவுருக்கள் தாவலில் இருந்து புதிய பொருளைச் சேர்க்க, பொருளை "
-"நீக்க அல்லது ஏற்கனவே உள்ள பொருள்களைத் திருத்த முடியும். >>. ஒரு சி-குறியீடு கோப்பில் "
-"<<plasma:magic-comments,மேசிக் கருத்துகள்> ஐப் பயன்படுத்தி இதை அடைய முடியும்."
+"<<plasma:parameters-tab,அளவுருக்கள் தாவலிலிருந்து>> புதிய பொருளைச் சேர்க்கவோ, "
+"பொருளை நீக்கவோ அல்லது ஏற்கனவே உள்ள பொருளைத் திருத்தவோ முடியும். ஒரு ஜி-கோட் (G-code) "
+"கோப்பில் <<plasma:magic-comments,மேஜிக் கருத்துகளைப்>> பயன்படுத்துவதன் மூலமும் இதைச் "
+"செய்ய முடியும்."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:1421
@@ -239659,31 +239641,25 @@ msgstr "இடைநிறுத்தப்பட்ட இயக்கம்"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:1750
-#, fuzzy
-#| msgid ""
-#| "QtPlasmaC has the ability to allow the repositioning of the X and Y axes "
-#| "along the current cut path while the G-code program is paused."
 msgid ""
 "QtPlasmaC has the ability to allow the repositioning of the X and Y axes "
 "along the current cut path while the G-code program is paused, aiding in "
 "<<plasma:cut-recovery,Cut Recovery>>."
 msgstr ""
-"சி-கோட் நிரல் இடைநிறுத்தப்படும்போது, தற்போதைய வெட்டு பாதையில் ஃச் மற்றும் ஒய் அச்சுகளை "
-"மாற்றியமைக்க அனுமதிக்கும் திறனைக் க்யூடி பிளாச்மாக் கொண்டுள்ளது."
+"G-கோட் நிரல் இடைநிறுத்தப்பட்டிருக்கும் போது, தற்போதைய வெட்டுப் பாதையில் X மற்றும் Y "
+"அச்சுகளை மறுநிலைப்படுத்த அனுமதிக்கும் திறனை QtPlasmaC கொண்டுள்ளது; இது <<plasma:cut-"
+"recovery,வெட்டு மீட்பிற்கு (Cut Recovery)>> உதவுகிறது."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:1753
-#, fuzzy
-#| msgid ""
-#| "In order to use this feature, LinuxCNC's Adaptive Feed Control (M52) must "
-#| "be turned on (P1)."
 msgid ""
 "In order to use this feature, LinuxCNC's Adaptive Feed Control (M52) must be "
 "turned on (P1).  This is also a requirement for <<plasma:hole-cutting-"
 "velocity-reduction,Hole Cutting Velocity Reduction>>."
 msgstr ""
-"இந்த அம்சத்தைப் பயன்படுத்த, Linuxcnc இன் தகவமைப்பு ஊட்டக் கட்டுப்பாடு (M52) இயக்கப்பட "
-"வேண்டும் (P1)."
+"இந்த அம்சத்தைப் பயன்படுத்த, LinuxCNC-ன் தகவமைப்பு ஊட்டக் கட்டுப்பாடு (M52) இயக்கப்பட வேண்டும் "
+"(P1). இது <<plasma:hole-cutting-velocity-reduction,துளை வெட்டும் வேகக் "
+"குறைப்பு>> (Hole Cutting Velocity Reduction) என்பதற்கும் அவசியமாகும்."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:1755
@@ -240648,7 +240624,7 @@ msgstr ""
 #: src/plasma/qtplasmac.adoc:2001
 #, no-wrap
 msgid "#<pierce-only> = 1\n"
-msgstr "#<பியர்ச்-மட்டும்> = 1\n"
+msgstr "#<pierce-only> = 1\n"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:2004
@@ -240801,17 +240777,15 @@ msgstr ""
 
 #. type: NOTE
 #: src/plasma/qtplasmac.adoc:2037
-#, fuzzy
-#| msgid ""
-#| "In order to use this feature, LinuxCNC's Adaptive Feed Control (M52) must "
-#| "be turned on (P1)."
 msgid ""
 "In order to use this feature, LinuxCNC's Adaptive Feed Control (M52) must be "
 "turned on (P1).  This is also a requirement for <<plasma:paused-"
 "motion,Paused Motion>> during <<plasma:cut-recovery,Cut Recovery>>."
 msgstr ""
-"இந்த அம்சத்தைப் பயன்படுத்த, Linuxcnc இன் தகவமைப்பு ஊட்டக் கட்டுப்பாடு (M52) இயக்கப்பட "
-"வேண்டும் (P1)."
+"இந்த அம்சத்தைப் பயன்படுத்த, LinuxCNC-ன் தகவமைப்பு ஊட்டக் கட்டுப்பாடு (M52) இயக்கப்பட வேண்டும் "
+"(P1). <<plasma:cut-recovery,வெட்டு மீட்பின் (Cut Recovery)>> போது நிகழும் "
+"<<plasma:paused-motion,இடைநிறுத்தப்பட்ட இயக்கத்திற்கும் (Paused Motion)>> இது "
+"அவசியமாகும்."
 
 #. type: NOTE
 #: src/plasma/qtplasmac.adoc:2039
@@ -241217,8 +241191,8 @@ msgid ""
 "end,Pause At End>> parameter in the MATERIAL frame of the "
 "<<plasma:parameters-tab,PARAMETERS Tab>>."
 msgstr ""
-"<<plasma:pause-at-end, முடிவில் இடைநிறுத்தம் >> <<plasma:material-handling, "
-"அளவுருக்கள் தாவல் >>."
+"<<plasma:pause-at-end,முடிவில் இடைநிறுத்தம் >> <<plasma:parameters-"
+"tab,அளவுருக்கள் தாவல் >>."
 
 #. type: delimited block -
 #: src/plasma/qtplasmac.adoc:2171
@@ -241574,10 +241548,10 @@ msgid ""
 "Offsets are in the PIERCE ONLY frame of the CONFIGURATION section of the "
 "<<plasma:parameters-tab,PARAMETERS Tab>>"
 msgstr ""
-"* பியர்ச் மட்டும் * பயன்முறையின் போது பியர்ச் இருப்பிடம் ஃச் மற்றும்/அல்லது ஒய் அச்சுகளில் "
-"ஈடுசெய்யப்படலாம், * சாதாரண வெட்டு * பயன்முறைக்குத் திரும்பிய பின் துளைக்கும்போது வில் சரியாக "
-"மாற்ற முடியும் என்பதை உறுதிப்படுத்த முடியும். ஃச் மற்றும் ஒய் ஆஃப்செட்களுக்கான அளவுருக்கள் "
-"<<plasma:parameters-tab,அளவுருக்கள் தாவலின் உள்ளமைவு பிரிவின் மட்டுமே சட்டையில் உள்ளன"
+"*சாதாரண வெட்டு* பயன்முறைக்குத் திரும்பிய பின் ஆர்க் சரியாகப் பாய்வதை உறுதி செய்ய, *துளைத்தல் "
+"மட்டும்* பயன்முறையில் துளைக்கும் இடத்தை X/Y அச்சுகளில் ஆஃப்செட் செய்யலாம். இதற்கான அளவுருக்கள் "
+"<<plasma:parameters-tab,அளவுருக்கள் தாவலின்>> உள்ளமைவுப் பிரிவில் உள்ள *துளைத்தல் "
+"மட்டும்* ஃபிரேமில் உள்ளன"
 
 #. type: NOTE
 #: src/plasma/qtplasmac.adoc:2252
@@ -244219,9 +244193,11 @@ msgid ""
 "changing the following option to *False* in the *[SCREEN_OPTIONS]* of the "
 "_<machine_name>_.prefs file in the _<machine_name>_ directory:"
 msgstr ""
-"பயனர் ஆபரேட்டர் பிழை பாப்அப் சாளரத்தை முடக்கத் தேர்வுசெய்யலாம், மேலும் << பிளாச்மா: "
-"புள்ளிவிவர-அட்டவணை, புள்ளிவிவர தாவலுக்குச் செல்வதன் மூலம் பிழை செய்திகளைக் காணலாம் _ "
-"<chine_name> _. _ <chace_name> _ கோப்பகத்தில் உள்ள PREFS கோப்பு:"
+"_<machine_name>_ கோப்பகத்தில் உள்ள _<machine_name>_.prefs கோப்பின் "
+"*[SCREEN_OPTIONS]* பிரிவில் பின்வரும் தேர்வை *False* என மாற்றுவதன் மூலம், பயனர் "
+"'ஆபரேட்டர் பிழை' (Operator Error) பாப்அப் சாளரத்தை முடக்கலாம்; மேலும் "
+"<<plasma:statistics-tab,புள்ளிவிவரத் தாவலுக்கு (STATISTICS Tab)>>ச் சென்று பிழைச் "
+"செய்திகளைப் பார்வையிடலாம்:"
 
 #. type: delimited block -
 #: src/plasma/qtplasmac.adoc:2859
@@ -247812,8 +247788,10 @@ msgid ""
 "either the <<plasma:button-toggle,Toggle HAL Pin>> or <<plasma:button-"
 "pulse,Pulse HAL Pin>> custom user buttons to change the state of an output."
 msgstr ""
-"பின்வரும் ஆல் பிட் வெளியீட்டு ஊசிகளும் எப்போதும் உருவாக்கப்படுகின்றன, மேலும் << பிளாச்மா: "
-"பொத்தான்-டோக்ல், ஆல் முள் மாற்று ஒரு வெளியீட்டின்."
+"பின்வரும் HAL பிட் வெளியீட்டு பின்ன்கள் எப்போதும் உருவாக்கப்படுகின்றன, மேலும் ஒரு வெளியீட்டின் "
+"நிலையை மாற்ற இவற்றை <<plasma:button-toggle,Toggle HAL பின்>> அல்லது "
+"<<plasma:button-pulse,Pulse HAL பின்>> ஆகிய பிரத்யேகப் பயனர் பொத்தான்கள் மூலம் "
+"பயன்படுத்தலாம்."
 
 #. type: Table
 #: src/plasma/qtplasmac.adoc:3837
@@ -248113,8 +248091,9 @@ msgid ""
 "tab,PARAMETERS Tab>> there are two HAL pins to aid in the fine tuning of "
 "void anti-dive.  These HAL pins are:"
 msgstr ""
-"<<plasma:parameters-tab,அளவுருக்கள் தாவலில் உள்ள * வெற்றிட சாய்வு * அமைப்பிற்கு "
-"கூடுதலாக, வெற்றிட எதிர்ப்பு டைவ் டியூனிங்கில் உதவ இரண்டு ஆல் ஊசிகள் உள்ளன. இந்த ஆல் ஊசிகள்:"
+"<<plasma:parameters-tab,PARAMETERS (அளவுருக்கள்) தாவலில்>> உள்ள *Void Slope* "
+"அமைப்பிற்கு கூடுதலாக, வெற்றிட ஆன்டி-டைவ் (void anti-dive) நுண் சீரமைப்பிற்கு உதவ இரண்டு "
+"HAL பின்ன்கள் உள்ளன. அந்த HAL பின்ன்கள்:"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3927
@@ -248739,9 +248718,10 @@ msgid ""
 "next to the Gas Pressure setting in the MATERIAL section of the "
 "<<plasma:parameters-tab,PARAMETERS Tab>>."
 msgstr ""
-"தகவல்தொடர்பு இணைப்பின் ஆரம்ப அமைப்பின் போது பெறப்பட்ட தரவுகளால் காற்று அழுத்த அலகுகள் காட்சி "
-"(பி.எச்.ஐ அல்லது பார்) தீர்மானிக்கப்படுகிறது, பின்னர் <<plasma:parameters-tab,அளவுருக்கள் "
-"தாவல்> இன் பொருள் பிரிவில் காற்று அழுத்தம் அமைப்பிற்கு அடுத்ததாக காட்டப்பட்டுள்ளது >."
+"தகவல்தொடர்பு இணைப்பின் ஆரம்ப அமைப்பின் போது பெறப்பட்ட தரவுகளின் அடிப்படையில் வாயு அழுத்த "
+"அலகுக் காட்சி (psi அல்லது bar) தீர்மானிக்கப்படுகிறது. பின்னர் இது <<plasma:parameters-"
+"tab,அளவுருக்கள் தாவலின்>> பொருள் (MATERIAL) பிரிவில் உள்ள வாயு அழுத்த அமைப்பிற்கு "
+"அடுத்ததாகக் காட்டப்படும்."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:4070
@@ -249863,7 +249843,7 @@ msgstr ""
 #: src/plasma/qtplasmac.adoc:4348
 #, no-wrap
 msgid "Set feed rate from <<plasma:material-handling,material>>."
-msgstr "<< பிளாச்மாவிலிருந்து தீவன விகிதத்தை அமைக்கவும்: பொருள்-கையாளுதல், பொருள் >>."
+msgstr "<<plasma:material-handling,பொருள்>> இலிருந்து ஊட்ட வேகத்தை அமைக்கவும்."
 
 #. type: Table
 #: src/plasma/qtplasmac.adoc:4349
@@ -251176,15 +251156,16 @@ msgid ""
 "QtPlasmaC is shut down, the Operating System's autorepeat feature will be "
 "enabled for all keys."
 msgstr ""
-"விசைப்பலகையின் ஆட்டோ பீட் அம்சத்தை பாதிக்கக்கூடிய வன்பொருள் மற்றும் விசைப்பலகைகளின் சில "
-"சேர்க்கைகளுடன் அறியப்பட்ட சிக்கல் உள்ளது, பின்னர் சாகிங்கின் போது இடைப்பட்ட நிறுத்தி மற்றும் "
-"தொடங்குவதன் மூலம் விசைப்பலகை சாகிங்கை பாதிக்கும். அனைத்து விசைகளுக்கும் இயக்க முறைமையின் "
-"தன்னியக்க அம்ச அம்சத்தை முடக்குவதன் மூலம் இந்த சிக்கலைத் தடுக்க முடியும். <<plasma:main-"
-"tab,முதன்மையான தாவல் >> தெரியும் போது மட்டுமே Qtplasmac இந்த முடக்குதல் அம்சத்தை "
-"இயல்பாகவே பயன்படுத்துகிறது, <<plasma:main-tab, முதன்மையான தாவல்> உடன் ஆட்டோ பீட் "
-"அனுமதிக்கப்படும்போது பின்வரும் விதிவிலக்குகளுடன் தெரியும். தெரியும்: சி-கோட் எடிட்டர் "
-"செயலில் உள்ளது, எம்.டி.ஐ செயலில் உள்ளது. QTPlasmac மூடப்படும் போது, இயக்க முறைமையின் "
-"ஆட்டோ பேயட் நற்பொருத்தம் அனைத்து விசைகளுக்கும் இயக்கப்படும்."
+"வன்பொருள் மற்றும் விசைப்பலகைகளின் சில சேர்க்கைகளில் ஒரு அறியப்பட்ட சிக்கல் உள்ளது. இது "
+"விசைப்பலகையின் ஆட்டோ-ரிப்பீட் (autorepeat) அம்சத்தைப் பாதிக்கலாம், மேலும் ஜாக்கிங்கின் "
+"(jogging) போது அவ்வப்போது நின்று மீண்டும் இயங்குவதன் மூலம் விசைப்பலகை ஜாக்கிங்கைப் "
+"பாதிக்கும். அனைத்து விசைகளுக்கும் இயக்க முறைமையின் ஆட்டோ-ரிப்பீட் அம்சத்தை முடக்குவதன் மூலம் "
+"இந்தச் சிக்கலைத் தடுக்கலாம். <<plasma:main-tab,முதன்மைத் தாவல்>> திரையில் தெரியும் போது "
+"மட்டுமே QtPlasmaC இந்த முடக்கும் அம்சத்தை இயல்பாகப் பயன்படுத்துகிறது; இருப்பினும், "
+"<<plasma:main-tab,முதன்மைத் தாவல்>> தெரியும் போதே ஆட்டோ-ரிப்பீட் அனுமதிக்கப்படும் "
+"பின்வரும் விதிவிலக்குகள் உள்ளன: ஜி-கோட் (G-code) எடிட்டர் செயலில் இருக்கும்போது, MDI "
+"செயலில் இருக்கும்போது. QtPlasmaC மூடப்படும் போது, இயக்க முறைமையின் ஆட்டோ-ரிப்பீட் அம்சம் "
+"அனைத்து விசைகளுக்கும் மீண்டும் செயல்படுத்தப்படும்."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:4675
@@ -252189,9 +252170,9 @@ msgid ""
 "other <<gcode:modal-groups,modal group>> 10 M-codes as per <<gcode:order-of-"
 "execution,order of execution>>."
 msgstr ""
-"`M400` குறியீட்டை எதிர்கொள்ளும்போது,` myProcedure.ngc` ஐ மற்ற <<gcode:modal-"
-"groups, மோடல் குழு >> 10 மீ-குறியீடுகள் << gcode: ஆர்டர்-ஆஃப்-எக்சிகியூசன், "
-"மரணதண்டனை> >."
+"`M400` குறியீட்டை எதிர்கொள்ளும்போது, <<gcode:order-of-execution,செயலாக்க "
+"வரிசைப்படி>> மற்ற <<gcode:modal-groups,மோடல் குழு>> 10 M-குறியீடுகளுடன் "
+"`myprocedure.ngc` ஐ இயக்கவும்."
 
 #. type: Plain text
 #: src/remap/remap.adoc:237
@@ -252524,9 +252505,9 @@ msgid ""
 "code, there is the somewhat easier way of <<remap:python-o-word-"
 "procs,calling Python functions like O-word procedures>>."
 msgstr ""
-"நீங்கள் அடைய விரும்பினால், சி-குறியீட்டிலிருந்து சில பைதான் குறியீட்டை அழைக்க வேண்டும் "
-"என்றால், << ரீமேப்: பைதான்-ஓ-வேர்-ப்ரோக்ச், ஓ-சொல் நடைமுறைகள் போன்ற பைதான் செயல்பாடுகளை "
-"அழைக்கும் சற்றே எளிதான வழி உள்ளது என்பதை நினைவில் கொள்க."
+"G-கோட்டிலிருந்து சில Python குறியீட்டை அழைக்க விரும்பினால், அதற்கு <<remap:python-o-"
+"word-procs,Python ஃபங்க்ஷன்களை O-வேர்ட் நடைமுறைகளைப் போல அழைக்கும்>> சற்றே எளிதான வழி "
+"உள்ளது என்பதைக் கவனத்தில் கொள்ளவும்."
 
 #. type: Title ===
 #: src/remap/remap.adoc:326

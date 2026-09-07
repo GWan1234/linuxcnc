@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:51+0000\n"
+"PO-Revision-Date: 2026-09-07 00:51+0000\n"
 "Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -3657,7 +3657,7 @@ msgstr ""
 "Das wird wahrscheinlich schiefgehen! Das macht Sie nicht zu einem schlechten "
 "Menschen, es bedeutet nur, dass Sie dieses ganze Dokument lesen sollten, um "
 "herauszufinden, wie Sie Ihre Probleme lösen können.  Insbesondere den "
-"Abschnitt über <Satisfying-Build-Dependencies,Bedienen von Build "
+"Abschnitt über <<Satisfying-Build-Dependencies,Bedienen von Build "
 "Abhängigkeiten (engl. dependencies)>>."
 
 #. type: Plain text
@@ -8344,7 +8344,7 @@ msgid ""
 msgstr ""
 "Zurück in interp wird +settings->current_pocket+ der neue Werkzeugdatenindex "
 "von +settings->selected_pocket+ (gesetzt durch +Txxx+) zugewiesen.  Die "
-"entsprechenden nummerierten Parameter (<sub:numbered-parameters,#5400-"
+"entsprechenden nummerierten Parameter (<<sub:numbered-parameters,#5400-"
 "#5413>>) werden mit den neuen Werkzeuginformationen aus Tasche 0 (Spindel) "
 "aktualisiert."
 
@@ -18299,7 +18299,7 @@ msgid ""
 "<<sub:ini:sec:traj,machine units>> per second."
 msgstr ""
 "`DEFAULT_LINEAR_VELOCITY = .25` - Die Standardgeschwindigkeit für lineares "
-"Joggen, in <sub:ini:sec:traj,Maschineneinheiten>> pro Sekunde."
+"Joggen, in <<sub:ini:sec:traj,Maschineneinheiten>> pro Sekunde."
 
 #. type: Plain text
 #: src/config/ini-config.adoc:316
@@ -19551,7 +19551,7 @@ msgstr ""
 "'texample.tcl' beim Start mit arg1, arg2, etc als ::argv Liste aus.  Dateien "
 "mit dem Suffix .tcl werden wie oben beschrieben verarbeitet, verwenden aber "
 "haltcl zur Verarbeitung. Weitere Informationen finden Sie im Kapitel "
-"<cha:haltcl,HALTCL>>."
+"<<cha:haltcl,HALTCL>>."
 
 #. type: NOTE
 #: src/config/ini-config.adoc:652
@@ -20516,7 +20516,7 @@ msgid ""
 "<<sub:ini:sec:traj,machine units>> per second."
 msgstr ""
 "`MAX_VELOCITY = 1.2` - Maximale Geschwindigkeit für diese Achse in "
-"<sub:ini:sec:traj,Maschineneinheiten>> pro Sekunde."
+"<<sub:ini:sec:traj,Maschineneinheiten>> pro Sekunde."
 
 #. type: Plain text
 #: src/config/ini-config.adoc:923
@@ -20666,7 +20666,7 @@ msgid ""
 "See the chapter: <<cha:external-offsets,'External Axis Offsets'>> for usage "
 "information."
 msgstr ""
-"Siehe das Kapitel: 'cha:external-offsets,'External Axis Offsets'>> für "
+"Siehe das Kapitel: <<cha:external-offsets,'External Axis Offsets'>> für "
 "Informationen zur Verwendung."
 
 #. type: Title ===
@@ -21128,7 +21128,7 @@ msgid ""
 "position is desired to be 0."
 msgstr ""
 "`HOME_OFFSET = 0.0` - Die gemeinsame Position des Referenzschalters oder "
-"Indeximpulses, in <sub:ini:sec:traj,Maschineneinheiten>>.  Wenn der "
+"Indeximpulses, in <<sub:ini:sec:traj,Maschineneinheiten>>.  Wenn der "
 "Referenzpunkt während der Referenzfahrt gefunden wird, ist dies die "
 "Position, die diesem Punkt zugewiesen wird.  Bei gemeinsamer Nutzung von "
 "Referenzfahrt- und Endschaltern und bei Verwendung einer Referenzfahrt-"
@@ -21322,7 +21322,7 @@ msgstr ""
 "können.  Diese werden nicht von der LinuxCNC-Software verwendet.  Sie sind "
 "nur dazu da, alle Einstellungen an einem Ort zu speichern.  Für weitere "
 "Informationen über benutzerdefinierte INI-Datei-Einträge siehe den "
-"Unterabschnitt <sub:ini:custom,Benutzerdefiniert Abschnitte und Variablen>>."
+"Unterabschnitt <<sub:ini:custom,Benutzerdefiniert Abschnitte und Variablen>>."
 
 #. type: WARNING
 #: src/config/ini-config.adoc:1146
@@ -24597,7 +24597,7 @@ msgstr ""
 "verwendet.  Simulierte Drehmaschinen-Konfigurationen können diese "
 "historischen Einstellungen verwenden.  GMOCCAPY verwendet ebenfalls die "
 "erwähnten Einstellungen, bietet aber zusätzliche Einstellungen, siehe den "
-"Abschnitt <cha:gmoccapy,GMOCCAPY>> für Details."
+"Abschnitt <<cha:gmoccapy,GMOCCAPY>> für Details."
 
 #. type: delimited block -
 #: src/config/lathe-config.adoc:45 src/config/lathe-config.adoc:73
@@ -27631,7 +27631,7 @@ msgid ""
 "chapter."
 msgstr ""
 "Ermöglicht die Angabe eines Komp-Dateinamens und -typs.  Ermöglicht eine "
-"anspruchsvolle Kompensation. Siehe den<sub:ini:sec:axis-letter,Achsen-"
+"anspruchsvolle Kompensation. Siehe den <<sub:ini:sec:axis-letter,Achsen-"
 "Abschnitt>> des INI Kapitels."
 
 #. type: Labeled list
@@ -27649,7 +27649,7 @@ msgid ""
 msgstr ""
 "Ermöglicht die Einstellung einer einfachen Kompensation des Umkehrspiels. "
 "Kann nicht mit Kompensationsdatei verwendet werden. Siehe den "
-"<sub:ini:sec:axis-letter,Achsen-Abschnitt>> des INI Kapitels."
+"<<sub:ini:sec:axis-letter,Achsen-Abschnitt>> des INI Kapitels."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: src/config/pncconf.adoc:631 src/config/pncconf.adoc:632
@@ -27809,7 +27809,7 @@ msgstr ""
 "müssen Sie die Zeile: setp hm2_7i43.0.encoder.00.counter-mode 1 (wobei Sie "
 "den Namen der Karte und die Nummer des Drehgebers entsprechend Ihren "
 "Anforderungen ändern) in eine benutzerdefinierte HAL-Datei einfügen. Weitere "
-"Informationen zum Zählermodus finden Sie im Abschnitt <sec:hm2-"
+"Informationen zum Zählermodus finden Sie im Abschnitt <<sec:hm2-"
 "encoder,Encoder>> in Hostmot2."
 
 #. type: Title ==
@@ -27846,7 +27846,7 @@ msgstr ""
 "um den aktuellen Benutzerursprung auf Null zu setzen und schnell zu "
 "löschen.  Das serielle Modbus-Programm ist im Grunde eine leere "
 "Programmvorlage, die ClassicLadder für seriellen Modbus einrichtet. Siehe "
-"das Kapitel <cha:classicladder,ClassicLadder>> im Handbuch."
+"das Kapitel <<cha:classicladder,ClassicLadder>> im Handbuch."
 
 #. type: Block title
 #: src/config/pncconf.adoc:701
@@ -32298,7 +32298,7 @@ msgstr ""
 "'Base Period Maximum Jitter' - Geben Sie hier das Ergebnis des Latenztests "
 "ein.  Um einen Latenztest durchzuführen, drücken Sie die Schaltfläche 'Test "
 "Base Period Jitter'. Weitere Einzelheiten finden Sie im Abschnitt "
-"<sec:latency-test,Latenz-Test>>."
+"<<sec:latency-test,Latenz-Test>>."
 
 #. type: Index entry
 #: src/config/stepconf.adoc:103 src/config/stepconf.adoc:104
@@ -32622,7 +32622,7 @@ msgid ""
 "maximum-acceleration,Finding Maximum Acceleration>> to set the acceleration."
 msgstr ""
 "'Maximale Beschleunigung' - Die richtigen Werte für diese Elemente können "
-"nur durch Experimentieren ermittelt werden.  Siehe <sub:finding-maximum-"
+"nur durch Experimentieren ermittelt werden.  Siehe <<sub:finding-maximum-"
 "velocity,Maximale Geschwindigkeit bestimmen>> zur Einstellung der "
 "Geschwindigkeit und <<sub:finding-maximum-acceleration,Maximale "
 "Beschleunigung bestimmen>> zur Einstellung der Beschleunigung."
@@ -33310,7 +33310,7 @@ msgid ""
 msgstr ""
 "'Include ClassicLadder PLC' - Diese Option fügt die ClassicLadder PLC "
 "(Speicherprogrammierbare Steuerung) hinzu. Weitere Informationen finden Sie "
-"im Kapitel <cha:classicladder,ClassicLadder>>."
+"im Kapitel <<cha:classicladder,ClassicLadder>>."
 
 #. type: Plain text
 #: src/config/stepconf.adoc:364
@@ -34644,7 +34644,7 @@ msgstr ""
 "reagiert. Manche Hardware kann die Verarbeitung unterbrechen, was beim "
 "Betrieb einer CNC-Maschine zu verpassten Schritten führen kann.  Dies ist "
 "der erste Schritt, den Sie tun müssen.  Folgen Sie den Anweisungen "
-"<sec:latency-test,hier>>, um den Latenztest durchzuführen."
+"<<sec:latency-test,hier>>, um den Latenztest durchzuführen."
 
 #. type: Table
 #: src/config/stepper-quickstart.adoc:21 src/config/stepper-quickstart.adoc:27
@@ -41619,7 +41619,7 @@ msgid ""
 "<<cha:classicladder,ClassicLadder>>."
 msgstr ""
 "Eine andere Möglichkeit ist die Verwendung von Classic Ladder, das Modbus "
-"eingebaut hat, siehe <cha:classicladder,ClassicLadder >>."
+"eingebaut hat, siehe <<cha:classicladder,ClassicLadder >>."
 
 #. type: Plain text
 #: src/drivers/mb2hal.adoc:21
@@ -52521,7 +52521,7 @@ msgstr ""
 "Maschine in ihrer aktuellen Position befindet und die aktuellen G5x- und G52/"
 "G92-Korrekturen aktiv sind. Die Achsen, die nicht im Befehl G10 L10 "
 "angegeben sind, werden nicht geändert. Dies könnte bei einer "
-"Messtasterbewegung nützlich sein, wie im Abschnitt <gcode:g38,G38>> "
+"Messtasterbewegung nützlich sein, wie im Abschnitt <<gcode:g38,G38>> "
 "beschrieben."
 
 #. type: Block title
@@ -52748,7 +52748,7 @@ msgid ""
 "when a G28 is issued. If no positions are stored with G28.1 then all axes "
 "will go to the <<sec:machine-coordinate-system,machine origin>>."
 msgstr ""
-"G28 verwendet die in <sub:numbered-parameters,Parameter 5161-5169>> "
+"G28 verwendet die in <<sub:numbered-parameters,Parameter 5161-5169>> "
 "gespeicherten Werte als X Y Z A B C U V W Endpunkt zum Anfahren. Die "
 "Parameterwerte sind 'absolute' Maschinenkoordinaten in den maschineneigenen "
 "'Einheiten' wie in der INI-Datei angegeben. Alle in der INI-Datei "
@@ -52762,7 +52762,7 @@ msgid ""
 "'G28' - makes a <<gcode:g0,rapid move>> from the current position to the "
 "'absolute' position of the values in parameters 5161-5166."
 msgstr ""
-"'G28' - bewegt sich im 'gcode:g0,Schnellauf>> durch von der aktuellen "
+"'G28' - bewegt sich im <<gcode:g0,Schnellauf>> durch von der aktuellen "
 "Position zur 'absoluten' Position der Werte in den Parametern 5161-5166."
 
 #. type: WARNING
@@ -52840,7 +52840,7 @@ msgid ""
 "with G30.1 then all axes will go to the <<sec:machine-coordinate-"
 "system,machine origin>>."
 msgstr ""
-"G30 funktioniert wie G28, verwendet aber die in <sub:numbered-"
+"G30 funktioniert wie G28, verwendet aber die in <<sub:numbered-"
 "parameters,Parameter 5181-5189>> gespeicherten Werte als X Y Z A B C U V W "
 "Endpunkt zum Anfahren. Die Parameterwerte sind 'absolute' "
 "Maschinenkoordinaten in den maschineneigenen 'Einheiten' wie in der INI-"
@@ -52865,7 +52865,7 @@ msgid ""
 "'G30' - makes a <<gcode:g0,rapid move>> from the current position to the "
 "'absolute' position of the values in parameters 5181-5189."
 msgstr ""
-"'G30' - führt einen 'gcode:g0,Eilgang>> von der aktuellen Position zur "
+"'G30' - führt einen <<gcode:g0,Eilgang>> von der aktuellen Position zur "
 "'absoluten' Position der Werte in den Parametern 5181-5189 durch."
 
 #. type: NOTE
@@ -60018,7 +60018,7 @@ msgstr "<<mcode:m68,M68>>"
 #: src/gcode/m-code.adoc:33
 #, no-wrap
 msgid "<<mcode:m70,M70>>"
-msgstr ":mcode:m70,M70>"
+msgstr "<<mcode:m70,M70>"
 
 #. type: Table
 #: src/gcode/m-code.adoc:34
@@ -63286,7 +63286,7 @@ msgid ""
 "predefined parameter is set to 1, to indicate a value was returned. Both "
 "parameters are global, and are cleared just before the next subroutine call."
 msgstr ""
-"Der Rückgabewert eines Unterprogramms wird im '#<_value>' <gcode:predefined-"
+"Der Rückgabewert eines Unterprogramms wird im '#<_value>' <<gcode:predefined-"
 "named-parameters,predefined named parameter>> gespeichert, und der "
 "'#<_value_returned>' vordefinierte Parameter wird auf 1 gesetzt, um "
 "anzuzeigen, dass ein Wert zurückgegeben wurde. Beide Parameter sind global "
@@ -63461,7 +63461,7 @@ msgid ""
 "case, the speed may differ from the one programmed, even if the speed "
 "correction potentiometer is set to 100%."
 msgstr ""
-"Wie im Abschnitt 'gcode:g84, Rechtsgewindebohrzyklus mit Verweilzeit>> "
+"Wie im Abschnitt <<gcode:g84, Rechtsgewindebohrzyklus mit Verweilzeit>> "
 "beschrieben, wird, wenn ein 'G84' (Gewindebohren) Bohrzyklus aktiv ist und "
 "die Drehzahl- und Vorschubpotentiometer sind aktiviert, dasjenige mit der "
 "niedrigsten Einstellung verwendet.  Die Drehzahl und der Vorschub bleiben "
@@ -63490,7 +63490,7 @@ msgid ""
 "change."
 msgstr ""
 "Das Werkzeug wird erst gewechselt, wenn ein 'M6' programmiert wird (siehe "
-"Abschnitt <mcode:m6,M6>>). Das T-Wort kann in der gleichen Zeile wie der "
+"Abschnitt <<mcode:m6,M6>>). Das T-Wort kann in der gleichen Zeile wie der "
 "'M6' oder in einer vorhergehenden Zeile erscheinen. Es ist in Ordnung, wenn "
 "T-Wörter in zwei oder mehr Zeilen erscheinen, ohne dass das Werkzeug "
 "gewechselt wird. Nur das letzte T-Wort wird beim nächsten Werkzeugwechsel "
@@ -63838,7 +63838,7 @@ msgid ""
 "Line numbers are not recommended. See <<gcode:best-practices,Best "
 "Practices>>."
 msgstr ""
-"Zeilennummern werden nicht empfohlen. Siehe <gcode:best-practices,Best "
+"Zeilennummern werden nicht empfohlen. Siehe <<gcode:best-practices,Best "
 "Practices>."
 
 #. type: Title ===
@@ -63930,7 +63930,9 @@ msgstr "G"
 #: src/gcode/overview.adoc:130
 #, no-wrap
 msgid "General function (See table  <<cap:modal-groups,G-code Modal Groups>>)"
-msgstr "Allgemeine Funktion (siehe Tabelle <cap:modal-groups,G-Code Modale Gruppen>>)"
+msgstr ""
+"Allgemeine Funktion (siehe Tabelle <<cap:modal-groups,G-Code Modale "
+"Gruppen>>)"
 
 #. type: Table
 #: src/gcode/overview.adoc:131
@@ -64003,7 +64005,9 @@ msgstr "M"
 #: src/gcode/overview.adoc:137
 #, no-wrap
 msgid "Miscellaneous function (See table  <<tbl:mcodes-modal-groups,M-code Modal Groups>>)"
-msgstr "Verschiedene Funktionen (siehe Tabelle <cap:modal-groups,M-Code Modale Gruppen>>)"
+msgstr ""
+"Verschiedene Funktionen (siehe Tabelle <<tbl:mcodes-modal-groups,M-Code "
+"Modale Gruppen>>)"
 
 #. type: Table
 #: src/gcode/overview.adoc:137
@@ -64302,7 +64306,7 @@ msgstr ""
 "Logische Ausdrücke können jedoch mit gcode formuliert werden: gcode:binary-"
 "operators,Boolesche Operatoren>> ( 'AND', 'OR', 'XOR', und die "
 "Vergleichsoperatoren 'EQ','NE','GT','GE','LT','LE'), sowie die 'MOD', "
-"'ROUND', 'FUP' und 'FIX' <gcode:functions,Operatoren>> unterstützen "
+"'ROUND', 'FUP' und 'FIX' <<gcode:functions,Operatoren>> unterstützen "
 "Ganzzahlarithmetik."
 
 #. type: Plain text
@@ -65863,8 +65867,8 @@ msgid ""
 "If enabled in the <<sub:ini:sec:rs274ngc, INI file>> G-code has access to "
 "the values of INI file entries and HAL pins."
 msgstr ""
-"Wenn dies in der <sub:ini:sec:rs274ngc, INI-Datei>> aktiviert ist, hat der G-"
-"Code Zugriff auf die Werte der INI-Datei-Einträge und HAL-Pins."
+"Wenn dies in der <<sub:ini:sec:rs274ngc, INI-Datei>> aktiviert ist, hat der "
+"G-Code Zugriff auf die Werte der INI-Datei-Einträge und HAL-Pins."
 
 #. type: Plain text
 #: src/gcode/overview.adoc:619
@@ -66472,7 +66476,7 @@ msgid ""
 msgstr ""
 "Eine Zeile kann eine beliebige Anzahl von G-Wörtern haben, aber zwei G-"
 "Wörter aus derselben modalen Gruppe dürfen nicht in derselben Zeile "
-"erscheinen. Weitere Informationen finden Sie im Abschnitt <gcode:modal-"
+"erscheinen. Weitere Informationen finden Sie im Abschnitt <<gcode:modal-"
 "groups,Modal Groups>>."
 
 #. type: Plain text
@@ -109955,7 +109959,8 @@ msgstr ""
 "QtDragon hat die Möglichkeit, geladene Dateien durch ein \"Filterprogramm\" "
 "zu schicken.  Dieser Filter kann jede gewünschte Aufgabe erfüllen: Etwas so "
 "Einfaches wie sicherzustellen, dass die Datei mit \"M2\" endet, oder etwas "
-"so Kompliziertes wie die Erzeugung von G-Code aus einem Bild."
+"so Kompliziertes wie die Erzeugung von G-Code aus einem Bild. Siehe "
+"<<cha:filter,Filterprogramme>> für weitere Informationen."
 
 #. type: Plain text
 #: src/gui/qtdragon.adoc:320
@@ -244036,10 +244041,9 @@ msgid ""
 "are allowed."
 msgstr ""
 "`code1` und `code2` folgen beide den Regeln der vorangegangenen Code-"
-"Erklärungen, <\\<plasma\\:button-cmds,Externe Befehle>>, <[plasma\\:button-"
-"py,Python-Code](plasma:button-py,Python-Code)> und <[plasma\\:button-code,G-"
-"Code](plasma:button-code,G-Code)>. Mehrere Codes sowie eine Mischung "
-"unterschiedlicher Codes sind zulässig."
+"Erklärungen, <<plasma:button-cmds,Externe Befehle>>, <<plasma:button-"
+"py,Python-Code>> und <<plasma:button-code,G-code>>. Mehrere Codes sowie eine "
+"Mischung unterschiedlicher Codes sind zulässig."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3362
