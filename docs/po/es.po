@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:51+0000\n"
+"PO-Revision-Date: 2026-09-07 00:51+0000\n"
 "Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -29525,7 +29525,7 @@ msgid ""
 "<<sec:the-spindle-dictionary, The spindle dictionary>>."
 msgstr ""
 "'(devuelve tupla de diccionarios)' - devuelve el estado actual del husillo "
-"ver <sec:the-spindle-dictionary, El diccionario spindle>>."
+"ver <<sec:the-spindle-dictionary, El diccionario spindle>>."
 
 #. type: Labeled list
 #: src/config/python-interface.adoc:336
@@ -48899,10 +48899,10 @@ msgid ""
 "workpiece is known but current tool location may not be known."
 msgstr ""
 "Se desaconseja el uso de 'G92' para programar con sistemas de coordenadas "
-"locales en un programa de pieza. En su lugar, vea <<sec:g52-and-g92-"
-"offsets,'G52'>>, un offset local del sistema de coordenadas es más intuitivo "
-"cuando se conoce el offset deseado relativo a la pieza de trabajo, pero es "
-"posible que no se conozca la ubicación actual de la herramienta."
+"locales en un programa de pieza. En su lugar, vea <<sec:g52,'G52'>>, un "
+"offset local del sistema de coordenadas es más intuitivo cuando se conoce el "
+"offset deseado relativo a la pieza de trabajo, pero es posible que no se "
+"conozca la ubicación actual de la herramienta."
 
 #. type: NOTE
 #: src/gcode/coordinates.adoc:295
@@ -62116,7 +62116,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gcode/o-code.adoc:133
-#, fuzzy
 msgid ""
 "Subroutines can change the value of parameters above #30 and those changes "
 "will be visible to the calling code.  Subroutines may also change the value "
@@ -62124,8 +62123,10 @@ msgid ""
 "names begin with the underscore character \"`_`\")."
 msgstr ""
 "Las subrutinas pueden cambiar el valor de los parámetros por encima de #30 y "
-"esos cambios serán visible para el código de llamada. Las subrutinas también "
-"pueden cambiar el valor de parámetros globales con nombre."
+"esos cambios serán visibles para el código que llama. Las subrutinas también "
+"pueden cambiar el valor de los <<gcode:named-parameters,parámetros globales "
+"con nombre>> (es decir, parámetros cuyo nombre empieza con el carácter de "
+"subrayado \"`_`\")."
 
 #. type: Table
 #: src/gcode/o-code.adoc:135 src/remap/remap.adoc:1993
@@ -73887,7 +73888,8 @@ msgid ""
 "information."
 msgstr ""
 "'Editor Ladder' - Si se ha cargado ClassicLadder, se puede editar desde "
-"aquí. Ver el capítulo Classicladder para más información."
+"aquí. Ver el <<cha:classicladder,capítulo de ClassicLadder>> para más "
+"información."
 
 #. type: NOTE
 #: src/gui/axis.adoc:150
@@ -89291,7 +89293,6 @@ msgstr "¡Así que tenemos 67 reacciones con sólo 10 pines de HAL!"
 
 #. type: Plain text
 #: src/gui/gmoccapy.adoc:639
-#, fuzzy
 msgid ""
 "These pins are made available to be able to use the screen without a touch "
 "panel, or protect it from excessive use by placing hardware buttons around "
@@ -89299,8 +89300,9 @@ msgid ""
 "<<gmoccapy-sim-hardware-button,image below>>."
 msgstr ""
 "Estos pines están disponibles para poder utilizar la pantalla sin un panel "
-"tactil, o protégerlos del uso excesivo colocando botones de hardware "
-"alrededor el panel."
+"táctil, o protegerlos del uso excesivo colocando botones de hardware "
+"alrededor del panel. Están disponibles en una configuración de ejemplo como "
+"se muestra en la <<gmoccapy-sim-hardware-button,imagen de abajo>>."
 
 #. type: Block title
 #: src/gui/gmoccapy.adoc:641
@@ -93103,7 +93105,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:61
-#, fuzzy
 msgid ""
 "<<cha:glade-vcp,GladeVCP>> binds LinuxCNC, HAL, PyGTK and Glade all "
 "together.  LinuxCNC requires some special widgets so GladeVCP supplies "
@@ -93113,13 +93114,14 @@ msgid ""
 "widgets, to make them do things not available in their default form.  If you "
 "can build a GladeVCP panel you can customize Gscreen!"
 msgstr ""
-"GladeVCP enlaza LinuxCNC, HAL, PyGTK y Glade, todos juntos.  LinuxCNC "
-"requiere algunos widgets especiales; GladeVCP los suministra. Muchos son "
-"solo extensiones HAL a los widgets PyGTK existentes. GladeVCP crea los pines "
-"HAL para los widgets especiales descritos en el archivo Glade. GladeVCP "
-"también permite agregar comandos Python para interactuar con los widgets, de "
-"forma que hagan cosas que no estan disponibles en su forma predeterminada. "
-"Si puede construir un panel GladeVCP, puede personalizar Gscreen!"
+"<<cha:glade-vcp,GladeVCP>> enlaza LinuxCNC, HAL, PyGTK y Glade, todos "
+"juntos. LinuxCNC requiere algunos widgets especiales; GladeVCP los "
+"suministra. Muchos son solo extensiones HAL a los widgets PyGTK existentes. "
+"GladeVCP crea los pines HAL para los widgets especiales descritos en el "
+"archivo Glade. GladeVCP también permite agregar comandos Python para "
+"interactuar con los widgets, de forma que hagan cosas que no están "
+"disponibles en su forma predeterminada. ¡Si puede construir un panel "
+"GladeVCP, puede personalizar Gscreen!"
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:69
@@ -93225,7 +93227,6 @@ msgstr "Archivos Handler"
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:103
-#, fuzzy
 msgid ""
 "A handler file is a file containing Python code, which Gscreen adds to its "
 "default routines.  A handler file allows one to modify defaults, or add "
@@ -93244,25 +93245,25 @@ msgid ""
 "vcp,GladeVCP Chapter>> for the basics to GladeVCP handler files.  Gscreen "
 "uses a very similar technique."
 msgstr ""
-"Un archivo handler es un archivo que contiene código python que Gscreen "
-"agrega a su rutinas por defecto. Un archivo handler permite modificar "
-"valores predeterminados o agregar lógica a una skin Gscreen sin tener que "
-"modificar Gscreen propiamente dicho. Puede combinar nuevas funciones con "
-"funciones de Gscreen para modificar el comportamiento a su gusto. Usted "
-"puede omitir por completo todas las funciones de Gscreen y hacer que "
-"funcionen de forma completamente diferente. Si esta presente un archivo "
-"handler llamado gscreen_handler.py (o MYNAME_handler.py si usa el "
-"interruptor INI) se cargará y registrará. Gscreen solo permite buscar un "
-"archivo handler; si lo encuentra, tomara nota de los nombres de funciones "
-"específicas y las llamara en lugar de las predeterminadas. Si se agregan "
-"widgets, puede configurar llamadas de señal desde el editor de Glade para "
-"llamar a rutinas que haya escrito en el archivo handler. De esta forma "
-"podrás tener un comportamiento personalizado. Las rutinas del handler pueden "
-"llamar a las rutinas predeterminadas de Gscreen, ya sea antes o después de "
-"ejecutar su propio código. De esta manera se puede añadir comportamiento "
-"extra, como añadir un sonido. Por favor vea el capitulo GladeVCP para "
-"entender los fundamentos de los archivos handler GladeVCP. Gscreen utiliza "
-"una técnica muy similar."
+"Un archivo handler es un archivo que contiene código Python que Gscreen "
+"agrega a sus rutinas por defecto. Un archivo handler permite modificar "
+"valores predeterminados o agregar lógica a una apariencia (skin) de Gscreen "
+"sin tener que modificar Gscreen propiamente dicho. Puede combinar nuevas "
+"funciones con las funciones de Gscreen para modificar el comportamiento a su "
+"gusto. Puede omitir por completo todas las funciones de Gscreen y hacer que "
+"funcione de forma completamente diferente. Si está presente un archivo "
+"handler llamado gscreen_handler.py (o MYNAME_handler.py si usa la opción INI)"
+", se cargará y registrará (solo se permite un archivo). Gscreen busca el "
+"archivo handler y, si lo encuentra, buscará nombres de funciones específicas "
+"y las llamará en lugar de las predeterminadas. Si agrega widgets, puede "
+"configurar llamadas a señales desde el editor Glade para llamar a rutinas "
+"que haya escrito en el archivo handler. De esta forma podrá tener un "
+"comportamiento personalizado. Las rutinas del handler pueden llamar a las "
+"rutinas predeterminadas de Gscreen, ya sea antes o después de ejecutar su "
+"propio código. De esta manera se puede añadir un comportamiento extra, como "
+"añadir un sonido. Por favor consulte el <<cha:glade-vcp,Capítulo GladeVCP>> "
+"para conocer los conceptos básicos de los archivos handler de GladeVCP. "
+"Gscreen utiliza una técnica muy similar."
 
 #. type: Title ===
 #: src/gui/gscreen.adoc:104 src/gui/qtvcp.adoc:181
@@ -93364,7 +93365,6 @@ msgstr "Comandos en compilados RIP"
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:143
-#, fuzzy
 msgid ""
 "Using a compiled from source version of https://wiki.linuxcnc.org/cgi-bin/"
 "wiki.pl?Installing_LinuxCNC[LinuxCNC] open a terminal and <<faq:cd,cd>> to "
@@ -93375,15 +93375,15 @@ msgid ""
 "share/gscreen/skins/.  This should be copied to a configuration folder.  Or "
 "you can make a clean-sheet Glade file by saving it in a configuration folder."
 msgstr ""
-"Usando un compilado de la versión fuente de http://wiki.linuxcnc.org/cgi-bin/"
-"wiki.pl?Installing_LinuxCNC[LinuxCNC], abra un terminal y cambie de "
-"directorio a la parte superior de la carpeta LinuxCNC. Configure el entorno "
-"entrando '. ./scripts/rip-environment ' y ahora ingrese 'glade'. Usted vera "
-"un montón de advertencias en el terminal que puede ignorar y el editor debe "
-"abrirse. El archivo de Gscreen Glade está en: src/emc/usr_intf/gscreen/.  "
-"Las skins de muestra están en /share/gscreen/skins/. Esto debe ser copiado a "
-"una carpeta de configuración, o puede hacer un archivo Glade limpio "
-"guardándolo en una carpeta de configuración."
+"Usando una versión compilada desde el código fuente de https://"
+"wiki.linuxcnc.org/cgi-bin/wiki.pl?Installing_LinuxCNC[LinuxCNC], abra un "
+"terminal y haga <<faq:cd,cd>> a la raíz de la carpeta LinuxCNC. Configure el "
+"entorno ingresando '. ./scripts/rip-environment' y ahora ingrese 'glade', "
+"verá un montón de advertencias en el terminal que puede ignorar y el editor "
+"debería abrirse. El archivo Glade original de Gscreen está en: src/emc/"
+"usr_intf/gscreen/, las skins de muestra están en /share/gscreen/skins/. Esto "
+"debe copiarse a una carpeta de configuración. O puede crear un archivo Glade "
+"en blanco guardándolo en una carpeta de configuración."
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:148
@@ -93424,7 +93424,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:158
-#, fuzzy
 msgid ""
 "Gscreen leverages GladeVCP widgets as much as possible, to avoid adding "
 "Python code.  Learning about <<cha:glade-vcp,GladeVCP>> widgets is a "
@@ -93434,13 +93433,14 @@ msgid ""
 "some Python programming.  The name of the parent window needs to be window1. "
 "Gscreen assumes this name."
 msgstr ""
-"Gscreen aprovecha los widgets de GladeVCP tanto como sea posible, para "
-"evitar agregar código python.  Aprender acerca de los widgets de GladeVCP es "
-"un requisito previo.  Si los widgets existentes le brindan la función que "
-"desea o necesita, entonces no es necesario agregar código Python; solo "
-"guarde el archivo Glade en su carpeta de configuración.  Si necesita algo "
-"más personalizado, entonces debe hacer algo de programación en Python.  El "
-"nombre de la ventana principal debe ser window1. Gscreen asume este nombre."
+"Gscreen aprovecha los widgets de <<cha:glade-vcp,GladeVCP>> tanto como sea "
+"posible, para evitar agregar código Python. Aprender acerca de los widgets "
+"de GladeVCP es un requisito previo. Si los widgets existentes le brindan la "
+"función que desea o necesita, entonces no es necesario agregar código "
+"Python; solo guarde el archivo Glade en su carpeta de configuración. Si "
+"necesita algo más personalizado, entonces debe hacer algo de programación en "
+"Python. El nombre de la ventana principal debe ser window1. Gscreen asume "
+"este nombre."
 
 #. type: Plain text
 #: src/gui/gscreen.adoc:160
@@ -106001,16 +106001,16 @@ msgstr "Primeros pasos"
 
 #. type: NOTE
 #: src/gui/qtdragon.adoc:64
-#, fuzzy
 msgid ""
 "If your configuration is not currently set up to use QtDragon, you can "
 "change it by editing the INI file sections.  For an exhaustive list of "
 "options, see the <<sub:ini:sec:display,display section>> of the INI file "
 "documentation."
 msgstr ""
-"Si su configuración no está configurada actualmente para usar AXIS, puede "
-"cambiarlo editando el archivo .ini. En la sección '[DISPLAY]' indiquelo con "
-"la linea 'DISPLAY = axis'."
+"Si su configuración no está actualmente preparada para usar QtDragon, puede "
+"cambiarla editando las secciones del archivo ini. Para una lista exhaustiva "
+"de opciones, vea la <<sub:ini:sec:display,sección display>> de la "
+"documentación del archivo ini."
 
 #. type: NOTE
 #: src/gui/qtdragon.adoc:68
@@ -113542,21 +113542,18 @@ msgstr "Más información"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1148
-#, fuzzy
 msgid "<<cha:qtvcp:panels,QtVCP Builtin Virtual Control Panels>>"
-msgstr "Removed all-Englush _es file: qtvcp-libraries,bibliotecas QtVCP"
+msgstr "<<cha:qtvcp:panels,Paneles de control virtuales integrados de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1150
-#, fuzzy
 msgid "<<cha:qtvcp:widgets,QtVCP Widgets>>"
-msgstr "Removed all-English _es file: cha:qtvcp-widgets,widgets QtVCP"
+msgstr "<<cha:qtvcp:widgets,QtVCP Widgets>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1152
-#, fuzzy
 msgid "<<cha:qtvcp:libraries,QtVCP Libraries>>"
-msgstr "Removed all-Englush _es file: qtvcp-libraries,bibliotecas QtVCP"
+msgstr "<<cha:qtvcp:libraries,Bibliotecas QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1154
@@ -113565,25 +113562,19 @@ msgstr "<<cha:qtvcp:vismach,Qt Vismach>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1156
-#, fuzzy
 msgid "<<cha:qtvcp:code,QtVCP Handler File Code Snippets>>"
-msgstr ""
-"Removed all-English _es file: cha:qtvcp-code,fragmentos de código de archivo "
-"del controlador QtVCP"
+msgstr "<<cha:qtvcp:code,Fragmentos de código del archivo handler de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1158
-#, fuzzy
 msgid "<<cha:qtvcp:devel,QtVCP Development>>"
-msgstr "Removed all-English _es file: cha:qtvcp-development,QtVCP Development"
+msgstr "<<cha:qtvcp:devel,Desarrollo de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp.adoc:1160
-#, fuzzy
 msgid "<<cha:qtvcp:custom-widgets,QtVCP Custom Qt Designer Widgets>>"
 msgstr ""
-"Removed all-English _es file: cha:qtvcp-custom-widgets,QtVCP Custom Designer "
-"Widgets"
+"<<cha:qtvcp:custom-widgets,Widgets personalizados de Qt Designer para QtVCP>>"
 
 #. type: Title =
 #: src/gui/qtvcp-code-snippets.adoc:5
@@ -124685,9 +124676,8 @@ msgstr "Builtin panels"
 
 #. type: Plain text
 #: src/gui/qtvcp-vismach.adoc:638
-#, fuzzy
 msgid "<<sub:qtvcp:panels:vismach,QtVCP builtin Vismach Panels>>"
-msgstr "Removed all-Englush _es file: qtvcp-libraries,bibliotecas QtVCP"
+msgstr "<<sub:qtvcp:panels:vismach,Paneles Vismach integrados de QtVCP>>"
 
 #. type: Plain text
 #: src/gui/qtvcp-widgets.adoc:15
@@ -143748,9 +143738,9 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:275 src/hal/components.adoc:367
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Software PWM/PDM generation, see <<sec:pwmgen,description>>."
-msgstr "(((pwmgen))) Software de generación PWM/PDM."
+msgstr "Generación de PWM/PDM por software, ver <<sec:pwmgen,description>>."
 
 #. type: Table
 #: src/hal/components.adoc:276 src/hal/components.adoc:403
@@ -143760,9 +143750,9 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:276 src/hal/components.adoc:403
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Signal generator, see <<sec:siggen,description>>."
-msgstr "Generador de señal."
+msgstr "Generador de señal, ver <<sec:siggen,description>>."
 
 #. type: Table
 #: src/hal/components.adoc:277
@@ -143772,9 +143762,11 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:277
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Simulated quadrature encoder, see <<sec:simulated-encoder,description>>."
-msgstr "(((sim_encoder))) codificador de cuadratura simulado."
+msgstr ""
+"Codificador de cuadratura simulado, ver <<sec:simulated-encoder,description>>"
+"."
 
 #. type: Table
 #: src/hal/components.adoc:278 src/hal/components.adoc:368
@@ -143784,9 +143776,10 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:278 src/hal/components.adoc:368
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Software step pulse generation, see <<sec:stepgen,description>>."
-msgstr "(((stepgen))) Generación de pulsos de pasos de software."
+msgstr ""
+"Generación de pulsos de paso por software, ver <<sec:stepgen,description>>."
 
 #. type: Title ====
 #: src/hal/components.adoc:281
@@ -144606,9 +144599,11 @@ msgstr "link:../man/man9/encoder.9.html[encoder]"
 
 #. type: Table
 #: src/hal/components.adoc:365
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Software counting of quadrature encoder signals, see <<sec:encoder,description>>."
-msgstr "(((encoder))) Conteo por software de señales de encoder en cuadratura."
+msgstr ""
+"Conteo por software de señales de codificador en cuadratura, ver "
+"<<sec:encoder,description>>."
 
 #. type: Table
 #: src/hal/components.adoc:366
@@ -144618,9 +144613,9 @@ msgstr "link:../man/man9/pid.9.html[pid]"
 
 #. type: Table
 #: src/hal/components.adoc:366
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Proportional/integral/derivative controller, <<sec:pid,description>>."
-msgstr "Controlador proporcional/integral/derivativo."
+msgstr "Controlador proporcional/integral/derivativo, <<sec:pid,description>>."
 
 #. type: Title ===
 #: src/hal/components.adoc:372
@@ -144762,9 +144757,11 @@ msgstr ""
 
 #. type: Table
 #: src/hal/components.adoc:390
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Realtime software PLC based on ladder logic. See <<cha:classicladder,ClassicLadder>> chapter for more information."
-msgstr "(((classicladder)))Software PLC en tiempo real basado en lógica de escalera. Consulte el capítulo ClassicLadder para obtener más información."
+msgstr ""
+"PLC de software en tiempo real basado en lógica de escalera. Consulte el "
+"capítulo <<cha:classicladder,ClassicLadder>> para más información."
 
 #. type: Table
 #: src/hal/components.adoc:392
@@ -152259,7 +152256,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/hal/rtcomps.adoc:223
-#, fuzzy
 msgid ""
 "'Output type 1' - PWM/PDM and direction pins.  Positive and negative inputs "
 "will be output as positive and negative PWM.  The direction pin is false for "
@@ -152268,12 +152264,12 @@ msgid ""
 "component to convert your PWM signal to positive value, when a negative "
 "input is input."
 msgstr ""
-"'Tipo de salida 1' - pines PWM/PDM y de dirección. Entradas positivas y "
-"negativas saldran como PWM positivo y negativo. El pin de dirección es FALSO "
-"para comandos positivos, y VERDADERO para comandos negativos. Si su control "
-"necesita PWM positivo para CW y CCW, use el componente <<sub:abs,abs>> para "
-"convertir su señal PWM a un valor positivo cuando se ingrese una entrada "
-"negativa."
+"'Tipo de salida 1' - pines de PWM/PDM y de dirección. Las entradas positivas "
+"y negativas se emitirán como PWM positivo y negativo. El pin de dirección es "
+"falso para comandos positivos y verdadero para comandos negativos. Si su "
+"control necesita PWM positivo tanto para CW como para CCW, use el componente "
+"link:../man/man9/abs.9.html[abs] para convertir su señal PWM a un valor "
+"positivo cuando se ingrese una entrada negativa."
 
 #. type: Plain text
 #: src/hal/rtcomps.adoc:227
@@ -154194,7 +154190,6 @@ msgstr "images/hal-meter02.png"
 
 #. type: Plain text
 #: src/hal/tools.adoc:98
-#, fuzzy
 msgid ""
 "`halshow` (<<cha:halshow,complete usage description>>) can be started from "
 "the command line to show details for selected components, pins, parameters, "
@@ -154204,15 +154199,15 @@ msgid ""
 "existing watch list.  The watch list items can also be loaded automatically "
 "on startup.  For command line usage:"
 msgstr ""
-"Halshow (ver sección separada para descripción completa de uso)  se puede "
-"iniciar desde la línea de comando para mostrar los detalles de los "
-"componentes seleccionados, pines, parámetros, señales, funciones e hilos de "
-"un HAL en ejecución.  La pestaña WATCH proporciona una visualización "
-"continua de pines, parámetros y elementos de señal. El menú Archivo "
-"proporciona botones para 1) guardar los elementos observados en una lista de "
-"vigilancia y para cargar una lista de vigilancia existente. Los elementos de "
-"la lista de observación pueden también cargarse automáticamente al inicio. "
-"Para su uso, en línea de comandos:"
+"`halshow` (<<cha:halshow,descripción completa de uso>>) se puede iniciar "
+"desde la línea de comandos para mostrar los detalles de los componentes "
+"seleccionados, pines, parámetros, señales, funciones e hilos de un HAL en "
+"ejecución. La pestaña WATCH proporciona una visualización continua de pines, "
+"parámetros y elementos de señal seleccionados. El menú Archivo proporciona "
+"botones para guardar los elementos observados en una lista de vigilancia y "
+"para cargar una lista de vigilancia existente. Los elementos de la lista de "
+"vigilancia también pueden cargarse automáticamente al inicio. Para uso en "
+"línea de comandos:"
 
 #. type: delimited block -
 #: src/hal/tools.adoc:107
@@ -210229,10 +210224,10 @@ msgstr ""
 
 #. type: Plain text
 #: src/motion/kinematics.adoc:285
-#, fuzzy
 msgid ""
 "Implements the <<sec:Forward-transformation,forward kinematics function>>."
-msgstr "Implementa la función cinemática directa."
+msgstr ""
+"Implementa la <<sec:Forward-transformation,función de cinemática directa>>."
 
 #. type: delimited block -
 #: src/motion/kinematics.adoc:290
@@ -225880,17 +225875,13 @@ msgstr "Pero los siguientes no lo son:"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3248
-#, fuzzy
 msgid "<<plasma:button-cmds,External commands>>"
-msgstr ""
-"Comandos en la terminal [[sec:Terminal-Commands]](((Terminal Commands)))"
+msgstr "<<plasma:button-cmds,Comandos externos>>"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3249
-#, fuzzy
 msgid "<<plasma:button-py,External python scripts>>"
-msgstr ""
-"Comandos en la terminal [[sec:Terminal-Commands]](((Terminal Commands)))"
+msgstr "<<plasma:button-py,Scripts python externos>>"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3250
@@ -225899,10 +225890,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3251
-#, fuzzy
 msgid "<<plasma:button-dual,Dual code>>"
-msgstr ""
-"Comandos en la terminal [[sec:Terminal-Commands]](((Terminal Commands)))"
+msgstr "<<plasma:button-dual,Código dual>>"
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3252
@@ -225983,10 +225972,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3267
-#, fuzzy
 msgid "<<plasma:button-joint,Toggle between joint and teleop modes>>"
-msgstr ""
-"soporte para alternar entre los modos articulacion y teleop con la tecla '$'"
+msgstr "<<plasma:button-joint,Alternar entre modos articulación y teleop>>"
 
 #. type: Block title
 #: src/plasma/qtplasmac.adoc:3269
@@ -226173,6 +226160,10 @@ msgid ""
 "and <<plasma:button-code,G-code>>. Multiple codes as well as mixing codes "
 "are allowed."
 msgstr ""
+"code1 y code2 siguen ambos la regla de las explicaciones de código "
+"anteriores, <<plasma:button-cmds,External commands>>, <<plasma:button-"
+"py,Python code>>, y <<plasma:button-code,G-code>>. Se permiten múltiples "
+"códigos así como mezclar códigos."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:3362
@@ -231760,11 +231751,12 @@ msgstr "`argspec=`'<argspec>'"
 
 #. type: Plain text
 #: src/remap/remap.adoc:271
-#, fuzzy
 msgid ""
 "See <<sub:argspec-parameter,description of the argspec parameter options>>. "
 "Optional."
-msgstr "Ver descripción de opciones de parámetros argspec. Opcional."
+msgstr ""
+"Ver <<sub:argspec-parameter,descripción de las opciones del parámetro "
+"argspec>>. Opcional."
 
 #. type: Labeled list
 #: src/remap/remap.adoc:272

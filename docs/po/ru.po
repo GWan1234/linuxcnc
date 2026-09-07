@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:51+0000\n"
+"PO-Revision-Date: 2026-09-07 00:52+0000\n"
 "Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
 "Language-Team: none\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -67323,8 +67323,8 @@ msgstr ""
 "Пункты меню File > Edit... and File > Edit Tool Table... становятся "
 "доступными после определения редактора в разделе INI [DISPLAY]. Полезные "
 "значения включают `EDITOR=gedit` и `EDITOR=gnome-terminal -e vim`. "
-"Дополнительную информацию см. в разделе «sub:ini:sec:display,Display» главы "
-"Конфигурация INI."
+"Дополнительную информацию см. в разделе <<sub:ini:sec:display,Display>> "
+"главы Конфигурация INI."
 
 #. type: Title ===
 #: src/gui/axis.adoc:969
@@ -148068,15 +148068,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/install/latency-test.adoc:107
-#, fuzzy
-#| msgid ""
-#| "In the example above, latency-test only ran for a few seconds.  You "
-#| "should run the test for at least several minutes; sometimes the worst "
-#| "case latency doesn't happen very often, or only happens when you do some "
-#| "particular action. For instance, one Intel motherboard worked pretty well "
-#| "most of the time, but every 64 seconds it had a very bad 300 µs latency. "
-#| "Fortunately that was fixable, see https://wiki.linuxcnc.org/cgi-bin/"
-#| "wiki.pl?FixingSMIIssues ."
 msgid ""
 "In the example above, latency-test only ran for a few seconds.  You should "
 "run the test for at least several minutes; sometimes the worst case latency "
@@ -148090,8 +148081,8 @@ msgstr ""
 "задержка случается не очень часто или случается только при выполнении какого-"
 "то определенного действия. Например, одна материнская плата Intel работала "
 "довольно хорошо большую часть времени, но каждые 64 секунды у нее была очень "
-"плохая задержка в 300мкс. К счастью, это можно было исправить, см. https://"
-"wiki.linuxcnc.org/cgi-bin/wiki.pl?FixingSMIIssues ."
+"плохая задержка в 300мкс. К счастью, это можно было исправить, см. "
+"<<_latency_tuning>>."
 
 #. type: Plain text
 #: src/install/latency-test.adoc:109

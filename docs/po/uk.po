@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:52+0000\n"
+"PO-Revision-Date: 2026-09-07 00:52+0000\n"
 "Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
 "Language-Team: none\n"
 "Language: uk\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -3631,8 +3631,8 @@ msgid ""
 msgstr ""
 "Це, ймовірно, не вдасться! Це не робить вас поганою людиною, це просто "
 "означає, що вам слід прочитати весь цей документ, щоб дізнатися, як вирішити "
-"свої проблеми.  Особливо розділ «Задоволення залежностей збірки, задоволення "
-"залежностей збірки»."
+"свої проблеми.  Особливо розділ <<Satisfying-Build-Dependencies,задоволення "
+"залежностей збірки>>."
 
 #. type: Plain text
 #: src/code/building-linuxcnc.adoc:91
@@ -4980,10 +4980,10 @@ msgid ""
 "quickest, easiest way to get started.  However, there are other options to "
 "consider."
 msgstr ""
-"Інструкції «Швидкий старт» у верхній частині цього документа клонують наше "
-"git-репозиторій за адресою https://github.com/LinuxCNC/linuxcnc.git.  Це "
-"найшвидший і найпростіший спосіб розпочати роботу.  Однак є й інші варіанти, "
-"які варто врахувати."
+"Інструкції <Quick-Start,Швидкий старт>> у верхній частині цього документа "
+"клонують наше git-репозиторій за адресою https://github.com/LinuxCNC/"
+"linuxcnc.git.  Це найшвидший і найпростіший спосіб розпочати роботу.  Однак "
+"є й інші варіанти, які варто врахувати."
 
 #. type: Title ===
 #: src/code/building-linuxcnc.adoc:552
@@ -32508,7 +32508,8 @@ msgstr ""
 "«Швидкість 1 і 2, PWM 1 і 2» — у створеному файлі конфігурації "
 "використовується проста лінійна залежність для визначення значення PWM для "
 "заданого значення RPM. Якщо значення невідомі, їх можна визначити. "
-"Докладнішу інформацію див. у розділі «Визначення калібрування шпинделя»."
+"Докладнішу інформацію див. у розділі <<sub:determining-spindle-"
+"calibration,Визначення калібрування шпинделя>>."
 
 #. type: Index entry
 #: src/config/stepconf.adoc:288 src/config/stepconf.adoc:294
@@ -60611,8 +60612,8 @@ msgid ""
 "<<mcode:m70-saved-state,Modal state saved with an 'M70'>> code can be "
 "restored by executing an 'M72'."
 msgstr ""
-"Стан модального вікна, збережений за допомогою коду 'M70'>>, можна "
-"відновити, виконавши код 'M72'."
+"<<mcode:m70-saved-state,Модальний стан, збережений за допомогою коду 'M70'>>"
+", можна відновити, виконавши 'M72'."
 
 #. type: NOTE
 #: src/gcode/m-code.adoc:570
@@ -62483,9 +62484,9 @@ msgid ""
 "case, the speed may differ from the one programmed, even if the speed "
 "correction potentiometer is set to 100%."
 msgstr ""
-"Як описано в розділі «gcode:g84, цикл правого нарізування з витримкою», якщо "
-"активний цикл свердління «G84» (нарізування) і потенціометри швидкості та "
-"подачі ввімкнені, буде використовуватися той, що має найнижче значення.  "
+"Як описано в розділі <<gcode:g84, цикл правого нарізування з витримкою>>, "
+"якщо активний цикл свердління «G84» (нарізування) і потенціометри швидкості "
+"та подачі ввімкнені, буде використовуватися той, що має найнижче значення.  "
 "Швидкість обертання та швидкість подачі залишатимуться синхронізованими. У "
 "цьому випадку швидкість може відрізнятися від запрограмованої, навіть якщо "
 "потенціометр корекції швидкості встановлений на 100%."
@@ -163550,15 +163551,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/install/latency-test.adoc:107
-#, fuzzy
-#| msgid ""
-#| "In the example above, latency-test only ran for a few seconds.  You "
-#| "should run the test for at least several minutes; sometimes the worst "
-#| "case latency doesn't happen very often, or only happens when you do some "
-#| "particular action. For instance, one Intel motherboard worked pretty well "
-#| "most of the time, but every 64 seconds it had a very bad 300 µs latency. "
-#| "Fortunately that was fixable, see https://wiki.linuxcnc.org/cgi-bin/"
-#| "wiki.pl?FixingSMIIssues ."
 msgid ""
 "In the example above, latency-test only ran for a few seconds.  You should "
 "run the test for at least several minutes; sometimes the worst case latency "
@@ -163572,8 +163564,8 @@ msgstr ""
 "затримки трапляється не дуже часто або трапляється лише тоді, коли ви "
 "виконуєте певну дію. Наприклад, одна материнська плата Intel працювала "
 "досить добре більшу частину часу, але кожні 64 секунди мала дуже погану "
-"затримку в 300 мкс. На щастя, це можна було виправити, див. https://"
-"wiki.linuxcnc.org/cgi-bin/wiki.pl?FixingSMIIssues ."
+"затримку в 300 мкс. На щастя, це можна було виправити, див. "
+"<<_latency_tuning>>."
 
 #. type: Plain text
 #: src/install/latency-test.adoc:109
@@ -229048,9 +229040,9 @@ msgid ""
 "torch moves up and comes to rest at the Pierce Height seems excessive, see "
 "<<plasma:probing,the probing section>> for a possible solution."
 msgstr ""
-"Якщо час між контактом пальника з матеріалом і моментом, коли пальник "
-"піднімається і зупиняється на висоті проколювання, здається надмірним, див. "
-"розділ «Плазма: зондування, зондування» для можливого вирішення."
+"Якщо час між торканням пальником матеріалу та його підйомом і зупинкою на "
+"висоті пробивання здається надмірним, див. <<plasma:probing,розділ про "
+"зондування>> щодо можливого рішення."
 
 #. type: IMPORTANT
 #: src/plasma/qtplasmac.adoc:353
@@ -233134,7 +233126,7 @@ msgid ""
 "with the Z axis selected to set the Z axis at zero offset.  This should not "
 "need to be done again."
 msgstr ""
-"Як зазначено в розділі «plasma:initial-setup,Initial Setup» (плазма: "
+"Як зазначено в розділі <<plasma:initial-setup,Initial Setup>> (плазма: "
 "початкова настройка, початкова настройка), при першому використанні "
 "QtPlasmaC рекомендується переконатися, що під паяльною лампою нічого немає, "
 "а потім перемістити вісь Z вниз, доки вона не зупиниться на мінімальному "
@@ -236376,10 +236368,10 @@ msgid ""
 "tab,SETTINGS Tab>>, or a custom user button is specified as a "
 "<<plasma:button-mancut,manual cut>> button."
 msgstr ""
-"Для ручного одноразового вирізання необхідно, щоб у розділі «Налаштування» "
-"вкладки «Налаштування» було ввімкнено «плазмові:клавіатурні "
-"скорочення,клавіатурні скорочення» або щоб була вказана спеціальна кнопка "
-"користувача як кнопка «плазмові:кнопка-ручне вирізання,ручне вирізання»."
+"Для ручного поодинокого різання необхідно або увімкнути <<plasma:keyboard-"
+"shortcuts,комбінації клавіш>> у розділі GUI SETTINGS <<plasma:settings-"
+"tab,вкладки НАЛАШТУВАННЯ>>, або призначити користувацьку кнопку як "
+"<<plasma:button-mancut,кнопку ручного різання>>."
 
 #. type: NOTE
 #: src/plasma/qtplasmac.adoc:2216
@@ -243541,10 +243533,10 @@ msgid ""
 "next to the Gas Pressure setting in the MATERIAL section of the "
 "<<plasma:parameters-tab,PARAMETERS Tab>>."
 msgstr ""
-"Одиниця виміру тиску газу (psi або bar) визначається даними, отриманими під "
-"час початкового налаштування каналу зв'язку, і потім відображається поруч із "
-"налаштуванням тиску газу в розділі «МАТЕРІАЛ» на вкладці «плазма:параметри», "
-"вкладка «ПАРАМЕТРИ»."
+"Одиниці вимірювання тиску газу (psi або bar) визначаються даними, отриманими "
+"під час початкового налаштування каналу зв'язку, і відображаються поруч із "
+"налаштуванням тиску газу в розділі МАТЕРІАЛ <<plasma:parameters-tab,вкладки "
+"ПАРАМЕТРИ>>."
 
 #. type: Plain text
 #: src/plasma/qtplasmac.adoc:4070

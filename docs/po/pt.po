@@ -5,20 +5,21 @@
 # ssantos <ssantos@web.de>, 2022.
 # TecnoLAZ <luispaulodias89@gmail.com>, 2024.
 # Américo Monteiro <a_monteiro@gmx.com>, 2025, 2026.
+# Luca Toniolo <toniolo.luca@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: emc-developers@lists.sourceforge.net\n"
 "POT-Creation-Date: 2026-01-29 16:34+0000\n"
-"PO-Revision-Date: 2026-09-01 15:52+0000\n"
-"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"PO-Revision-Date: 2026-09-07 00:52+0000\n"
+"Last-Translator: Luca Toniolo <toniolo.luca@outlook.com>\n"
 "Language-Team: none\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1.dev0\n"
 
 #.  vim: set syntax=asciidoc:
 #. type: Attribute :lang:
@@ -3725,7 +3726,7 @@ msgid ""
 msgstr ""
 "A partir de https://www.rtai.org.   Um kernel Linux com o patch RTAI está "
 "disponível a partir do arquivo Debian em https://linuxcnc.org.   Veja "
-"<cha:getting-linuxcnc,Obter o LinuxCNC> para instruções de instalação."
+"<<cha:getting-linuxcnc,Obter o LinuxCNC> para instruções de instalação."
 
 #. type: Labeled list
 #: src/code/building-linuxcnc.adoc:126
@@ -3822,7 +3823,7 @@ msgid ""
 "Start>> section at the top of this document, possibly with different "
 "arguments to `src/configure` and `make`."
 msgstr ""
-"Compilar para Run-In-Place segue os passos na secção <Quick-Start,Arranque "
+"Compilar para Run-In-Place segue os passos na secção <<Quick-Start,Arranque "
 "Rápido> na topo deste documento, possivelmente com diferentes argumentos "
 "para `src/configure` e `make`."
 
@@ -4104,7 +4105,8 @@ msgid ""
 msgstr ""
 "dependências de tempo de compilação devem ser instaladas, ou seja, ficheiros "
 "de cabeçalho para bibliotecas usadas de código externo, como descrito na "
-"secção <Satisfying-Build-Dependencies,Satisfazer Dependências de Compilação>."
+"secção <<Satisfying-Build-Dependencies,Satisfazer Dependências de Compilação>"
+"."
 
 #. type: Plain text
 #: src/code/building-linuxcnc.adoc:254
@@ -4170,9 +4172,9 @@ msgid ""
 msgstr ""
 "O `debian/configure` aceita argumentos dependendo da plataforma em que/para "
 "que você está compilando, veja a secção <debian-configure-arguments, "
-"argumentos `debian/configure`>>.  Vem predefinido para o LinuxCNC correr no "
-"espaço do utilizador (\"uspace\"), contando com um kernel preempt_rt para "
-"minimizar latências."
+"argumentos <<debian-configure-arguments, `debian/configure`>>.  Vem "
+"predefinido para o LinuxCNC correr no espaço do utilizador (\"uspace\"), "
+"contando com um kernel preempt_rt para minimizar latências."
 
 #. type: Plain text
 #: src/code/building-linuxcnc.adoc:281
@@ -4978,10 +4980,10 @@ msgid ""
 "quickest, easiest way to get started.  However, there are other options to "
 "consider."
 msgstr ""
-"As instruções <<Quick-Start,Arranque Rápido> no topo deste documento clonam "
-"o nosso repositório git em https://github.com/LinuxCNC/linuxcnc.git.  Esta é "
-"a maneira mais rápida e fácil de começar.  No entanto, há outras opções a "
-"considerar."
+"As instruções de <<Quick-Start,Arranque Rápido>> no topo deste documento "
+"clonam o nosso repositório git em https://github.com/LinuxCNC/linuxcnc.git. "
+"Esta é a maneira mais rápida e fácil de começar. No entanto, há outras "
+"opções a considerar."
 
 #. type: Title ===
 #: src/code/building-linuxcnc.adoc:552
@@ -7787,9 +7789,9 @@ msgid ""
 "controls which of these kinds of hardware LinuxCNC thinks it is connected to."
 msgstr ""
 "LinuxCNC suporta dois tipos de hardware de troca de ferramentas, chamado "
-"_nonrandom_ e _random_.  A definição INI <sub:ini:sec:emcio,"
-"[EMCIO]RANDOM_TOOLCHANGER> controla a qual desses tipos de hardware o "
-"LinuxCNC pensa que está ligado."
+"_nonrandom_ e _random_.  A definição INI "
+"<<sub:ini:sec:emcio,[EMCIO]RANDOM_TOOLCHANGER> controla a qual desses tipos "
+"de hardware o LinuxCNC pensa que está ligado."
 
 #. type: Title ====
 #: src/code/code-notes.adoc:1119
@@ -8219,11 +8221,11 @@ msgid ""
 "numbered parameters (<<sub:numbered-parameters,#5400-#5413>>) are updated "
 "with the new tool information from pocket 0 (spindle)."
 msgstr ""
-"Voltar ao interp, +settings->current_pocket+ é atribuído o novo índice de "
-"dados de ferramentas a partir de +settings->selected_pocket+ (definido por "
+"De volta ao interp, +settings->current_pocket+ é atribuído o novo índice de "
+"dados de ferramenta a partir de +settings->selected_pocket+ (definido por "
 "+Txxx+).  Os parâmetros numerados relevantes (<<sub:numbered-"
-"parameters,#5400-#5413>) são atualizados com as novas informações da "
-"ferramenta do bolso 0 (fuso)."
+"parameters,#5400-#5413>>) são atualizados com as novas informações da "
+"ferramenta do bolso 0 (o fuso)."
 
 #. type: Title ====
 #: src/code/code-notes.adoc:1217
@@ -8416,8 +8418,8 @@ msgstr ""
 "tool_table+.  (Esta cópia não é necessária em máquinas de trocador de "
 "ferramentas aleatórias porque lá, as ferramentas não têm um bolso inicial e, "
 "em vez disso, apenas atualizamos a ferramenta no bolso 0 diretamente.).  Os "
-"parâmetros numerados relevantes (<<sub:numbered-parameters,#5400-#5413>) são "
-"atualizados a partir da informação da ferramenta no fuso (copiando as "
+"parâmetros numerados relevantes (<<sub:numbered-parameters,#5400-#5413>>) "
+"são atualizados a partir da informação da ferramenta no fuso (copiando as "
 "informações do interp +settings->tool_table+ para +settings->parameters+).  "
 "(CORRIGIR: este é um buglet, os parâmetros só devem ser atualizados se foi a "
 "ferramenta atual que foi modificada)."
@@ -13694,7 +13696,8 @@ msgid ""
 "usually a <<sub:hal-s32,s32>>, but could be also a <<sub:hal-s64,s64>>."
 msgstr ""
 "Um número inteiro que pode ter um sinal positivo ou negativo.  Em HAL é "
-"geralmente um <sub:hal-s32,s32>, mas poderá ser também um <sub:hal-s64,s64>."
+"geralmente um <<sub:hal-s32,s32>, mas poderá ser também um <<sub:hal-s64,s64>"
+"."
 
 #. type: Title ====
 #: src/common/glossary.adoc:326 src/config/core-components.adoc:192
@@ -13855,8 +13858,8 @@ msgid ""
 "A whole number that has no sign.  In HAL it is usually a <<sub:hal-u32,u32>> "
 "but could be also a <<sub:hal-u64,u64>>."
 msgstr ""
-"Um número inteiro que não tem sinal.  Em HAL é geralmente um <sub:hal-"
-"u32,u32> mas pode ser também um <sub:hal-u64,u64>."
+"Um número inteiro que não tem sinal.  Em HAL é geralmente um <<sub:hal-"
+"u32,u32> mas pode ser também um <<sub:hal-u64,u64>."
 
 #. type: Labeled list
 #: src/common/glossary.adoc:369
